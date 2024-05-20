@@ -155,7 +155,17 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="area">Area</label>
-                            <input type="text" name="address[area]" class="form-control" id="area">
+                            <select class="form-control" name="address[area]" id="area" required>
+                                <?php
+                                if( $areas = selectDB("areas","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $areas as $area ){
+                                        ?>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
                         </div>
                     </div>
                     <div class="form-row">
