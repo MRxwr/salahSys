@@ -115,11 +115,7 @@
             <div class="card-body">
                 <form>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" id="address">
-                        </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label for="area">Area</label>
                             <input type="text" class="form-control" id="area">
                         </div>
