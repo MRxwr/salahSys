@@ -207,11 +207,13 @@
                 <form>
                     <div class="form-group">
                         <label for="acknowledgement">ACKNOWLEDGEMENT</label>
-                        <textarea class="form-control" id="acknowledgement" rows="5">
+                        <textarea class="form-control" id="acknowledgement" rows="5" disabled>
 I the undersigned hereby certify that I can swim efficiently and have not experienced any cases of loss of consciousness or epilepsy. I undertake to inform the health authorities responsible for the medical examination if such an incident occurs to me or to suffer any of the diseases in which the leadership of the boat becomes a danger to me or to others. The Law of Small Vessels No. 36/1960, as amended, and the ministerial decrees thereof.
                         </textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit form</button>
+					<div class="form-group text-center">
+                    	<button type="submit" class="btn btn-primary">Submit form</button>
+					</div>
                 </form>
             </div>
         </div>
