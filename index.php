@@ -1,16 +1,17 @@
 <?php
 require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
-var_dump($_POST);
 if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullName"]) ){
 	if (is_uploaded_file($_FILES['photo']['tmp_name'])) {
 		$_POST["applicant"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
 	}else{
 		$_POST["applicant"]["photo"] = "";
 	}
-	$_POST["applicant"] = json_encode($_POST["applicant"]);
-	$_POST["address"] = json_encode($_POST["address"]);
-	if( insertDB("application", $_POST) ){
+	$data["applicant"] = json_encode($_POST["applicant"]);
+	$data["address"] = json_encode($_POST["address"]);
+	$data["applicationType"] = $_POST["applicationType"];
+	$data["licenseType"] = $_POST["licenseType"];
+	if( insertDB("application", $data) ){
 		?>
 		<script>
 			alert("Application submitted successfully. we will contact you soon.");
