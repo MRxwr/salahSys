@@ -132,7 +132,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         	<input type="file" name="photo" class="form-control-file" id="photo">
                         </div>
                     </div>
-                </form>
             </div>
         </div>
 
@@ -142,7 +141,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 Address Information
             </div>
             <div class="card-body">
-                <form>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="area">Area</label>
@@ -179,7 +177,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <input type="text" name="address[floor]" class="form-control" id="floor">
                         </div>
                     </div>
-                </form>
             </div>
         </div>
 
@@ -189,7 +186,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 Application Type
             </div>
             <div class="card-body">
-                <form>
                     <div class="form-group">
                         <label for="applicationType">Application Type</label>
                         <select class="form-control" name="applicationType" id="applicationType">
@@ -202,7 +198,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <option>Government/Comm.</option>
                         </select>
                     </div>
-                </form>
             </div>
         </div>
 
@@ -212,7 +207,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 License Type
             </div>
             <div class="card-body">
-                <form>
                     <div class="form-group">
                         <label for="licenseType">License Type</label>
                         <select class="form-control" name="licenseType" id="licenseType">
@@ -223,7 +217,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <option>Cruise</option>
                         </select>
                     </div>
-                </form>
             </div>
         </div>
 
@@ -233,7 +226,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 ACKNOWLEDGEMENT
             </div>
             <div class="card-body">
-                <form>
                     <div class="form-group">
                         <label for="acknowledgement">ACKNOWLEDGEMENT</label>
                         <textarea class="form-control" id="acknowledgement" rows="5" disabled>
