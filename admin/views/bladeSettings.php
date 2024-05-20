@@ -378,7 +378,8 @@ updateDB("currency", array("realValue" => (string)$value, "yourValue" => (string
 		</div>
 	</div>
 
-	<?php/*<!-- default currency -->
+	<?php
+	/*<!-- default currency -->
 	<div class="col-md-4">
 		<div class="panel panel-default card-view">
 			<div class="panel-heading">
@@ -406,7 +407,8 @@ updateDB("currency", array("realValue" => (string)$value, "yourValue" => (string
 			</div>
 		</div>
 	</div>
-*/?>
+*/
+?>
 	<!-- system main email -->
 	<div class="col-md-4">
 		<div class="panel panel-default card-view">
