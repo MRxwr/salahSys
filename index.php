@@ -87,7 +87,17 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         </div>
                         <div class="form-group col-md-6">
                             <label for="nationality">Nationality</label>
-                            <input type="text" name="applicant[nationality]" class="form-control" id="nationality" required>
+                            <select class="form-control" name="applicant[nationality]" id="nationality" required>
+                                <?php
+                                if( $countries = selectDB("cities","`status` = '1' GROUP BY `CountryName` ORDER BY `CountryName` ASC") ){
+                                    foreach( $countries as $country ){
+                                        ?>
+                                        <option value="<?= $country["CountryName"] ?>"><?= $country["CountryName"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
                         </div>
                     </div>
 					<div class="form-row">
