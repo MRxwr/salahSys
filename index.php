@@ -211,21 +211,7 @@
 I the undersigned hereby certify that I can swim efficiently and have not experienced any cases of loss of consciousness or epilepsy. I undertake to inform the health authorities responsible for the medical examination if such an incident occurs to me or to suffer any of the diseases in which the leadership of the boat becomes a danger to me or to others. The Law of Small Vessels No. 36/1960, as amended, and the ministerial decrees thereof.
                         </textarea>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="date">Date</label>
-                            <input type="date" class="form-control" id="date">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="signature">Signature</label>
-                            <input type="text" class="form-control" id="signature">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit form</button>
                 </form>
             </div>
         </div>
