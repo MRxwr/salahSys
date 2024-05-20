@@ -11,7 +11,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
 	$data["address"] = json_encode($_POST["address"]);
 	$data["applicationType"] = $_POST["applicationType"];
 	$data["licenseType"] = $_POST["licenseType"];
-	if( insertDB("application", $data) ){
+	if( insertDB("applications", $data) ){
 		?>
 		<script>
 			alert("Application submitted successfully. we will contact you soon.");
