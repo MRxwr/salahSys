@@ -1,3 +1,31 @@
+<?php
+require_once("admin/includes/config.php");
+require_once("admin/includes/functions.php");
+if( isset($_POST["fullName"]) && !empty($_POST["fullName"]) ){
+	if (is_uploaded_file($_FILES['photo']['tmp_name'])) {
+		$_POST["applicant"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
+	}else{
+		$_POST["applicant"]["photo"] = "";
+	}
+	$_POST["applicant"] = json_encode($_POST["applicant"]);
+	$_POST["address"] = json_encode($_POST["address"]);
+	if( insertDB("application", $_POST) ){
+		?>
+		<script>
+			alert("Application submitted successfully. we will contact you soon.");
+			window.location.href = "index.php";
+		</script>
+		<?php
+	}else{
+		?>
+		<script>
+			alert("Application failed to submit. please try again.");
+			window.location.href = "index.php";
+		</script>
+		<?php
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
