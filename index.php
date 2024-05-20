@@ -17,25 +17,25 @@
                 Applicant Information
             </div>
             <div class="card-body">
-                <form>
+                <form action="" method="post" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="applicantFullName">Applicant Full Name</label>
-                            <input type="text" class="form-control" id="applicantFullName">
+                            <input type="text" name="applicant[fullName]" class="form-control" id="applicantFullName">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="civilId">Civil ID No.</label>
-                            <input type="text" class="form-control" id="civilId">
+                            <input type="text" name="applicant[civilId]"class="form-control" id="civilId">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="dob">Date of Birth</label>
-                            <input type="date" class="form-control" id="dob">
+                            <input type="date" name="applicant[dob]" class="form-control" id="dob">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="gender">Gender</label>
-                            <select class="form-control" id="gender">
+                            <select class="form-control" name="applicant[gender]" id="gender">
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
@@ -44,7 +44,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="bloodType">Blood Type</label>
-							<select class="form-control" id="bloodType">
+							<select class="form-control" name="applicant[bloodType]" id="bloodType">
                                 <option>O+</option>
                                 <option>O-</option>
                                 <option>A+</option>
@@ -57,50 +57,50 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="nationality">Nationality</label>
-                            <input type="text" class="form-control" id="nationality">
+                            <input type="text" name="applicant[nationality]" class="form-control" id="nationality">
                         </div>
                     </div>
 					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="visaType">Visa Type</label>
-							<select class="form-control" id="visaType">
+							<select class="form-control" name="applicant[visaType]" id="visaType">
                                 <option>Fisher</option>
                                 <option>Other</option>
                             </select>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="visaExpireyDate">Visa Expirey Date</label>
-                            <input type="date" class="form-control" id="visaExpireyDate">
+                            <input type="date" name="applicant[visaExpireyDate]" class="form-control" id="visaExpireyDate">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="FLEdate">Fishing License Expiry Date</label>
-                            <input type="date" class="form-control" id="FLEdate">
+                            <input type="date" name="applicant[FLEdate]" class="form-control" id="FLEdate">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="employer">Employer</label>
-                            <input type="text" class="form-control" id="employer">
+                            <input type="text" name="applicant[employer]" class="form-control" id="employer">
                         </div>
                     </div>
 					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="SponsorsName">Sponsors Name</label>
-                            <input type="text" class="form-control" id="SponsorsName">
+                            <input type="text" name="applicant[SponsorsName]" class="form-control" id="SponsorsName">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="sponsorsCivilId">Sponsors Civil ID No.</label>
-                            <input type="text" class="form-control" id="sponsorsCivilId">
+                            <input type="text" name="applicant[sponsorsCivilId]" class="form-control" id="sponsorsCivilId">
                         </div>
                     </div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
                             <label for="phone">Personal Phone</label>
-                            <input type="tel" class="form-control" id="phone">
+                            <input type="tel" name="applicant[phone]" class="form-control" id="phone">
                         </div>
                         <div class="form-group col-md-6">
 							<label for="photo">Photo</label>
-                        	<input type="file" class="form-control-file" id="photo">
+                        	<input type="file" name="photo" class="form-control-file" id="photo">
                         </div>
                     </div>
                 </form>
@@ -117,37 +117,37 @@
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="area">Area</label>
-                            <input type="text" class="form-control" id="area">
+                            <input type="text" name="address[area]" class="form-control" id="area">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="street">Street</label>
-                            <input type="text" class="form-control" id="street">
+                            <input type="text" name="address[street]" class="form-control" id="street">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="block">Block</label>
-                            <input type="text" class="form-control" id="block">
+                            <input type="text" name="address[block]" class="form-control" id="block">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="house">House</label>
-                            <input type="text" class="form-control" id="house">
+                            <input type="text" name="address[house]" class="form-control" id="house">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="ave">Ave</label>
-                            <input type="text" class="form-control" id="ave">
+                            <input type="text" name="address[ave]" class="form-control" id="ave">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="flat">Flat</label>
-                            <input type="text" class="form-control" id="flat">
+                            <input type="text" name="address[flat]" class="form-control" id="flat">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="floor">Floor</label>
-                            <input type="text" class="form-control" id="floor">
+                            <input type="text" name="address[floor]" class="form-control" id="floor">
                         </div>
                     </div>
                 </form>
@@ -163,7 +163,7 @@
                 <form>
                     <div class="form-group">
                         <label for="applicationType">Application Type</label>
-                        <select class="form-control" id="applicationType">
+                        <select class="form-control" name="applicationType" id="applicationType">
                             <option>New</option>
                             <option>Renewal</option>
                             <option>Replacement of lost</option>
@@ -186,7 +186,7 @@
                 <form>
                     <div class="form-group">
                         <label for="licenseType">License Type</label>
-                        <select class="form-control" id="licenseType">
+                        <select class="form-control" name="licenseType" id="licenseType">
                             <option>Pleasure (A)</option>
                             <option>Pleasure (B)</option>
                             <option>Fishing (A)</option>
