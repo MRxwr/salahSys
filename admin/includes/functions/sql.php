@@ -153,51 +153,37 @@ function selectJoinDB($table, $joinData, $where){
 }
 
 function insertDB($table, $data){
-    global $dbconnect, $userID, $empUsername, $_GET;
-
-    // Check for database connection
-    if ($dbconnect === null) {
-        $error = array("msg" => "Database connection is not initialized");
-        return outputError($error);
-    }
-
-    // Check if data is an array
-    if (!is_array($data) || empty($data)) {
-        $error = array("msg" => "Invalid data provided");
-        return outputError($error);
-    }
-
-    // Prepare SQL statement
+    GLOBAL $dbconnect, $userID, $empUsername, $_GET;
+    $check = [';', '"'];
+    //$data = escapeString($data);
     $keys = array_keys($data);
-    $sql = "INSERT INTO `{$table}` (";
+    $sql = "INSERT INTO `{$table}`(";
     $placeholders = "";
     foreach ($keys as $key) {
         $sql .= "`{$key}`,";
         $placeholders .= "?,";
     }
-    $sql = rtrim($sql, ",") . ") VALUES (" . rtrim($placeholders, ",") . ")";
-    echo $sql;
-
-    // Prepare the statement
+    $sql = rtrim($sql, ",");
+    $placeholders = rtrim($placeholders, ",");
+    echo $sql .= ") VALUES ({$placeholders})";
     $stmt = $dbconnect->prepare($sql);
-    if ($stmt === false) {
-        $error = array("msg" => "Error preparing the statement: " . $dbconnect->error);
-        return outputError($error);
-    }
-
-    // Bind parameters
     $types = str_repeat('s', count($data));
-    if (!$stmt->bind_param($types, ...array_values($data))) {
-        $error = array("msg" => "Error binding parameters: " . $stmt->error);
-        return outputError($error);
+    $stmt->bind_param($types, ...array_values($data));
+    if( isset($_GET["v"]) && !empty($_GET["v"]) ){
+        $array = array(
+            "userId" => $userID,
+            "username" => $empUsername,
+            "module" => $_GET["v"],
+            "action" => "Insert",
+            "sqlQuery" => json_encode(array("table"=>$table,"data"=>$data)),
+        );
+        LogsHistory($array);
     }
-
-    // Execute the statement
-    if ($stmt->execute()) {
+   
+    if($stmt->execute()){
         return 1;
-    } else {
-        $error = array("msg" => "Error executing the statement: " . $stmt->error);
-        return outputError($error);
+    }else{
+        return 0;
     }
 }
 
