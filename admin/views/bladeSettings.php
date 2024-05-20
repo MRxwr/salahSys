@@ -112,12 +112,13 @@ $sql = "SELECT * FROM `s_media` WHERE `id` LIKE '3'";
 $result = $dbconnect->query($sql);
 $row = $result->fetch_assoc();
 $theme = $row["theme"];
-
+/*
 if ($currList = getCurr()) {
 foreach ($currList as $key => $value) {
 updateDB("currency", array("realValue" => (string)$value, "yourValue" => (string)$value), "`short` LIKE '%{$key}%'");
 }
 }
+*/
 ?>
 <div class="row heading-bg">
 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
@@ -377,7 +378,7 @@ updateDB("currency", array("realValue" => (string)$value, "yourValue" => (string
 		</div>
 	</div>
 
-	<!-- default currency -->
+	<?php/*<!-- default currency -->
 	<div class="col-md-4">
 		<div class="panel panel-default card-view">
 			<div class="panel-heading">
@@ -405,7 +406,7 @@ updateDB("currency", array("realValue" => (string)$value, "yourValue" => (string
 			</div>
 		</div>
 	</div>
-
+*/?>
 	<!-- system main email -->
 	<div class="col-md-4">
 		<div class="panel panel-default card-view">
