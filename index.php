@@ -44,26 +44,64 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="bloodType">Blood Type</label>
-                            <input type="text" class="form-control" id="bloodType">
+							<select class="form-control" id="bloodType">
+                                <option>O+</option>
+                                <option>O-</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                            </select>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="nationality">Nationality</label>
                             <input type="text" class="form-control" id="nationality">
                         </div>
                     </div>
+					<div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="visaType">Visa Type</label>
+							<select class="form-control" id="visaType">
+                                <option>Fisher</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="visaExpireyDate">Visa Expirey Date</label>
+                            <input type="date" class="form-control" id="visaExpireyDate">
+                        </div>
+                    </div>
                     <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="FLEdate">Fishing License Expiry Date</label>
+                            <input type="date" class="form-control" id="FLEdate">
+                        </div>
                         <div class="form-group col-md-6">
                             <label for="employer">Employer</label>
                             <input type="text" class="form-control" id="employer">
                         </div>
+                    </div>
+					<div class="form-row">
                         <div class="form-group col-md-6">
+                            <label for="SponsorsName">Sponsors Name</label>
+                            <input type="text" class="form-control" id="SponsorsName">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sponsorsCivilId">Sponsors Civil ID No.</label>
+                            <input type="text" class="form-control" id="sponsorsCivilId">
+                        </div>
+                    </div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
                             <label for="phone">Phone</label>
                             <input type="tel" class="form-control" id="phone">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="photo">Photo</label>
-                        <input type="file" class="form-control-file" id="photo">
+                        <div class="form-group col-md-6">
+							<label for="photo">Photo</label>
+                        	<input type="file" class="form-control-file" id="photo">
+                        </div>
                     </div>
                 </form>
             </div>
