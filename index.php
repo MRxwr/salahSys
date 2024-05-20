@@ -49,21 +49,21 @@ if( isset($_POST["fullName"]) && !empty($_POST["fullName"]) ){
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="applicantFullName">Applicant Full Name</label>
-                            <input type="text" name="applicant[fullName]" class="form-control" id="applicantFullName">
+                            <input type="text" name="applicant[fullName]" class="form-control" id="applicantFullName" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="civilId">Civil ID No.</label>
-                            <input type="text" name="applicant[civilId]"class="form-control" id="civilId">
+                            <input type="text" name="applicant[civilId]"class="form-control" id="civilId" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="dob">Date of Birth</label>
-                            <input type="date" name="applicant[dob]" class="form-control" id="dob">
+                            <input type="date" name="applicant[dob]" class="form-control" id="dob" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="gender">Gender</label>
-                            <select class="form-control" name="applicant[gender]" id="gender">
+                            <select class="form-control" name="applicant[gender]" id="gender" required>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
@@ -72,7 +72,7 @@ if( isset($_POST["fullName"]) && !empty($_POST["fullName"]) ){
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="bloodType">Blood Type</label>
-							<select class="form-control" name="applicant[bloodType]" id="bloodType">
+							<select class="form-control" name="applicant[bloodType]" id="bloodType" required>
                                 <option>O+</option>
                                 <option>O-</option>
                                 <option>A+</option>
@@ -85,13 +85,13 @@ if( isset($_POST["fullName"]) && !empty($_POST["fullName"]) ){
                         </div>
                         <div class="form-group col-md-6">
                             <label for="nationality">Nationality</label>
-                            <input type="text" name="applicant[nationality]" class="form-control" id="nationality">
+                            <input type="text" name="applicant[nationality]" class="form-control" id="nationality" required>
                         </div>
                     </div>
 					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="visaType">Visa Type</label>
-							<select class="form-control" name="applicant[visaType]" id="visaType">
+							<select class="form-control" name="applicant[visaType]" id="visaType" required>
                                 <option>Fisher</option>
                                 <option>Other</option>
                             </select>
@@ -124,7 +124,7 @@ if( isset($_POST["fullName"]) && !empty($_POST["fullName"]) ){
 					<div class="form-row">
 						<div class="form-group col-md-6">
                             <label for="phone">Personal Phone</label>
-                            <input type="tel" name="applicant[phone]" class="form-control" id="phone">
+                            <input type="tel" name="applicant[phone]" class="form-control" id="phone" required>
                         </div>
                         <div class="form-group col-md-6">
 							<label for="photo">Photo</label>
