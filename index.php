@@ -46,7 +46,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 Applicant Information
             </div>
             <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="index" method="post" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="applicantFullName">Applicant Full Name</label>
