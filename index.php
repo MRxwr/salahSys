@@ -18,40 +18,52 @@
             </div>
             <div class="card-body">
                 <form>
-                    <div class="form-group">
-                        <label for="applicantFullName">Applicant Full Name</label>
-                        <input type="text" class="form-control" id="applicantFullName">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="applicantFullName">Applicant Full Name</label>
+                            <input type="text" class="form-control" id="applicantFullName">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="civilId">Civil ID No.</label>
+                            <input type="text" class="form-control" id="civilId">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="bloodType">Blood Type</label>
+                            <input type="text" class="form-control" id="bloodType">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" class="form-control" id="nationality">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="employer">Employer</label>
+                            <input type="text" class="form-control" id="employer">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="civilId">Civil ID No.</label>
-                        <input type="text" class="form-control" id="civilId">
-                    </div>
-                    <div class="form-group">
-                        <label for="dob">Date of Birth</label>
-                        <input type="date" class="form-control" id="dob">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">Gender</label>
-                        <select class="form-control" id="gender">
-                            <option>Male</option>
-                            <option>Female</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="bloodType">Blood Type</label>
-                        <input type="text" class="form-control" id="bloodType">
-                    </div>
-                    <div class="form-group">
-                        <label for="nationality">Nationality</label>
-                        <input type="text" class="form-control" id="nationality">
-                    </div>
-                    <div class="form-group">
-                        <label for="employer">Employer</label>
-                        <input type="text" class="form-control" id="employer">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" class="form-control" id="phone">
+                        <label for="photo">Photo</label>
+                        <input type="file" class="form-control-file" id="photo">
                     </div>
                 </form>
             </div>
@@ -64,37 +76,45 @@
             </div>
             <div class="card-body">
                 <form>
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="area">Area</label>
+                            <input type="text" class="form-control" id="area">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="area">Area</label>
-                        <input type="text" class="form-control" id="area">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="street">Street</label>
+                            <input type="text" class="form-control" id="street">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="block">Block</label>
+                            <input type="text" class="form-control" id="block">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="street">Street</label>
-                        <input type="text" class="form-control" id="street">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="house">House</label>
+                            <input type="text" class="form-control" id="house">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="ave">Ave</label>
+                            <input type="text" class="form-control" id="ave">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="block">Block</label>
-                        <input type="text" class="form-control" id="block">
-                    </div>
-                    <div class="form-group">
-                        <label for="house">House</label>
-                        <input type="text" class="form-control" id="house">
-                    </div>
-                    <div class="form-group">
-                        <label for="ave">Ave</label>
-                        <input type="text" class="form-control" id="ave">
-                    </div>
-                    <div class="form-group">
-                        <label for="flat">Flat</label>
-                        <input type="text" class="form-control" id="flat">
-                    </div>
-                    <div class="form-group">
-                        <label for="floor">Floor</label>
-                        <input type="text" class="form-control" id="floor">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="flat">Flat</label>
+                            <input type="text" class="form-control" id="flat">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="floor">Floor</label>
+                            <input type="text" class="form-control" id="floor">
+                        </div>
                     </div>
                 </form>
             </div>
@@ -157,21 +177,19 @@
 I the undersigned hereby certify that I can swim efficiently and have not experienced any cases of loss of consciousness or epilepsy. I undertake to inform the health authorities responsible for the medical examination if such an incident occurs to me or to suffer any of the diseases in which the leadership of the boat becomes a danger to me or to others. The Law of Small Vessels No. 36/1960, as amended, and the ministerial decrees thereof.
                         </textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" class="form-control" id="date">
-                    </div>
-                    <div class="form-group">
-                        <label for="signature">Signature</label>
-                        <input type="text" class="form-control" id="signature">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="signature">Signature</label>
+                            <input type="text" class="form-control" id="signature">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="photo">Photo</label>
-                        <input type="file" class="form-control-file" id="photo">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
