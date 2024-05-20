@@ -95,7 +95,7 @@
                     </div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-                            <label for="phone">Phone</label>
+                            <label for="phone">Personal Phone</label>
                             <input type="tel" class="form-control" id="phone">
                         </div>
                         <div class="form-group col-md-6">
