@@ -1,20 +1,35 @@
 <?php
-require ("includes/config.php");
-require ("includes/translate.php");
+session_start ();
+require("includes/config.php");
+require("includes/functions.php");
+require("includes/translate.php");
+if ( isset($_POST["email"]) && !empty($_POST["email"]) ){
+  if( $employee = selectDBNew("employees",[$_POST["email"],sha1($_POST["password"])],"`email` LIKE ? AND `password` LIKE ? AND `hidden` != 2 AND `status` = 0","") ){
+    if( count($employee) > 1 ){
+      header("Location: ../login.php?error=tryAgain");die();
+    }else{
+      $GenerateNewCC = md5(rand());
+      if( updateDB("employees",array("keepMeAlive"=>$GenerateNewCC),"`id` = '{$employee[0]["id"]}'") ){
+        $_SESSION[$cookieSession."A"] = $email;
+        header("Location: ../index.php");
+        setcookie($cookieSession."A", $GenerateNewCC, time() + (86400*30 ), "/");die();
+      }else{
+        header("Location: ../login.php?error=cookiesNS");die();
+      }
+    }
+  }else{ 
+    header("Location: ../login.php?error=p");die();
+  }
+}
 
-if ( isset($_COOKIE[$cookieSession."A"]) )
-{
+if ( isset($_COOKIE[$cookieSession."A"]) ){
 	header("Location: index");
 }
 
-if ( isset ($_GET["error"]) ) 
-{
-  if ( $_GET["error"] === "p" ) 
-  { 
+if( isset ($_GET["error"]) ){
+  if ( $_GET["error"] === "p" ){ 
     $errormsg = "Please enter details correctly.";
-  } 
-  elseif ($_GET["error"] === "e" ) 
-  { 
+  }elseif ($_GET["error"] === "e" ){ 
     $errormsg = "Please enter email correctly."; 
   } 
 } 
