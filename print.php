@@ -17,7 +17,7 @@ class PDF extends Fpdi
 }
 
 // Path to the pre-made PDF
-$templatePdf = '/pdf/files.pdf';
+$templatePdf = 'pdf/files.pdf';
 
 // Create new PDF instance
 $pdf = new PDF();
@@ -96,4 +96,4 @@ foreach ($data as $field => $value) {
 }
 
 // Output the modified PDF directly to the browser
-$pdf->Output('/pdf/filled_template.pdf', 'I');
+$pdf->Output('pdf/filled_template.pdf', 'I');
