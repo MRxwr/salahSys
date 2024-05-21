@@ -1,7 +1,7 @@
 <?php 
 if( isset($_GET["delId"]) && !empty($_GET["delId"]) ){
-	if( updateDB('visaType',array('status'=> '1'),"`id` = '{$_GET["delId"]}'") ){
-		header("LOCATION: ?v=VisaType");
+	if( updateDB('licenseType',array('status'=> '1'),"`id` = '{$_GET["delId"]}'") ){
+		header("LOCATION: ?v=LicenseType");
 	}
 }
 
@@ -9,8 +9,8 @@ if( isset($_POST["enTitle"]) ){
 	$id = $_POST["update"];
 	unset($_POST["update"]);
 	if ( $id == 0 ){
-		if( insertDB("visaType", $_POST) ){
-			header("LOCATION: ?v=VisaType");
+		if( insertDB("licenseType", $_POST) ){
+			header("LOCATION: ?v=LicenseType");
 		}else{
 		?>
 		<script>
@@ -19,8 +19,8 @@ if( isset($_POST["enTitle"]) ){
 		<?php
 		}
 	}else{
-		if( updateDB("visaType", $_POST, "`id` = '{$id}'") ){
-			header("LOCATION: ?v=VisaType");
+		if( updateDB("licenseType", $_POST, "`id` = '{$id}'") ){
+			header("LOCATION: ?v=LicenseType");
 		}else{
 		?>
 		<script>
@@ -37,7 +37,7 @@ if( isset($_POST["enTitle"]) ){
 <div class="panel panel-default card-view">
 <div class="panel-heading">
 <div class="pull-left">
-	<h6 class="panel-title txt-dark"><?php echo direction("Visa Type Details","تفاصيل التأشيرة") ?></h6>
+	<h6 class="panel-title txt-dark"><?php echo direction("License Type Details","تفاصيل  الترخيص") ?></h6>
 </div>
 	<div class="clearfix"></div>
 </div>
@@ -70,7 +70,7 @@ if( isset($_POST["enTitle"]) ){
 <div class="panel panel-default card-view">
 <div class="panel-heading">
 <div class="pull-left">
-<h6 class="panel-title txt-dark"><?php echo direction("List of Visa Types","قائمة التأشيرات") ?></h6>
+<h6 class="panel-title txt-dark"><?php echo direction("List of Application Types","قائمة  التراخيص") ?></h6>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -90,7 +90,7 @@ if( isset($_POST["enTitle"]) ){
 		<tbody>
 		<?php 
 		$orderBy = direction("enTitle","arTitle");
-		if( $areas = selectDB("visaType","`status` = '0' ORDER BY `{$orderBy}` ASC") ){
+		if( $areas = selectDB("licenseType","`status` = '0' ORDER BY `{$orderBy}` ASC") ){
 			for( $i = 0; $i < sizeof($areas); $i++ ){
 				$counter = $i + 1;
 				?>
