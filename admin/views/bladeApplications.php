@@ -67,7 +67,6 @@ if( isset($_POST["fullName"]) ){
 		<thead>
 		<tr>
 		<th><?php echo direction("Date","التاريخ") ?></th>
-		<th><?php echo direction("Photo","الصورة") ?></th>
 		<th><?php echo direction("Applicant","الطالب") ?></th>
 		<th><?php echo direction("Visa","التأشيره") ?></th>
 		<th><?php echo direction("Sponsor","الكفيل") ?></th>
