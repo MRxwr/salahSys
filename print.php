@@ -16,7 +16,7 @@ class PDF extends TCPDF
 }
 
 // Path to the pre-made PDF
-$templatePdf = 'pdf/file-1.png';
+$templatePdf = 'pdf/files2.pdf';
 
 // Create new PDF instance
 $pdf = new PDF();
