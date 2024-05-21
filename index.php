@@ -260,6 +260,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 ACKNOWLEDGEMENT
             </div>
             <div class="card-body">
+            <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="acknowledgement">ACKNOWLEDGEMENT</label>
                         <textarea class="form-control" id="acknowledgement" rows="5" disabled>
@@ -267,7 +268,7 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
                         </textarea>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="acknowledgement">ACKNOWLEDGEMENT</label>
+                        <label for="acknowledgement">إقرار</label>
                         <textarea class="form-control" id="acknowledgement" rows="5" disabled>
 اقر أﻧﺎ اﻟﻣوﻗﻊ أدﻧﺎه ﺑﺄﻧﻧﻲ أﺟﯾد اﻟﺳﺑﺎﺣﺔ ﺑﻛﻔﺎءة، ,وأﻧﻧﻲ ﻟم أﺻب ﺑﺄي ﺣﺎﻻت ﻓﻘدان اﻟوﻋﻲ
 أو اﻟﺻرع وأﺗﻌﮭد ﺑﺈﺑﻼغ اﻟﺟﮭﺎت اﻟﺻﺣﯾﺔ اﻟﻣﺳؤوﻟﺔ ﻋن اﻟﻔﺣص اﻟطﺑﻲ ﺣﺎل ﺣدوث
@@ -276,6 +277,7 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
 وتعديلاته والقرارات الوزارية التابعة له.
                         </textarea>
                     </div>
+                </div>
 					<div class="form-group text-center">
                     	<button type="submit" class="btn btn-primary">Submit form</button>
 					</div>
