@@ -107,12 +107,12 @@ $coordinates = [
     'damage' => [60, 178],
     'update' => [60, 185],
     'upgrade' => [60, 192],
-    'pleasureA' => [145, 157],
-    'pleasureB' => [145, 164],
-    'fishingA' => [145, 171],
-    'fishingB' => [145, 178],
-    'cruise' => [145, 185],
-    'government' => [145, 192],
+    'pleasureA' => [148, 157],
+    'pleasureB' => [148, 164],
+    'fishingA' => [148, 171],
+    'fishingB' => [148, 178],
+    'cruise' => [148, 185],
+    'government' => [148, 192],
 ];
 
 // Add the data to the PDF
