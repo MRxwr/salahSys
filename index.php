@@ -256,36 +256,28 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 Attachments / المرفقات
             </div>
             <div class="card-body">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="street">Street / الشارع</label>
-                            <input type="text" name="address[street]" class="form-control" id="street">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="block">Block / القطعة</label>
-                            <input type="text" name="address[block]" class="form-control" id="block">
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="photo">Personal Photo / صورة شخصية</label>
+                        <input type="file" name="photo" class="form-control-file" id="photo" required>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="house">House / المنزل</label>
-                            <input type="text" name="address[house]" class="form-control" id="house">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="ave">Ave / الجاده</label>
-                            <input type="text" name="address[ave]" class="form-control" id="ave">
-                        </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Civil ID / البطاقة المدنية </label>
+                        <input type="file" name="photo" class="form-control-file" id="photo" required>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="flat">Flat / الشقة</label>
-                            <input type="text" name="address[flat]" class="form-control" id="flat">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="floor">Floor / الطابق</label>
-                            <input type="text" name="address[floor]" class="form-control" id="floor">
-                        </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Driving Licence / رخصة القيادة </label>
+                        <input type="file" name="photo" class="form-control-file" id="photo" required>
                     </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
+                        <input type="file" name="photo" class="form-control-file" id="photo">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
+                        <input type="file" name="photo" class="form-control-file" id="photo">
+                    </div>
+                </div>
             </div>
         </div>
 
