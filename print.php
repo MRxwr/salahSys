@@ -90,7 +90,7 @@ $coordinates = [
     'flat' => [25, 127],
     'floor' => [50, 127],
     'phone' => [35, 140],
-    'applicationType1' => [60, 175],
+    'applicationType1' => [60, 178],
 ];
 
 // Add the data to the PDF
