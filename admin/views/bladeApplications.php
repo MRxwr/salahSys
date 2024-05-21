@@ -69,9 +69,12 @@ if( isset($_POST["fullName"]) ){
 		<th><?php echo direction("Date","التاريخ") ?></th>
 		<th><?php echo direction("Photo","الصورة") ?></th>
 		<th><?php echo direction("Applicant","الطالب") ?></th>
+		<th><?php echo direction("Visa","التأشيره") ?></th>
+		<th><?php echo direction("Sponsor","الكفيل") ?></th>
 		<th><?php echo direction("Address","العنوان") ?></th>
 		<th><?php echo direction("Application Type","نوع الطلب") ?></th>
 		<th><?php echo direction("License Type","نوع الرخصة") ?></th>
+		<th><?php echo direction("Attachments","المرفقات") ?></th>
 		<th class="text-nowrap"><?php echo direction("Actions","الخيارات") ?></th>
 		</tr>
 		</thead>
@@ -82,26 +85,50 @@ if( isset($_POST["fullName"]) ){
 			for( $i = 0; $i < sizeof($applications); $i++ ){
                 $applicant = json_decode($applications[$i]["applicant"],true);
                 $address = json_decode($applications[$i]["address"],true);
+                $sponsor = json_decode($applications[$i]["sponsor"],true);
+                $visa = json_decode($applications[$i]["visa"],true);
+                $attchments = json_decode($applications[$i]["attchments"],true);
 				?>
 				<tr>
                 <td id="date<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["date"] ?></td>
-                <td><img src="../logos/<?php echo $applicant["photo"] ?>" style="width: 100px;height: 100px;"></td>
+                <td><img src="../logos/<?php echo $attchments["photo"] ?>" style="width: 100px;height: 100px;"></td>
 				<td id="applicant<?php echo $applications[$i]["id"]?>" >
                     <?php
                         foreach ($applicant as $key => $value) {
-                            echo $key." : ".$value."<br>";
+                            echo strtoupper($key)." : ".$value."<br>";
                         }
                     ?>
                 </td>
 				<td id="address<?php echo $applications[$i]["id"]?>" >
                     <?php
                         foreach ($address as $key => $value) {
-                            echo $key." : ".$value."<br>";
+                            echo strtoupper($key)." : ".$value."<br>";
+                        }
+                    ?>
+                </td>
+				<td id="visa<?php echo $applications[$i]["id"]?>" >
+                    <?php
+                        foreach ($visa as $key => $value) {
+                            echo strtoupper($key)." : ".$value."<br>";
+                        }
+                    ?>
+                </td>
+				<td id="sponsor<?php echo $applications[$i]["id"]?>" >
+                    <?php
+                        foreach ($sponsor as $key => $value) {
+                            echo strtoupper($key)." : ".$value."<br>";
                         }
                     ?>
                 </td>
 				<td id="applicationType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["applicationType"] ?></td>
 				<td id="licenseType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["licenseType"] ?></td>
+				<td id="sponsor<?php echo $applications[$i]["id"]?>" >
+                    <?php
+                        foreach ($sponsor as $key => $value) {
+                            echo strtoupper($key)." : ".$value."<br>";
+                        }
+                    ?>
+                </td>
 				<td class="text-nowrap">
 					<a href="?v=ClientInfo&id=<?php echo $applications[$i]["id"] ?>" class="mr-25" data-toggle="tooltip" data-original-title="<?php echo direction("More","المزيد") ?>"> <i class="fa fa-plus text-inverse m-r-10"></i>
 					<a href="<?php echo "?v={$_GET["v"]}&delId={$applications[$i]["id"]}" ?>" data-toggle="tooltip" data-original-title="<?php echo direction("Delete","حذف") ?>"><i class="fa fa-close text-danger"></i>
