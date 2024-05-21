@@ -90,7 +90,7 @@ foreach ($data as $field => $value) {
 
 // Ensure the output directory is writable
 $outputFile = '/pdf/filled_template.pdf';
-$pdf->Output($outputFile, 'I');
+$pdf->Output($outputFile, 'F');
 /*
 if (is_writable(dirname($outputFile))) {
     // Output the modified PDF
