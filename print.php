@@ -1,8 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 
-use TCPDF;
-
 // Extend TCPDF to include custom header and footer if needed
 class PDF extends TCPDF
 {
@@ -18,7 +16,7 @@ class PDF extends TCPDF
 }
 
 // Path to the pre-made PDF
-$templatePdf = 'file.pdf';
+$templatePdf = 'files.pdf';
 
 // Create new PDF instance
 $pdf = new PDF();
@@ -90,5 +88,11 @@ foreach ($data as $field => $value) {
     $pdf->Cell(0, 10, $value);
 }
 
-// Output the modified PDF
-$pdf->Output('output.pdf', 'F');
+// Ensure the output directory is writable
+$outputFile = '/logos/filled_template.pdf';
+if (is_writable(dirname($outputFile))) {
+    // Output the modified PDF
+    $pdf->Output($outputFile, 'F');
+} else {
+    die('Error: Output directory is not writable.');
+}
