@@ -1,8 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
-// Extend TCPDF to include custom header and footer if needed
-class PDF extends TCPDF
+use setasign\Fpdi\Tcpdf\Fpdi;
+
+// Extend the TCPDF class to include FPDI
+class PDF extends FPDI
 {
     public function Header()
     {
@@ -16,7 +18,7 @@ class PDF extends TCPDF
 }
 
 // Path to the pre-made PDF
-$templatePdf = 'files.pdf';
+$templatePdf = '/pdf/file.pdf';
 
 // Create new PDF instance
 $pdf = new PDF();
@@ -28,9 +30,15 @@ $pdf->SetTitle('Filled PDF Form');
 $pdf->SetSubject('PDF Form Filling');
 $pdf->SetKeywords('TCPDF, PDF, example, test, guide');
 
-// Import the first page of the template PDF as an image
+// Import the first page of the template PDF
+$pageCount = $pdf->setSourceFile($templatePdf);
+$templateId = $pdf->importPage(1);
+
+// Add a page
 $pdf->AddPage();
-$pdf->Image($templatePdf, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
+
+// Use the imported page
+$pdf->useTemplate($templateId);
 
 // Set font and color for the text
 $pdf->SetFont('helvetica', '', 12);
@@ -88,14 +96,5 @@ foreach ($data as $field => $value) {
     $pdf->Cell(0, 10, $value);
 }
 
-// Ensure the output directory is writable
-$outputFile = '/pdf/filled_template.pdf';
-$pdf->Output($outputFile, 'I');
-/*
-if (is_writable(dirname($outputFile))) {
-    // Output the modified PDF
-    
-} else {
-    die('Error: Output directory is not writable.');
-}
-*/
+// Output the modified PDF directly to the browser
+$pdf->Output('filled_template.pdf', 'I');
