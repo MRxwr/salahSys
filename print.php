@@ -1,10 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
-use setasign\Fpdi\TcpdfFpdi;
+use TCPDF;
 
-// Create a custom class that extends TCPDF and FPDI
-class PDF extends TcpdfFpdi
+// Extend TCPDF to include custom header and footer if needed
+class PDF extends TCPDF
 {
     public function Header()
     {
@@ -20,14 +20,19 @@ class PDF extends TcpdfFpdi
 // Path to the pre-made PDF
 $templatePdf = 'file.pdf';
 
-// Create new FPDI instance
+// Create new PDF instance
 $pdf = new PDF();
 
-// Add a page from the pre-made PDF
-$pageCount = $pdf->setSourceFile($templatePdf);
-$tplId = $pdf->importPage(1);
+// Set document information
+$pdf->SetCreator(PDF_CREATOR);
+$pdf->SetAuthor('Your Name');
+$pdf->SetTitle('Filled PDF Form');
+$pdf->SetSubject('PDF Form Filling');
+$pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+
+// Import the first page of the template PDF as an image
 $pdf->AddPage();
-$pdf->useTemplate($tplId, ['adjustPageSize' => true]);
+$pdf->Image($templatePdf, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
 
 // Set font and color for the text
 $pdf->SetFont('helvetica', '', 12);
