@@ -128,7 +128,6 @@ if( isset($_POST["fullName"]) ){
 		<th><?php echo direction("Email","الإيميل") ?></th>
 		<th><?php echo direction("Mobile","الهاتف") ?></th>
 		<th><?php echo direction("Type","النوع") ?></th>
-		<th><?php echo direction("Shop","المحل") ?></th>
 		<th class="text-nowrap"><?php echo direction("الخيارات","Actions") ?></th>
 		</tr>
 		</thead>
@@ -156,12 +155,6 @@ if( isset($_POST["fullName"]) ){
 					$type = "POS";
 				}
 
-				
-				if( $shop = selectDB("shops","`id` = '{$employees[$i]["shopId"]}'") ){
-					$shop = direction($shop[0]["enTitle"],$shop[0]["arTitle"]);
-				}else{
-					$shop = "";
-				}
 				if( $employee = selectDB("roles","`id` = '{$employees[$i]["empType"]}'") ){
 					$employee = direction($employee[0]["enTitle"],$employee[0]["arTitle"]);
 				}else{
@@ -174,7 +167,6 @@ if( isset($_POST["fullName"]) ){
 				<td id="email<?php echo $employees[$i]["id"]?>" ><?php echo $employees[$i]["email"] ?></td>
 				<td id="mobile<?php echo $employees[$i]["id"]?>" ><?php echo $employees[$i]["phone"] ?></td>
 				<td><?php echo $employee ?></td>
-				<td><?php echo $shop ?></td>
 				<td class="text-nowrap">
 				
 				<a id="<?php echo $employees[$i]["id"] ?>" class="mr-25 edit" data-toggle="tooltip" data-original-title="<?php echo direction("Edit","تعديل") ?>"> <i class="fa fa-pencil text-inverse m-r-10"></i>
@@ -209,7 +201,6 @@ if( isset($_POST["fullName"]) ){
 		var name = $("#name"+id).html();
 		var mobile = $("#mobile"+id).html();
 		var type = $("#type"+id).html();
-		var shop = $("#shop"+id).html();
 		var logo = $("#logo"+id).html();
 		$("input[name=password]").prop("required",false);
 		$("input[name=email]").val(email);
@@ -218,6 +209,5 @@ if( isset($_POST["fullName"]) ){
 		$("input[name=fullName]").val(name);
 		$("input[name=fullName]").focus();
 		$("select[name=empType]").val(type);
-		$("select[name=shopId]").val(shop);
 	})
 </script>
