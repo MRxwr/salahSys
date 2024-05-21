@@ -64,8 +64,8 @@ $data = [
     'employer' => 'Company Name',
     'phone' => '55512345',
     'sponsor_name' => 'Sponsor Name',
-    'sponsor_cid' => '9876543210',
-    'applicationType1' => '✔'
+    'sponsor_cid' => '✔',
+    'applicationType1' => '✔',
 ];
 
 // Map the data to coordinates on the PDF
