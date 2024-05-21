@@ -257,23 +257,23 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
             </div>
             <div class="card-body">
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-12">
                         <label for="photo">Personal Photo / صورة شخصية</label>
                         <input type="file" name="photo" class="form-control-file" id="photo" required>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-12">
                         <label for="photo">Civil ID / البطاقة المدنية </label>
                         <input type="file" name="photo" class="form-control-file" id="photo" required>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-12">
                         <label for="photo">Driving Licence / رخصة القيادة </label>
                         <input type="file" name="photo" class="form-control-file" id="photo" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-12">
                         <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
                         <input type="file" name="photo" class="form-control-file" id="photo">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-12">
                         <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
                         <input type="file" name="photo" class="form-control-file" id="photo">
                     </div>
