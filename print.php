@@ -46,7 +46,8 @@ $pdf->SetTextColor(0, 0, 0);
 
 // Define the data to fill in
 $data = [
-    'full_name' => 'John Doe',
+    'enName' => 'John Doe',
+    'arName' => 'جون دو',
     'civil_id' => '1234567890',
     'area' => 'Salmiya',
     'date_of_birth' => '01/01/1980',
@@ -79,11 +80,13 @@ $data = [
     'cruise' => '✔',
     'government' => '✔',
     'profile' => 'image',
+    'licenseNumber' => '123456',
 ];
 
 // Map the data to coordinates on the PDF
 $coordinates = [
-    'full_name' => [60, 55],
+    'enName' => [60, 55],
+    'arName' => [148, 62],
     'civil_id' => [120, 73],
     'date_of_birth' => [120, 80],
     'gender' => [120, 87],
@@ -116,6 +119,7 @@ $coordinates = [
     'cruise' => [148, 185],
     'government' => [148, 192],
     'profile' => [21, 26],
+    'licenseNumber' => [160, 26],
 ];
 
 // Add the data to the PDF
