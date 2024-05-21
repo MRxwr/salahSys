@@ -108,7 +108,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 if( $areas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -167,7 +167,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 if( $areas = selectDB("areas","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -221,7 +221,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 if( $areas = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -244,7 +244,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 if( $areas = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
