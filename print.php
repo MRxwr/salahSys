@@ -86,7 +86,7 @@ $data = [
 // Map the data to coordinates on the PDF
 $coordinates = [
     'enName' => [60, 55],
-    'arName' => [148, 62],
+    'arName' => [135, 62],
     'civil_id' => [120, 73],
     'date_of_birth' => [120, 80],
     'gender' => [120, 87],
@@ -119,7 +119,7 @@ $coordinates = [
     'cruise' => [148, 185],
     'government' => [148, 192],
     'profile' => [21, 26],
-    'licenseNumber' => [160, 26],
+    'licenseNumber' => [160, 50],
 ];
 
 // Add the data to the PDF
