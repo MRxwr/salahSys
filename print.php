@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-use setasign\Fpdi\Fpdi;
+use setasign\Fpdi\Tcpdf\Fpdi;
 
 // Path to the pre-made PDF
 $templatePdf = 'file.pdf';
@@ -16,7 +16,7 @@ $pdf->AddPage();
 $pdf->useTemplate($tplId, ['adjustPageSize' => true]);
 
 // Set font and color for the text
-$pdf->SetFont('Arial', '', 12);
+$pdf->SetFont('helvetica', '', 12);
 $pdf->SetTextColor(0, 0, 0);
 
 // Define the data to fill in
@@ -72,4 +72,4 @@ foreach ($data as $field => $value) {
 }
 
 // Output the modified PDF
-$pdf->Output('F', 'out.pdf');
+$pdf->Output('out.pdf', 'F');
