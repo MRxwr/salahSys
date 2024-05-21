@@ -122,7 +122,7 @@ $coordinates = [
 foreach ($data as $field => $value) {
     if ($field == 'profile') {
         // Add signature image instead of text for the 'employer' field
-        $pdf->Image($signatureImage, $coordinates[$field][0], $coordinates[$field][1], 40, 45); // Adjust size (30x15) and position as needed
+        $pdf->Image($signatureImage, $coordinates[$field][0], $coordinates[$field][1], 35, 45); // Adjust size (30x15) and position as needed
     } else {
         $pdf->SetXY($coordinates[$field][0], $coordinates[$field][1]);
         $pdf->Cell(0, 10, $value);
