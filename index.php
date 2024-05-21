@@ -44,27 +44,27 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
         <!-- Applicant Information -->
         <div class="card my-4">
             <div class="card-header">
-                Applicant Information
+                Applicant Information / معلومات الطالب
             </div>
             <div class="card-body">
                 <form action="index" method="post" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="applicantFullName">Applicant Full Name</label>
+                            <label for="applicantFullName">Applicant Full Name / الاسم الكامل</label>
                             <input type="text" name="applicant[fullName]" class="form-control" id="applicantFullName" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="civilId">Civil ID No.</label>
+                            <label for="civilId">Civil ID No. / رقم الهوية</label>
                             <input type="text" name="applicant[civilId]"class="form-control" id="civilId" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="dob">Date of Birth</label>
+                            <label for="dob">Date of Birth / تاريخ الميلاد</label>
                             <input type="date" name="applicant[dob]" class="form-control" id="dob" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="gender">Gender</label>
+                            <label for="gender">Gender / الجنس</label>
                             <select class="form-control" name="applicant[gender]" id="gender" required>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -73,7 +73,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="bloodType">Blood Type</label>
+                            <label for="bloodType">Blood Type / نوع الدم</label>
 							<select class="form-control" name="applicant[bloodType]" id="bloodType" required>
                                 <option>O+</option>
                                 <option>O-</option>
@@ -86,7 +86,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             </select>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="nationality">Nationality</label>
+                            <label for="nationality">Nationality / الجنسية</label>
                             <select class="form-control" name="applicant[nationality]" id="nationality" required>
                                 <?php
                                 if( $countries = selectDB("cities","`status` = '1' GROUP BY `CountryName` ORDER BY `CountryName` ASC") ){
@@ -102,7 +102,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                     </div>
 					<div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="visaType">Visa Type</label>
+                            <label for="visaType">Visa Type / نوع الفيزا</label>
                             <select class="form-control" name="applicant[visaType]" id="visaType" required>
                                 <?php
                                 if( $areas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
@@ -116,33 +116,33 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             </select>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="visaExpireyDate">Visa Expirey Date</label>
+                            <label for="visaExpireyDate">Visa Expirey Date / تاريخ إنتهاء الفيزا</label>
                             <input type="date" name="applicant[visaExpireyDate]" class="form-control" id="visaExpireyDate">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="FLEdate">Fishing License Expiry Date</label>
+                            <label for="FLEdate">Fishing License Expiry Date / تاريخ أنتهاء الرخصة البحرية</label>
                             <input type="date" name="applicant[FLEdate]" class="form-control" id="FLEdate">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="employer">Employer</label>
+                            <label for="employer">Employer / جهة العمل</label>
                             <input type="text" name="applicant[employer]" class="form-control" id="employer">
                         </div>
                     </div>
 					<div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="SponsorsName">Sponsors Name</label>
+                            <label for="SponsorsName">Sponsors Name / اسم الكفيل </label>
                             <input type="text" name="applicant[SponsorsName]" class="form-control" id="SponsorsName">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="sponsorsCivilId">Sponsors Civil ID No.</label>
+                            <label for="sponsorsCivilId">Sponsors Civil ID No. / رقم الهوية للكفيل</label>
                             <input type="text" name="applicant[sponsorsCivilId]" class="form-control" id="sponsorsCivilId">
                         </div>
                     </div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-                            <label for="phone">Personal Phone</label>
+                            <label for="phone">Personal Phone / هاتف</label>
                             <input type="tel" name="applicant[phone]" class="form-control" id="phone" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -156,12 +156,12 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
         <!-- Address Information -->
         <div class="card my-4">
             <div class="card-header">
-                Address Information
+                Address Information / معلومات العنوان
             </div>
             <div class="card-body">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <label for="area">Area</label>
+                            <label for="area">Area / المنطقة</label>
                             <select class="form-control" name="address[area]" id="area" required>
                                 <?php
                                 if( $areas = selectDB("areas","`status` = '0' ORDER BY `enTitle` ASC") ){
@@ -177,31 +177,31 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="street">Street</label>
+                            <label for="street">Street / الشارع</label>
                             <input type="text" name="address[street]" class="form-control" id="street">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="block">Block</label>
+                            <label for="block">Block / القطعة</label>
                             <input type="text" name="address[block]" class="form-control" id="block">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="house">House</label>
+                            <label for="house">House / المنزل</label>
                             <input type="text" name="address[house]" class="form-control" id="house">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="ave">Ave</label>
+                            <label for="ave">Ave / الجاده</label>
                             <input type="text" name="address[ave]" class="form-control" id="ave">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="flat">Flat</label>
+                            <label for="flat">Flat / الشقة</label>
                             <input type="text" name="address[flat]" class="form-control" id="flat">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="floor">Floor</label>
+                            <label for="floor">Floor / الطابق</label>
                             <input type="text" name="address[floor]" class="form-control" id="floor">
                         </div>
                     </div>
@@ -211,11 +211,11 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
         <!-- Application Type -->
         <div class="card my-4">
             <div class="card-header">
-                Application Type
+                Application Type / نوع الطلب
             </div>
             <div class="card-body">
                     <div class="form-group">
-                        <label for="applicationType">Application Type</label>
+                        <label for="applicationType">Application Type / نوع الطلب</label>
                         <select class="form-control" name="applicationType" id="applicationType" required>
                                 <?php
                                 if( $areas = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
@@ -234,11 +234,11 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
         <!-- License Type -->
         <div class="card my-4">
             <div class="card-header">
-                License Type
+                License Type / نوع الرخصة
             </div>
             <div class="card-body">
                     <div class="form-group">
-                        <label for="licenseType">License Type</label>
+                        <label for="licenseType">License Type / نوع الرخصة</label>
                         <select class="form-control" name="licenseType" id="licenseType" required>
                                 <?php
                                 if( $areas = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
@@ -257,18 +257,16 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
         <!-- Acknowledgement -->
         <div class="card my-4">
             <div class="card-header">
-                ACKNOWLEDGEMENT
+                ACKNOWLEDGEMENT / إقرار
             </div>
             <div class="card-body">
             <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="acknowledgement">ACKNOWLEDGEMENT</label>
                         <textarea class="form-control" id="acknowledgement" rows="5" disabled>
 I the undersigned hereby certify that I can swim efficiently and have not experienced any cases of loss of consciousness or epilepsy. I undertake to inform the health authorities responsible for the medical examination if such an incident occurs to me or to suffer any of the diseases in which the leadership of the boat becomes a danger to me or to others. The Law of Small Vessels No. 36/1960, as amended, and the ministerial decrees thereof.
                         </textarea>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="acknowledgement">إقرار</label>
                         <textarea class="form-control" id="acknowledgement" rows="5" disabled>
 اقر أﻧﺎ اﻟﻣوﻗﻊ أدﻧﺎه ﺑﺄﻧﻧﻲ أﺟﯾد اﻟﺳﺑﺎﺣﺔ ﺑﻛﻔﺎءة، ,وأﻧﻧﻲ ﻟم أﺻب ﺑﺄي ﺣﺎﻻت ﻓﻘدان اﻟوﻋﻲ
 أو اﻟﺻرع وأﺗﻌﮭد ﺑﺈﺑﻼغ اﻟﺟﮭﺎت اﻟﺻﺣﯾﺔ اﻟﻣﺳؤوﻟﺔ ﻋن اﻟﻔﺣص اﻟطﺑﻲ ﺣﺎل ﺣدوث
