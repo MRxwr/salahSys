@@ -89,7 +89,7 @@ foreach ($data as $field => $value) {
 }
 
 // Ensure the output directory is writable
-$outputFile = '/pdf/filled_template.pdf';
+$outputFile = 'pdf/filled_template.pdf';
 $pdf->Output($outputFile, 'F');
 /*
 if (is_writable(dirname($outputFile))) {
