@@ -115,7 +115,7 @@ $coordinates = [
     'fishingB' => [148, 178],
     'cruise' => [148, 185],
     'government' => [148, 192],
-    'profile' => [22, 30],
+    'profile' => [22, 26],
 ];
 
 // Add the data to the PDF
