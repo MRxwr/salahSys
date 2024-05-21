@@ -1,358 +1,101 @@
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.05pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:18px;">&nbsp;</span></p>
-<table style="border: none;margin-left:147.75pt;border-collapse:collapse;">
-    <tbody>
-        <tr>
-            <td style="width: 224.35pt;padding: 0in;height: 17.9pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left:10.0pt;line-height:16.6pt;'><strong><span style="font-size:20px;">Application&nbsp;for&nbsp;Skipper&nbsp;License</span></strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 224.35pt;padding: 0in;height: 35.55pt;vertical-align: top;">
-                <p dir="RTL" style='margin: 0in 0in 0.0001pt 62.4pt;font-size:15px;font-family: "Times New Roman", serif;text-align: right;line-height: 19.35pt;'><strong><span style='font-size:24px;font-family:"Courier New";'>الا</span></strong><strong><span style='font-size:24px;font-family:  "Courier New";'>م</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>س</span></strong><strong><span style='font-size:24px;font-family:  "Courier New";'>&nbsp;</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ل</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>كم</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ل</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>مل</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ق</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>د</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>م</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>الط</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ل</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ب</span></strong></p>
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.45pt;margin-right:0in;margin-left:58.7pt;line-height:12.8pt;'><strong><span style="font-size:16px;">Applicant&nbsp;Full&nbsp;Name</span></strong></p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:.3pt;'><span style="font-size:9px;">&nbsp;</span></p>
-<table style="margin-left:6.7pt;border-collapse:collapse;border:none;">
-    <tbody>
-        <tr>
-            <td colspan="7" style="width: 401.75pt;border-top: none;border-left: none;border-bottom: 1.5pt solid rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 17.4pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 75.8pt;border-top: 1pt solid rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);border-bottom: 1pt solid rgb(91, 155, 212);border-image: initial;border-left: none;padding: 0in;height: 17.4pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:3.65pt;margin-right:0in;margin-left:8.9pt;'><span style='font-size:10px;font-family:"Calibri",sans-serif;'>For&nbsp;official&nbsp;use&nbsp;only</span></p>
-            </td>
-            <td style="width: 29pt;border-top: none;border-right: none;border-left: none;border-image: initial;border-bottom: 1pt solid rgb(91, 155, 212);padding: 0in;height: 17.4pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="width: 148.2pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: 1.5pt double rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 15.65pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 27.5pt;text-align: right;line-height: 14.7pt;'><strong><span style='font-size:21px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:21px;font-family:  "Courier New";'>ل</span></strong><strong><span style='font-size:21px;font-family:"Courier New";'>ع</span></strong><strong><span style='font-size:21px;font-family:"Courier New";'>ن</span></strong><strong><span style='font-size:21px;font-family:"Courier New";'>و</span></strong><strong><span style='font-size:21px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:21px;font-family:"Courier New";'>ن</span></strong><strong><span style="font-size:16px;">&nbsp;</span></strong><strong><span style="font-size:16px;">&nbsp; &nbsp;</span></strong><strong><span dir="LTR" style="font-size:16px;">Ad</span></strong><strong><span dir="LTR" style="font-size:16px;">d</span></strong><strong><span dir="LTR" style="font-size:16px;">res</span></strong><strong><span dir="LTR" style="font-size:16px;">s</span></strong></p>
-            </td>
-            <td colspan="6" rowspan="8" style="width: 358.35pt;border-top: none;border-left: none;border-bottom: 1.5pt double rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 15.65pt;vertical-align: top;">
-                <p dir="RTL" style='margin: 0in 0in 0.0001pt 3.65pt;font-size:15px;font-family: "Times New Roman", serif;text-align: right;line-height: 15.4pt;'><span style='font-size:21px;font-family:  "Courier New";'>الرمق</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>ا</span><span style='font-size:21px;font-family:"Courier New";'>مل</span><span style='font-size:21px;font-family:"Courier New";'>د</span><span style='font-size:21px;font-family:"Courier New";'>ي</span><span style='font-size:21px;font-family:"Courier New";'>ن</span><span style="font-size:16px;">&nbsp;</span><u><span style="font-size:16px;">&nbsp;</span></u><u><span style="font-size:16px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;">&nbsp;</span><span style="font-size:16px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span dir="LTR" style="font-size:16px;">N</span><u><span dir="LTR" style="font-size:16px;">o</span></u><span dir="LTR" style="font-size:16px;">.</span><span style="font-size:16px;">&nbsp;</span><span dir="LTR" style="font-size:16px;">I</span><span dir="LTR" style="font-size:16px;">D</span><span style="font-size:16px;">&nbsp;</span><span dir="LTR" style="font-size:16px;">Civil</span></p>
-                <p dir="RTL" style='font-size:15px;font-family: "Times New Roman", serif;margin: 0.35pt 49.05pt 0.0001pt 3.65pt;text-align: right;line-height: 98%;'><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ات</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ر</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>خي</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>مل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>د</span><span style="font-size:16px;line-height:98%;">&nbsp;</span><u><span style="font-size:16px;line-height:98%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;line-height:98%;">&nbsp;</span><span style="font-size:16px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:98%;">B</span><span dir="LTR" style="font-size:16px;line-height:98%;">irth</span><span style="font-size:16px;line-height:98%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:  98%;">of</span><span style="font-size:16px;line-height:98%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:98%;">D</span><span dir="LTR" style="font-size:16px;line-height:98%;">a</span><span dir="LTR" style="font-size:16px;line-height:98%;">te</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>جل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ن</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>س</span><span style="font-size:16px;line-height:98%;">&nbsp;</span><u><span style="font-size:16px;line-height:98%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;line-height:98%;">&nbsp;</span><span style="font-size:16px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span dir="LTR" style="font-size:16px;line-height:98%;">G</span><span dir="LTR" style="font-size:16px;line-height:98%;">e</span><span dir="LTR" style="font-size:16px;line-height:98%;">nder</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ف</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ص</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ة</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>دل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>م</span><span style="font-size:16px;line-height:98%;">&nbsp;</span><u><span style="font-size:16px;line-height:98%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;line-height:98%;">&nbsp;</span><span style="font-size:16px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:98%;">T</span><span dir="LTR" style="font-size:16px;line-height:98%;">y</span><span dir="LTR" style="font-size:16px;line-height:98%;">pe</span><span style="font-size:16px;line-height:98%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:  98%;">B</span><span dir="LTR" style="font-size:16px;line-height:98%;">lood</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>جل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ن</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>س</span><span dir="LTR" style='font-size:21px;line-height:98%;font-family:"Courier New";'>.</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ة</span><span style="font-size:16px;line-height:98%;">&nbsp; <u>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:98%;">N</span><span dir="LTR" style="font-size:16px;line-height:98%;">a</span><span dir="LTR" style="font-size:16px;line-height:98%;">tionality</span><span style='font-size:21px;line-height:  98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ن</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>و</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ع</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>إ</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ق</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>م</span><span style='font-size:21px;line-height:98%;font-family:"Courier New";'>ة</span><span style="font-size:21px;line-height:98%;">&nbsp;</span><u><span style="font-size:21px;line-height:98%;">&nbsp;</span></u><u><span style="font-size:21px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sub>&nbsp;</sub></span></u><span style="font-size:21px;line-height:98%;">&nbsp;</span><span style="font-size:21px;line-height:98%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><sub><span dir="LTR" style="font-size:21px;line-height:98%;">T</span></sub><sub><span dir="LTR" style="font-size:21px;line-height:98%;">y</span></sub><sub><span dir="LTR" style="font-size:21px;line-height:98%;">p</span></sub><sub><span dir="LTR" style="font-size:21px;line-height:98%;">e</span></sub><span style="font-size:21px;line-height:98%;">&nbsp;</span><sub><span dir="LTR" style="font-size:21px;line-height:98%;">Vis</span></sub><sub><span dir="LTR" style="font-size:21px;line-height:98%;">a</span></sub></p>
-                <p dir="RTL" style='font-size:15px;font-family: "Times New Roman", serif;margin: 0.75pt 6.8pt 0.0001pt 3.55pt;text-align: right;text-indent: 0.1pt;line-height: 101%;'><span style='font-size:21px;line-height:101%;font-family:  "Courier New";'>اترخي انهتاء الاقامة</span><span style="font-size:16px;line-height:101%;">&nbsp;<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u>&nbsp; &nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Date</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Expiry</span><span style="font-size:16px;line-height:  101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Visa</span><span style='font-size:21px;line-height:  101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:  101%;font-family:"Courier New";'>ات</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ر</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>خي</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ن</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ه</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ت</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ء</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ر</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>خ</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ص</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ة</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ص</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>د</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><u><span style="font-size:16px;line-height:101%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:101%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></u><span style="font-size:16px;line-height:101%;">&nbsp;</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">D</span><span dir="LTR" style="font-size:16px;line-height:101%;">a</span><span dir="LTR" style="font-size:16px;line-height:101%;">te</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Expiry</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">L</span><span dir="LTR" style="font-size:16px;line-height:101%;">icense</span><span style="font-size:16px;line-height:  101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">F</span><span dir="LTR" style="font-size:16px;line-height:101%;">ishing</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>هجة</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ال</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ع</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>مل</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><u><span style="font-size:16px;line-height:101%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:101%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;line-height:101%;">&nbsp;</span><span style="font-size:16px;line-height:101%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Employer</span><span style='font-size:21px;line-height:101%;font-family:  "Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>م</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>س</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ك</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ف</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><u><span style="font-size:16px;line-height:101%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:101%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;line-height:101%;">&nbsp;</span><span style="font-size:16px;line-height:101%;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">N</span><span dir="LTR" style="font-size:16px;line-height:101%;">a</span><span dir="LTR" style="font-size:16px;line-height:101%;">me</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Sponsor&rsquo;s</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ر</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>مق</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ا</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>مل</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>د</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ن</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ك</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ف</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ي</span><span style='font-size:21px;line-height:101%;font-family:"Courier New";'>ل</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><u><span style="font-size:16px;line-height:101%;">&nbsp;</span></u><u><span style="font-size:16px;line-height:101%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u><span style="font-size:16px;line-height:101%;">&nbsp;</span><span style="font-size:16px;line-height:101%;">&nbsp;&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">No</span><span dir="LTR" style="font-size:16px;line-height:101%;">.</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">C</span><span dir="LTR" style="font-size:16px;line-height:101%;">I</span><span dir="LTR" style="font-size:16px;line-height:101%;">D</span><span style="font-size:16px;line-height:101%;">&nbsp;</span><span dir="LTR" style="font-size:16px;line-height:101%;">Sponsor&rsquo;s</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="width: 148.2pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: none;border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 17.75pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 46.25pt;text-align: right;line-height: 15.4pt;'><span style='font-size:21px;font-family:  "Courier New";'>ا</span><span style='font-size:21px;font-family:"Courier New";'>مل</span><span style='font-size:21px;font-family:"Courier New";'>ن</span><span style='font-size:21px;font-family:"Courier New";'>ط</span><span style='font-size:21px;font-family:"Courier New";'>ق</span><span style='font-size:21px;font-family:"Courier New";'>ة</span><span style="font-size:21px;">&nbsp;</span><span style="font-size:21px;">&nbsp;&nbsp;</span><sub><span dir="LTR" style="font-size:21px;">A</span></sub><sub><span dir="LTR" style="font-size:21px;">r</span></sub><sub><span dir="LTR" style="font-size:21px;">e</span></sub><sub><span dir="LTR" style="font-size:21px;">a</span></sub></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="width: 148.2pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: 1.5pt double rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 16.6pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:-2.2pt;margin-left:1.1pt;line-height:13.45pt;'><u><span style="font-size:16px;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></u></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 72.4pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: 1pt dotted black;border-right: 1.5pt double rgb(91, 155, 212);padding: 0in;height: 32.55pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:2.15pt;margin-left:6.2pt;text-align:center;line-height:12.8pt;'><span style='font-size:21px;font-family:  "Courier New";'>شارع</span><span style="font-size:14px;">&nbsp;</span><span dir="LTR" style="font-size:14px;">Street</span></p>
-            </td>
-            <td colspan="2" style="width: 75.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted black;border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 32.55pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 8.6pt;text-align: right;line-height: 12.9pt;'><span style='font-size:21px;font-family:  "Courier New";'>قطعة</span><span style="font-size:14px;">&nbsp;</span><span dir="LTR" style="font-size:14px;">Block</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 72.4pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: 1pt dotted black;border-right: 1.5pt double rgb(91, 155, 212);padding: 0in;height: 34.65pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:5.85pt;margin-left:4.8pt;text-align:center;line-height:15.0pt;'><span style='font-size:21px;font-family:  "Courier New";'>امل</span><span style='font-size:21px;font-family:"Courier New";'>زن</span><span style='font-size:21px;font-family:"Courier New";'>ل</span><span style="font-size:14px;">&nbsp;</span><span style="font-size:14px;">&nbsp; &nbsp;</span><span dir="LTR" style="font-size:14px;">House</span></p>
-            </td>
-            <td colspan="2" style="width: 75.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted black;border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 34.65pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 11.85pt;text-align: right;line-height: 14.8pt;'><span style='font-size:21px;font-family:  "Courier New";'>جادة</span><span style="font-size:21px;">&nbsp;</span><sub><span dir="LTR" style="font-size:21px;">Ave.</span></sub></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 72.4pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: 4.5pt double rgb(91, 155, 212);border-right: 1.5pt double rgb(91, 155, 212);padding: 0in;height: 36.4pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:5.85pt;margin-left:.2in;text-align:center;line-height:14.8pt;'><span style='font-size:21px;font-family:  "Courier New";'>ا</span><span style='font-size:21px;font-family:"Courier New";'>ل</span><span style='font-size:21px;font-family:"Courier New";'>ش</span><span style='font-size:21px;font-family:"Courier New";'>ق</span><span style='font-size:21px;font-family:"Courier New";'>ة</span><span style="font-size:21px;">&nbsp;</span><span style="font-size:21px;">&nbsp;&nbsp;</span><sub><span dir="LTR" style="font-size:21px;">F</span></sub><sub><span dir="LTR" style="font-size:21px;">l</span></sub><sub><span dir="LTR" style="font-size:21px;">at</span></sub></p>
-            </td>
-            <td colspan="2" style="width: 75.8pt;border-top: none;border-left: none;border-bottom: 4.5pt double rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 36.4pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 9.2pt;text-align: right;line-height: 15pt;'><span style='font-size:21px;font-family:  "Courier New";'>ادلور</span><span style="font-size:14px;">&nbsp;</span><span dir="LTR" style="font-size:14px;">Floor</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="width: 148.2pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: none;border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 15.45pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 22.6pt;text-align: right;line-height: 13.25pt;'><span style='font-size:21px;font-family:  "Courier New";'>ت</span><span style='font-size:21px;font-family:"Courier New";'>ل</span><span style='font-size:21px;font-family:"Courier New";'>فو</span><span style='font-size:21px;font-family:"Courier New";'>ن</span><span style="font-size:14px;">&nbsp;</span><span style="font-size:14px;">&nbsp; &nbsp;&nbsp;</span><span dir="LTR" style="font-size:14px;">N</span><u><span dir="LTR" style="font-size:14px;">o</span></u><span dir="LTR" style="font-size:14px;">.</span><span style="font-size:14px;">&nbsp;</span><span dir="LTR" style="font-size:14px;">Phon</span><span dir="LTR" style="font-size:14px;">e</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="width: 148.2pt;border-top: none;border-left: 1pt solid rgb(91, 155, 212);border-bottom: 1.5pt double rgb(91, 155, 212);border-right: 1pt solid rgb(91, 155, 212);padding: 0in;height: 18.4pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:-2.2pt;margin-left:1.1pt;line-height:13.5pt;'><u><span style="font-size:16px;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></u></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-top: none;border-left: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-right: none;padding: 0in;height: 22.95pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:4.0pt;margin-right:0in;margin-left:.25in;'><strong><span style="font-size:17px;">Application&nbsp;Type</span></strong></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-right: none;border-left: none;border-image: initial;border-bottom: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 22.95pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 22.95pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 26.95pt;text-align: right;line-height: 19.15pt;'><strong><span style='font-size:24px;font-family:"Courier New";'>ن</span></strong><strong><span style='font-size:24px;font-family:  "Courier New";'>و</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ع</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>الط</span></strong><strong><span style='font-size:24px;font-family:  "Courier New";'>ل</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ب</span></strong></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-right: none;border-left: none;border-image: initial;border-bottom: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 22.95pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:4.0pt;margin-right:0in;margin-left:25.6pt;'><strong><span style="font-size:17px;">License&nbsp;Type</span></strong></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-right: none;border-left: none;border-image: initial;border-bottom: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 22.95pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 22.95pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 22.9pt;text-align: right;line-height: 20.45pt;'><strong><span dir="LTR" style='font-size:21px;font-family:  "Calibri",sans-serif;'>*</span></strong><strong><span style='font-size:24px;font-family:  "Courier New";'>ن</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>و</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ع</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ال</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ر</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>خ</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ص</span></strong><strong><span style='font-size:24px;font-family:"Courier New";'>ة</span></strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-right: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-left: 1pt dotted rgb(91, 155, 212);border-image: initial;border-top: none;padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.55pt;'><span style="font-size:16px;">New</span></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:4.35pt;margin-left:0in;text-align:right;'><span style="font-size:16px;">جديد</span></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.3pt;'><span style="font-size:16px;">Pleasure&nbsp;(&nbsp;A&nbsp;)</span></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 64.2pt;text-align: right;line-height: 16.65pt;'><span style='font-size:21px;font-family:  "Courier New";'>نزهه</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>(</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>أ</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>)</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-right: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-left: 1pt dotted rgb(91, 155, 212);border-image: initial;border-top: none;padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.55pt;'><span style="font-size:16px;">Renewal</span></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:4.3pt;margin-left:0in;text-align:right;'><span style="font-size:16px;">تجديد</span></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.3pt;'><span style="font-size:16px;">Pleasure&nbsp;( B&nbsp;)</span></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 63.7pt;text-align: right;line-height: 16.65pt;'><span style='font-size:21px;font-family:  "Courier New";'>نزهه&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>(</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>ب&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>)</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-right: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-left: 1pt dotted rgb(91, 155, 212);border-image: initial;border-top: none;padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.55pt;'><span style="font-size:16px;">Replacement&nbsp;of&nbsp;lost</span></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:4.35pt;margin-left:0in;text-align:right;'><span style="font-size:16px;">بد</span><span style="font-size:16px;">ل&nbsp;فاقد</span></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.3pt;'><span style="font-size:16px;">Fishing&nbsp;(&nbsp;A&nbsp;)</span></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 63.35pt;text-align: right;line-height: 16.65pt;'><span style='font-size:21px;font-family:  "Courier New";'>ص</span><span style='font-size:21px;font-family:"Courier New";'>ي</span><span style='font-size:21px;font-family:"Courier New";'>د</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>(</span><span style='font-size:21px;font-family:  "Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>أ</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>)</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-right: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-left: 1pt dotted rgb(91, 155, 212);border-image: initial;border-top: none;padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.55pt;'><span style="font-size:16px;">Replace.&nbsp;of&nbsp;damage</span></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:4.3pt;margin-left:0in;text-align:right;'><span style="font-size:16px;">ب</span><span style="font-size:16px;">دل&nbsp;تالف</span></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.3pt;'><span style="font-size:16px;">Fishing&nbsp;(&nbsp;B&nbsp;)</span></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 63pt;text-align: right;line-height: 16.65pt;'><span style='font-size:21px;font-family:  "Courier New";'>ص</span><span style='font-size:21px;font-family:"Courier New";'>ي</span><span style='font-size:21px;font-family:"Courier New";'>د</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>(</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>ب</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>)</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-right: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-left: 1pt dotted rgb(91, 155, 212);border-image: initial;border-top: none;padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.55pt;'><span style="font-size:16px;">Update</span></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:4.3pt;margin-left:0in;text-align:right;'><span style="font-size:16px;">ت</span><span style="font-size:16px;">حد</span><span style="font-size:16px;">ي</span><span style="font-size:16px;">ث</span></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.3pt;'><span style="font-size:16px;">Cruise</span></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 59.85pt;text-align: right;line-height: 16.65pt;'><span style='font-size:21px;font-family:  "Courier New";'>ر</span><span style='font-size:21px;font-family:"Courier New";'>ح</span><span style='font-size:21px;font-family:"Courier New";'>الت</span><span style='font-size:21px;font-family:"Courier New";'>&nbsp;</span><span style='font-size:21px;font-family:"Courier New";'>حب</span><span style='font-size:21px;font-family:"Courier New";'>ر</span><span style='font-size:21px;font-family:"Courier New";'>ي</span><span style='font-size:21px;font-family:"Courier New";'>ة</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 118.4pt;border-right: 1pt dotted rgb(91, 155, 212);border-bottom: 1pt dotted rgb(91, 155, 212);border-left: 1pt dotted rgb(91, 155, 212);border-image: initial;border-top: none;padding: 0in;height: 19.6pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.55pt;'><span style="font-size:16px;">Upgrade</span></p>
-            </td>
-            <td style="width: 29.8pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.6pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 109.1pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.6pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:4.3pt;margin-left:0in;text-align:right;'><span style="font-size:16px;">ت</span><span style="font-size:16px;">رق</span><span style="font-size:16px;">ي</span><span style="font-size:16px;">ة</span></p>
-            </td>
-            <td style="width: 110.65pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.6pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:2.8pt;margin-right:0in;margin-left:5.3pt;'><span style="font-size:16px;">Government/Comm.</span></p>
-            </td>
-            <td style="width: 28.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.6pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td colspan="3" style="width: 110.3pt;border-top: none;border-left: none;border-bottom: 1pt dotted rgb(91, 155, 212);border-right: 1pt dotted rgb(91, 155, 212);padding: 0in;height: 19.6pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left: 55.8pt;text-align: right;line-height: 16.65pt;'><span style='font-size:21px;font-family:  "Courier New";'>حك</span><span style='font-size:21px;font-family:"Courier New";'>و</span><span style='font-size:21px;font-family:"Courier New";'>يم</span><span dir="LTR" style='font-size:21px;font-family:"Courier New";'>/</span><span style='font-size:21px;font-family:"Courier New";'>جت</span><span style='font-size:21px;font-family:"Courier New";'>ار</span><span style='font-size:21px;font-family:"Courier New";'>ي</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-            <td style="border:none;"><br></td>
-        </tr>
-    </tbody>
-</table>
-<p dir="RTL" style='font-size:15px;font-family: "Times New Roman", serif;margin: 0.55pt 0in 0.0001pt 89.1pt;text-align: right;line-height: 10.5pt;'><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>إﻗــــــرار</span></strong><strong><span style='font-size:11px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong><strong><span dir="LTR" style='font-size:11px;font-family:"Arial",sans-serif;'>ACKNOWLEDGEMENT</span></strong></p>
-<p><span style='font-size:11px;font-family:"Arial",sans-serif;'><br>&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;margin-left:13.35pt;text-align:justify;line-height:101%;'>I the undersigned hereby <span style="color:#202020;">certify that I can swim efficiently and have not&nbsp;experienced&nbsp;any&nbsp;cases&nbsp;of&nbsp;loss&nbsp;of&nbsp;consciousness&nbsp;or&nbsp;epilepsy.&nbsp;I&nbsp;undertake&nbsp;to&nbsp;inform&nbsp;the&nbsp;health&nbsp;authorities&nbsp;responsible&nbsp;for&nbsp;the&nbsp;medical&nbsp;examination&nbsp;if such an incident occurs to me or to suffer any of the diseases in which&nbsp;the&nbsp;leadership&nbsp;of&nbsp;the&nbsp;boat&nbsp;becomes&nbsp;a&nbsp;danger&nbsp;to&nbsp;me&nbsp;or&nbsp;to&nbsp;others.&nbsp;The&nbsp;Law&nbsp;of Small Vessels No. 36/1960, as amended, and the ministerial decrees&nbsp;thereof.</span></p>
-<p><span dir="RTL" style='font-size:15px;line-height:98%;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
-<p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:1.6pt;margin-right:13.0pt;margin-left:0in;text-align:right;line-height:98%;'><span style='font-size:12px;line-height:98%;font-family:"Microsoft Sans Serif",sans-serif;'>أﻗرأﻧﺎ&nbsp;اﻟﻣوﻗﻊ&nbsp;أدﻧﺎه&nbsp;ﺑﺄﻧﻧﻲ&nbsp;أﺟﯾد&nbsp;اﻟﺳﺑﺎﺣﺔ&nbsp;ﺑﻛﻔﺎءة،&nbsp;</span><span dir="LTR" style='font-size:12px;line-height:98%;font-family:"Microsoft Sans Serif",sans-serif;'>,</span><span style='font-size:12px;line-height:98%;font-family:"Microsoft Sans Serif",sans-serif;'>وأﻧﻧﻲ&nbsp;ﻟم&nbsp;أﺻب&nbsp;ﺑﺄي&nbsp;ﺣﺎﻻت&nbsp;ﻓﻘدان&nbsp;اﻟوﻋﻲ&nbsp;أو&nbsp;اﻟﺻرع&nbsp;وأﺗﻌﮭد&nbsp;ﺑﺈﺑﻼغ&nbsp;اﻟﺟﮭﺎت&nbsp;اﻟﺻﺣﯾﺔ&nbsp;اﻟﻣﺳؤوﻟﺔ&nbsp;ﻋن&nbsp;اﻟﻔﺣص&nbsp;اﻟطﺑﻲ&nbsp;ﺣﺎل&nbsp;ﺣدوث&nbsp;ﻣﺛل&nbsp;ذﻟك&nbsp;ﻟﻲ&nbsp;أو&nbsp;إﺻﺎﺑﺗﻲ&nbsp;ﺑﺄي&nbsp;ﻣن&nbsp;اﻷﻣراض&nbsp;اﻟﺗﻲ&nbsp;ﺗﺻﺑﺢ&nbsp;ﻣﻌﮭﺎ&nbsp;ﻗﯾﺎدﺗﻲ&nbsp;ﻟﻠﻘﺎرب&nbsp;ﺧطراً&nbsp;ﻋﻠﻲ&nbsp;أو&nbsp;ﻋﻠﻰ&nbsp;اﻵﺧرﯾن،&nbsp;ﻛﻣﺎ&nbsp;أﻗر&nbsp;ﺑﺎﻻﻟﺗزام&nbsp;ﺑﻣﺎ&nbsp;ﺟﺎء&nbsp;ﻓﻲ&nbsp;ﻗﺎﻧون&nbsp;اﻟﺳﻔن&nbsp;اﻟﺻﻐﯾرة&nbsp;رﻗم&nbsp;</span><span dir="LTR" style='font-size:12px;line-height:98%;font-family:"Microsoft Sans Serif",sans-serif;'>1960/36</span></p>
-<p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-right:13.5pt;text-align:right;line-height:9.95pt;'><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>و</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ت</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ع</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>د</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ي</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ال</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ت</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ه</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>&nbsp;</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>و</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ا</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ل</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>ق</span><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>رارات الوزارية&nbsp;التابعة&nbsp;له</span><span dir="LTR" style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'>.</span></p>
-<p><span style='font-size:12px;font-family:"Microsoft Sans Serif",sans-serif;'><br>&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;'><br></p>
-<table>
-    <tbody>
-        <tr>
-            <td style="vertical-align:top;">&nbsp;<table style="width: 100%">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div style="padding:0pt 0pt 0pt 0pt;">
-                                    <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;line-height:12.2pt;'><strong>License&nbsp;No.</strong></p>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>&nbsp;&nbsp;</td>
-        </tr>
-    </tbody>
-</table>
-<p><br></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;margin-top:.2pt;'>&nbsp;</p>
-<table style="border: none;margin-left:10.25pt;border-collapse:collapse;">
-    <tbody>
-        <tr>
-            <td style="width: 79.5pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left:47.05pt;line-height:17.05pt;'><span style='font-size:19px;font-family:"Calibri",sans-serif;'>Date</span></p>
-            </td>
-            <td style="width: 79.35pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p dir="RTL" style='margin: 0.15pt 0in 0.0001pt 5.35pt;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;text-align: right;'><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ال</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>تار</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ي</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>خ</span></p>
-            </td>
-            <td style="width: 11.8pt;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 79.45pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left:19.7pt;line-height:17.05pt;'><span style='font-size:19px;font-family:"Calibri",sans-serif;'>Signature</span></p>
-            </td>
-            <td style="width: 79.25pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p dir="RTL" style='margin: 0.15pt 0in 0.0001pt 5.3pt;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;text-align: right;'><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ال</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ت</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>و</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ق</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ي</span><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>ع</span></p>
-            </td>
-            <td style="width: 11.9pt;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-            </td>
-            <td style="width: 79.5pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left:39.9pt;line-height:17.05pt;'><span style='font-size:19px;font-family:"Calibri",sans-serif;'>Name</span></p>
-            </td>
-            <td style="width: 79.25pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 18.7pt;vertical-align: top;">
-                <p dir="RTL" style='margin: 0.15pt 0in 0.0001pt 5.2pt;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;text-align: right;'><span style='font-size:19px;font-family:"Microsoft Sans Serif",sans-serif;'>االسم</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 158.85pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left:9.55pt;line-height:12.05pt;'><span style='font-size:13px;font-family:"Calibri",sans-serif;'>For&nbsp;Official&nbsp;use&nbsp;Only</span></p>
-            </td>
-            <td style="width: 11.8pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-            </td>
-            <td style="width: 79.45pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-            </td>
-            <td style="width: 79.25pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-            </td>
-            <td style="width: 11.9pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-            </td>
-            <td style="width: 79.5pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'><span style="font-size:13px;">&nbsp;</span></p>
-            </td>
-            <td style="width: 79.25pt;padding: 0in;height: 13.5pt;vertical-align: top;">
-                <p dir="RTL" style='margin: 2.15pt 0in 0.0001pt 2.45pt;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;text-align: right;line-height: 10.35pt;'><span style='font-size:13px;font-family:  "Microsoft Sans Serif",sans-serif;'>لالس</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>ت</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>عمال</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>&nbsp;</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>ال</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>رس</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>مي</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>&nbsp;</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>فق</span><span style='font-size:13px;font-family:"Microsoft Sans Serif",sans-serif;'>ط</span></p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;'><span style="font-size:13px;">&nbsp;</span></p>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:10px;font-family:"Microsoft Sans Serif",sans-serif;margin-top:.45pt;'><span style="font-size:13px;">&nbsp;</span></p>
-<table style="border: none;margin-left:7.45pt;border-collapse:collapse;">
-    <tbody>
-        <tr>
-            <td style="width: 159.65pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 39.3pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-left:1.0pt;text-align:center;line-height:20.3pt;'><strong><span style='font-size:27px;font-family:"Courier New";'>مدي</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ر</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>إ</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>د</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ر</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ة</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>ل</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ن</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ق</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ل</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>ل</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ب</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ح</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ر</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ي</span></strong></p>
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:.5pt;text-align:center;line-height:17.5pt;'><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﻟوزاري&nbsp;رﻗم&nbsp;</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>63)</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp;</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>2018/</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp;</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>(</span></u><u><span style="font-size:21px;color:red;">&nbsp;</span></u><u><span style="font-size:21px;color:red;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></u></p>
-            </td>
-            <td style="width: 11.75pt;padding: 0in;height: 39.3pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:.4pt;'><span style='font-size:24px;font-family:"Microsoft Sans Serif",sans-serif;'>&nbsp;</span></p>
-                <p dir="RTL" style='font-size:15px;font-family: "Times New Roman", serif;margin: 0in -5.8pt 0.0001pt -0.1pt;text-align: right;line-height: 17.5pt;'><u><span style='font-size:21px;font-family:"Courier New";color:red;'>رار&nbsp;ا</span></u></p>
-            </td>
-            <td style="width: 158.65pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 39.3pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:2.95pt;margin-left:3.25pt;text-align:center;line-height:20.3pt;'><strong><span style='font-size:27px;font-family:"Courier New";'>ر</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>ئ</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ي</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>س</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>ل</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ق</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>س</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>م</span></strong></p>
-                <p dir="RTL" style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:.5pt;margin-right:2.95pt;margin-left:7.6pt;text-align:center;line-height:17.5pt;'><u><span style='font-size:21px;font-family:  "Courier New";color:red;'>&nbsp;</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>رﺧﺻﺔ&nbsp;ا</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>�</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺎزة</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp;</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>اﻟﻧوﺧذة&nbsp;اﻟﺑﺣري&nbsp;اﻟواردة&nbsp;ﰲ&nbsp;اﻟﻘ</span></u></p>
-            </td>
-            <td style="width: 11.85pt;padding: 0in;height: 39.3pt;vertical-align: top;">
-                <p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:.4pt;'><span style='font-size:24px;font-family:"Microsoft Sans Serif",sans-serif;'>&nbsp;</span></p>
-                <p dir="RTL" style='font-size:15px;font-family: "Times New Roman", serif;margin: 0in -0.75pt 0.0001pt -0.65pt;text-align: right;line-height: 17.5pt;'><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﻣ</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>�</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺢ</span></u></p>
-            </td>
-            <td style="width: 165.05pt;border-right: none;border-bottom: none;border-left: none;border-image: initial;border-top: 1pt dotted black;padding: 0in;height: 39.3pt;vertical-align: top;">
-                <p dir="RTL" style='margin:0in;margin-bottom:  .0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:17.75pt;margin-left:15.45pt;text-align:center;line-height:20.3pt;'><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>م</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ل</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>و</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ظ</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ف</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>&nbsp;</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ا</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>خ</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>مل</span></strong><strong><span style='font-size:27px;font-family:  "Courier New";'>ت</span></strong><strong><span style='font-size:27px;font-family:"Courier New";'>ص</span></strong></p>
-                <p dir="RTL" style='margin:0in;margin-bottom:  .0001pt;font-size:15px;font-family:"Times New Roman",serif;margin-top:.5pt;margin-right:17.75pt;margin-left:17.55pt;text-align:center;line-height:17.5pt;'><u><span style='font-size:21px;font-family:  "Courier New";color:red;'>&nbsp;</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp; &nbsp;ﯾر</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>�</span></u><u><span style='font-size:21px;font-family:  "Courier New";color:red;'>&nbsp;</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﻣ</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>راﺟﻌﺔ</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp;</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>�</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺷ</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺗراطﺎت</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp;</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ا</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﻟ</span></u><u><span dir="LTR" style='font-size:21px;font-family:"Courier New";color:red;'>�</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺎ</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺻﺔ</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>&nbsp;</span></u><u><span style='font-size:21px;font-family:"Courier New";color:red;'>ﺑ</span></u></p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<p style='margin:0in;margin-bottom:.0001pt;font-size:15px;font-family:"Times New Roman",serif;'>&nbsp;</p>
+<?php
+require 'vendor/autoload.php';
+
+// Extend TCPDF to include custom header and footer if needed
+class PDF extends TCPDF
+{
+    public function Header()
+    {
+        // Do nothing to use the existing PDF header
+    }
+
+    public function Footer()
+    {
+        // Do nothing to use the existing PDF footer
+    }
+}
+
+// Path to the pre-made PDF
+$templatePdf = 'pdf/file.pdf';
+
+// Create new PDF instance
+$pdf = new PDF();
+
+// Set document information
+$pdf->SetCreator(PDF_CREATOR);
+$pdf->SetAuthor('Your Name');
+$pdf->SetTitle('Filled PDF Form');
+$pdf->SetSubject('PDF Form Filling');
+$pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+
+// Import the first page of the template PDF as an image
+$pdf->AddPage();
+$pdf->Image($templatePdf, 0, 0, 210, 297, '', '', '', false, 3600, '', false, false, 0);
+
+// Set font and color for the text
+$pdf->SetFont('helvetica', '', 12);
+$pdf->SetTextColor(0, 0, 0);
+
+// Define the data to fill in
+$data = [
+    'full_name' => 'John Doe',
+    'civil_id' => '1234567890',
+    'area' => 'Salmiya',
+    'date_of_birth' => '01/01/1980',
+    'gender' => 'Male',
+    'street' => 'Street Name',
+    'block' => 'Block 5',
+    'blood_type' => 'O+',
+    'nationality' => 'Kuwaiti',
+    'house' => 'House 12',
+    'visa_type' => 'Work',
+    'visa_expiry' => '01/01/2025',
+    'flat' => 'Flat 3',
+    'floor' => '2',
+    'fishing_license_expiry' => '01/01/2024',
+    'employer' => 'Company Name',
+    'phone' => '55512345',
+    'sponsor_name' => 'Sponsor Name',
+    'sponsor_cid' => '9876543210'
+];
+
+// Map the data to coordinates on the PDF
+$coordinates = [
+    'full_name' => [50, 50],
+    'civil_id' => [50, 60],
+    'area' => [50, 70],
+    'date_of_birth' => [50, 80],
+    'gender' => [50, 90],
+    'street' => [50, 100],
+    'block' => [50, 110],
+    'blood_type' => [50, 120],
+    'nationality' => [50, 130],
+    'house' => [50, 140],
+    'visa_type' => [50, 150],
+    'visa_expiry' => [50, 160],
+    'flat' => [50, 170],
+    'floor' => [50, 180],
+    'fishing_license_expiry' => [50, 190],
+    'employer' => [50, 200],
+    'phone' => [50, 210],
+    'sponsor_name' => [50, 220],
+    'sponsor_cid' => [50, 230]
+];
+
+// Add the data to the PDF
+foreach ($data as $field => $value) {
+    $pdf->SetXY($coordinates[$field][0], $coordinates[$field][1]);
+    $pdf->Cell(0, 10, $value);
+}
+
+// Ensure the output directory is writable
+$outputFile = '/pdf/filled_template.pdf';
+$pdf->Output($outputFile, 'I');
+/*
+if (is_writable(dirname($outputFile))) {
+    // Output the modified PDF
+    
+} else {
+    die('Error: Output directory is not writable.');
+}
+*/
