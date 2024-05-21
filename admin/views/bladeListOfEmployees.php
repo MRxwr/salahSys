@@ -97,20 +97,6 @@ if( isset($_POST["fullName"]) ){
 			</select>
 			</div>
 			
-			<div class="col-md-6">
-			<label><?php echo direction("Shop","المحل") ?></label>
-			<select name="shopId" class="form-control">
-				<?php
-				if( $shop = selectDB("shops","`status` = '0'") ){
-					for( $i = 0; $i < sizeof($shop); $i++ ){
-						$shopTitle = direction($shop[$i]["enTitle"],$shop[$i]["arTitle"]);
-						echo "<option value='{$shop[$i]["id"]}'>{$shopTitle}</option>";
-					}
-				}
-				?>
-			</select>
-			</div>
-			
 			<div class="col-md-6" style="margin-top:10px">
 			<input type="submit" class="btn btn-primary" value="<?php echo direction("Submit","أرسل") ?>">
 			<input type="hidden" name="update" value="0">
