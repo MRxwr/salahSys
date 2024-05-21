@@ -103,9 +103,16 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
 					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="visaType">Visa Type</label>
-							<select class="form-control" name="applicant[visaType]" id="visaType" required>
-                                <option>Fisher</option>
-                                <option>Other</option>
+                            <select class="form-control" name="applicant[visaType]" id="visaType" required>
+                                <?php
+                                if( $areas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $areas as $area ){
+                                        ?>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </select>
                         </div>
                         <div class="form-group col-md-6">
@@ -209,14 +216,16 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
             <div class="card-body">
                     <div class="form-group">
                         <label for="applicationType">Application Type</label>
-                        <select class="form-control" name="applicationType" id="applicationType">
-                            <option>New</option>
-                            <option>Renewal</option>
-                            <option>Replacement of lost</option>
-                            <option>Replace. of damage</option>
-                            <option>Update</option>
-                            <option>Upgrade</option>
-                            <option>Government/Comm.</option>
+                        <select class="form-control" name="applicationType" id="applicationType" required>
+                                <?php
+                                if( $areas = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $areas as $area ){
+                                        ?>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                         </select>
                     </div>
             </div>
@@ -230,12 +239,16 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
             <div class="card-body">
                     <div class="form-group">
                         <label for="licenseType">License Type</label>
-                        <select class="form-control" name="licenseType" id="licenseType">
-                            <option>Pleasure (A)</option>
-                            <option>Pleasure (B)</option>
-                            <option>Fishing (A)</option>
-                            <option>Fishing (B)</option>
-                            <option>Cruise</option>
+                        <select class="form-control" name="licenseType" id="licenseType" required>
+                                <?php
+                                if( $areas = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $areas as $area ){
+                                        ?>
+                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                         </select>
                     </div>
             </div>
