@@ -91,17 +91,9 @@ if( isset($_POST["fullName"]) ){
 				?>
 				<tr>
                 <td id="date<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["date"] ?></td>
-                <td><img src="../logos/<?php echo $attachment["photo"] ?>" style="width: 100px;height: 100px;"></td>
 				<td id="applicant<?php echo $applications[$i]["id"]?>" >
                     <?php
                         foreach ($applicant as $key => $value) {
-                            echo strtoupper($key)." : ".$value."<br>";
-                        }
-                    ?>
-                </td>
-				<td id="address<?php echo $applications[$i]["id"]?>" >
-                    <?php
-                        foreach ($address as $key => $value) {
                             echo strtoupper($key)." : ".$value."<br>";
                         }
                     ?>
@@ -116,6 +108,13 @@ if( isset($_POST["fullName"]) ){
 				<td id="sponsor<?php echo $applications[$i]["id"]?>" >
                     <?php
                         foreach ($sponsor as $key => $value) {
+                            echo strtoupper($key)." : ".$value."<br>";
+                        }
+                    ?>
+                </td>
+				<td id="address<?php echo $applications[$i]["id"]?>" >
+                    <?php
+                        foreach ($address as $key => $value) {
                             echo strtoupper($key)." : ".$value."<br>";
                         }
                     ?>
