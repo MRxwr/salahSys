@@ -18,6 +18,7 @@ class PDF extends Fpdi
 
 // Path to the pre-made PDF
 $templatePdf = 'pdf/files.pdf';
+$signatureImage = 'logos/PsjUlBA.png';
 
 // Create new PDF instance
 $pdf = new PDF();
@@ -77,6 +78,7 @@ $data = [
     'fishingB' => '✔',
     'cruise' => '✔',
     'government' => '✔',
+    'profile' => 'image',
 ];
 
 // Map the data to coordinates on the PDF
@@ -113,12 +115,18 @@ $coordinates = [
     'fishingB' => [148, 178],
     'cruise' => [148, 185],
     'government' => [148, 192],
+    'profile' => [30, 25],
 ];
 
 // Add the data to the PDF
 foreach ($data as $field => $value) {
-    $pdf->SetXY($coordinates[$field][0], $coordinates[$field][1]);
-    $pdf->Cell(0, 10, $value);
+    if ($field == 'profile') {
+        // Add signature image instead of text for the 'employer' field
+        $pdf->Image($signatureImage, $coordinates[$field][0], $coordinates[$field][1], 50, 50); // Adjust size (30x15) and position as needed
+    } else {
+        $pdf->SetXY($coordinates[$field][0], $coordinates[$field][1]);
+        $pdf->Cell(0, 10, $value);
+    }
 }
 
 // Output the modified PDF directly to the browser
