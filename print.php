@@ -40,7 +40,7 @@ $pdf->AddPage();
 $pdf->useTemplate($templateId, 0, 0, 210, 297);
 
 // Set font and color for the text
-$pdf->SetFont('helvetica', '', 12);
+$pdf->SetFont('dejavusans', '', 12);
 $pdf->SetTextColor(0, 0, 0);
 
 // Define the data to fill in
