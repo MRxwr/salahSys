@@ -115,14 +115,14 @@ $coordinates = [
     'fishingB' => [148, 178],
     'cruise' => [148, 185],
     'government' => [148, 192],
-    'profile' => [20, 26],
+    'profile' => [22, 26],
 ];
 
 // Add the data to the PDF
 foreach ($data as $field => $value) {
     if ($field == 'profile') {
         // Add signature image instead of text for the 'employer' field
-        $pdf->Image($signatureImage, $coordinates[$field][0], $coordinates[$field][1], 35, 50); // Adjust size (30x15) and position as needed
+        $pdf->Image($signatureImage, $coordinates[$field][0], $coordinates[$field][1], 35, 47); // Adjust size (30x15) and position as needed
     } else {
         $pdf->SetXY($coordinates[$field][0], $coordinates[$field][1]);
         $pdf->Cell(0, 10, $value);
