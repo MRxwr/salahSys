@@ -63,6 +63,21 @@ if( isset($_POST["fullName"]) ){
 <div class="panel-body">
 	<form class="" method="POST" action="" enctype="multipart/form-data">
 		<div class="row m-0">
+
+			<div class="col-md-12">
+			<label><?php echo direction("Type","النوع") ?></label>
+			<select name="empType" class="form-control">
+				<?php 
+				if( $roles = selectDB("roles","`status` = '0' AND `hidden` = '1'") ){
+					for( $i = 0; $i < sizeof($roles); $i++ ){
+						$title = direction($roles[$i]["enTitle"],$roles[$i]["arTitle"]);
+						echo "<option value='{$roles[$i]["id"]}'>{$title}</option>";
+					}
+				}
+				?>
+			</select>
+			</div>
+
 			<div class="col-md-6">
 			<label><?php echo direction("Name","الإسم") ?></label>
 			<input type="text" name="fullName" class="form-control" required>
@@ -83,21 +98,7 @@ if( isset($_POST["fullName"]) ){
 			<input type="number" min="0" maxlength="8" name="phone" class="form-control" required>
 			</div>
 			
-			<div class="col-md-6">
-			<label><?php echo direction("Type","النوع") ?></label>
-			<select name="empType" class="form-control">
-				<?php 
-				if( $roles = selectDB("roles","`status` = '0' AND `hidden` = '1'") ){
-					for( $i = 0; $i < sizeof($roles); $i++ ){
-						$title = direction($roles[$i]["enTitle"],$roles[$i]["arTitle"]);
-						echo "<option value='{$roles[$i]["id"]}'>{$title}</option>";
-					}
-				}
-				?>
-			</select>
-			</div>
-			
-			<div class="col-md-6" style="margin-top:10px">
+			<div class="col-md-12" style="margin-top:10px">
 			<input type="submit" class="btn btn-primary" value="<?php echo direction("Submit","أرسل") ?>">
 			<input type="hidden" name="update" value="0">
 			</div>
