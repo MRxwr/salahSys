@@ -87,7 +87,7 @@ if( isset($_POST["fullName"]) ){
                 $address = json_decode($applications[$i]["address"],true);
                 $sponsor = json_decode($applications[$i]["sponsor"],true);
                 $visa = json_decode($applications[$i]["visa"],true);
-                $attchments = json_decode($applications[$i]["attchments"],true);
+                $attchments = json_decode($applications[$i]["attchment"],true);
 				?>
 				<tr>
                 <td id="date<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["date"] ?></td>
