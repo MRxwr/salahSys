@@ -141,13 +141,9 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         </div>
                     </div>
 					<div class="form-row">
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-12">
                             <label for="phone">Personal Phone / هاتف</label>
                             <input type="tel" name="applicant[phone]" class="form-control" id="phone" required>
-                        </div>
-                        <div class="form-group col-md-6">
-							<label for="photo">Photo</label>
-                        	<input type="file" name="photo" class="form-control-file" id="photo">
                         </div>
                     </div>
             </div>
@@ -250,6 +246,45 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 }
                                 ?>
                         </select>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Address Information -->
+        <div class="card my-4">
+            <div class="card-header">
+                Attachments / المرفقات
+            </div>
+            <div class="card-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="street">Street / الشارع</label>
+                            <input type="text" name="address[street]" class="form-control" id="street">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="block">Block / القطعة</label>
+                            <input type="text" name="address[block]" class="form-control" id="block">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="house">House / المنزل</label>
+                            <input type="text" name="address[house]" class="form-control" id="house">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="ave">Ave / الجاده</label>
+                            <input type="text" name="address[ave]" class="form-control" id="ave">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="flat">Flat / الشقة</label>
+                            <input type="text" name="address[flat]" class="form-control" id="flat">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="floor">Floor / الطابق</label>
+                            <input type="text" name="address[floor]" class="form-control" id="floor">
+                        </div>
                     </div>
             </div>
         </div>
