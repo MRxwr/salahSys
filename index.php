@@ -260,10 +260,20 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 ACKNOWLEDGEMENT
             </div>
             <div class="card-body">
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                         <label for="acknowledgement">ACKNOWLEDGEMENT</label>
                         <textarea class="form-control" id="acknowledgement" rows="5" disabled>
 I the undersigned hereby certify that I can swim efficiently and have not experienced any cases of loss of consciousness or epilepsy. I undertake to inform the health authorities responsible for the medical examination if such an incident occurs to me or to suffer any of the diseases in which the leadership of the boat becomes a danger to me or to others. The Law of Small Vessels No. 36/1960, as amended, and the ministerial decrees thereof.
+                        </textarea>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="acknowledgement">ACKNOWLEDGEMENT</label>
+                        <textarea class="form-control" id="acknowledgement" rows="5" disabled>
+اقر أﻧﺎ اﻟﻣوﻗﻊ أدﻧﺎه ﺑﺄﻧﻧﻲ أﺟﯾد اﻟﺳﺑﺎﺣﺔ ﺑﻛﻔﺎءة، ,وأﻧﻧﻲ ﻟم أﺻب ﺑﺄي ﺣﺎﻻت ﻓﻘدان اﻟوﻋﻲ
+أو اﻟﺻرع وأﺗﻌﮭد ﺑﺈﺑﻼغ اﻟﺟﮭﺎت اﻟﺻﺣﯾﺔ اﻟﻣﺳؤوﻟﺔ ﻋن اﻟﻔﺣص اﻟطﺑﻲ ﺣﺎل ﺣدوث
+ﻣﺛل ذﻟك ﻟﻲ أو إﺻﺎﺑﺗﻲ ﺑﺄي ﻣن اﻷﻣراض اﻟﺗﻲ ﺗﺻﺑﺢ ﻣﻌﮭﺎ ﻗﯾﺎدﺗﻲ ﻟﻠﻘﺎرب ﺧطراً ﻋﻠﻲ
+أو ﻋﻠﻰ اﻵﺧرﯾن، ﻛﻣﺎ أﻗر ﺑﺎﻻﻟﺗزام ﺑﻣﺎ ﺟﺎء ﻓﻲ ﻗﺎﻧون اﻟﺳﻔن اﻟﺻﻐﯾرة رﻗم 1960/36
+وتعديلاته والقرارات الوزارية التابعة له.
                         </textarea>
                     </div>
 					<div class="form-group text-center">
