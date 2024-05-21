@@ -3,12 +3,35 @@ require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
 if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullName"]) ){
 	if (is_uploaded_file($_FILES['photo']['tmp_name'])) {
-		$_POST["applicant"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
+		$_POST["attachment"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
 	}else{
-		$_POST["applicant"]["photo"] = "";
+		$_POST["attachment"]["photo"] = "";
+	}
+    if (is_uploaded_file($_FILES['civilId']['tmp_name'])) {
+		$_POST["attachment"]["civilId"] = uploadImageBanner($_FILES['civilId']['tmp_name']);
+	}else{
+		$_POST["attachment"]["civilId"] = "";
+	}
+    if (is_uploaded_file($_FILES['drivingLicence']['tmp_name'])) {
+		$_POST["attachment"]["drivingLicence"] = uploadImageBanner($_FILES['drivingLicence']['tmp_name']);
+	}else{
+		$_POST["attachment"]["drivingLicence"] = "";
+	}
+    if (is_uploaded_file($_FILES['passport']['tmp_name'])) {
+		$_POST["attachment"]["passport"] = uploadImageBanner($_FILES['passport']['tmp_name']);
+	}else{
+		$_POST["attachment"]["passport"] = "";
+	}
+    if (is_uploaded_file($_FILES['PADegree']['tmp_name'])) {
+		$_POST["attachment"]["degree"] = uploadImageBanner($_FILES['degree']['tmp_name']);
+	}else{
+		$_POST["attachment"]["degree"] = "";
 	}
 	$data["applicant"] = json_encode($_POST["applicant"]);
 	$data["address"] = json_encode($_POST["address"]);
+	$data["attachment"] = json_encode($_POST["attachment"]);
+	$data["visa"] = json_encode($_POST["visa"]);
+	$data["sponsor"] = json_encode($_POST["sponsor"]);
 	$data["applicationType"] = $_POST["applicationType"];
 	$data["licenseType"] = $_POST["licenseType"];
 	if( insertDB("applications", $data) ){
@@ -103,7 +126,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
 					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="visaType">Visa Type / نوع الفيزا</label>
-                            <select class="form-control" name="applicant[visaType]" id="visaType" required>
+                            <select class="form-control" name="visa[Type]" id="visaType" required>
                                 <?php
                                 if( $areas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
@@ -117,27 +140,27 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         </div>
                         <div class="form-group col-md-6">
                             <label for="visaExpireyDate">Visa Expirey Date / تاريخ إنتهاء الفيزا</label>
-                            <input type="date" name="applicant[visaExpireyDate]" class="form-control" id="visaExpireyDate">
+                            <input type="date" name="visa[ExpireyDate]" class="form-control" id="visaExpireyDate">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="FLEdate">Fishing License Expiry Date / تاريخ أنتهاء الرخصة البحرية</label>
-                            <input type="date" name="applicant[FLEdate]" class="form-control" id="FLEdate">
+                            <input type="date" name="visa[FLEdate]" class="form-control" id="FLEdate">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="employer">Employer / جهة العمل</label>
-                            <input type="text" name="applicant[employer]" class="form-control" id="employer">
+                            <input type="text" name="sponsor[Employer]" class="form-control" id="employer">
                         </div>
                     </div>
 					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="SponsorsName">Sponsors Name / اسم الكفيل </label>
-                            <input type="text" name="applicant[SponsorsName]" class="form-control" id="SponsorsName">
+                            <input type="text" name="sponsor[Name]" class="form-control" id="SponsorsName">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="sponsorsCivilId">Sponsors Civil ID No. / رقم الهوية للكفيل</label>
-                            <input type="text" name="applicant[sponsorsCivilId]" class="form-control" id="sponsorsCivilId">
+                            <input type="text" name="sponsor[CivilId]" class="form-control" id="sponsorsCivilId">
                         </div>
                     </div>
 					<div class="form-row">
@@ -263,19 +286,19 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                     </div>
                     <div class="form-group col-md-12">
                         <label for="photo">Civil ID / البطاقة المدنية </label>
-                        <input type="file" name="photo" class="form-control-file" id="photo" required>
+                        <input type="file" name="civilId" class="form-control-file" id="civilId" required>
                     </div>
                     <div class="form-group col-md-12">
                         <label for="photo">Driving Licence / رخصة القيادة </label>
-                        <input type="file" name="photo" class="form-control-file" id="photo" required>
+                        <input type="file" name="drivingLicence" class="form-control-file" id="drivingLicence" required>
                     </div>
                     <div class="form-group col-md-12">
                         <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
-                        <input type="file" name="photo" class="form-control-file" id="photo">
+                        <input type="file" name="Passport" class="form-control-file" id="Passport">
                     </div>
                     <div class="form-group col-md-12">
                         <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
-                        <input type="file" name="photo" class="form-control-file" id="photo">
+                        <input type="file" name="PADegree" class="form-control-file" id="PADegree">
                     </div>
                 </div>
             </div>
@@ -289,12 +312,12 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
             <div class="card-body">
             <div class="form-row">
                     <div class="form-group col-md-6">
-                        <textarea class="form-control" id="acknowledgement" rows="5" disabled>
+                        <textarea class="form-control" id="enAcknowledgement" rows="5" disabled>
 I the undersigned hereby certify that I can swim efficiently and have not experienced any cases of loss of consciousness or epilepsy. I undertake to inform the health authorities responsible for the medical examination if such an incident occurs to me or to suffer any of the diseases in which the leadership of the boat becomes a danger to me or to others. The Law of Small Vessels No. 36/1960, as amended, and the ministerial decrees thereof.
                         </textarea>
                     </div>
                     <div class="form-group col-md-6">
-                        <textarea class="form-control" id="acknowledgement" rows="5" disabled>
+                        <textarea class="form-control" id="arAcknowledgement" rows="5" disabled>
 اقر أﻧﺎ اﻟﻣوﻗﻊ أدﻧﺎه ﺑﺄﻧﻧﻲ أﺟﯾد اﻟﺳﺑﺎﺣﺔ ﺑﻛﻔﺎءة، ,وأﻧﻧﻲ ﻟم أﺻب ﺑﺄي ﺣﺎﻻت ﻓﻘدان اﻟوﻋﻲ
 أو اﻟﺻرع وأﺗﻌﮭد ﺑﺈﺑﻼغ اﻟﺟﮭﺎت اﻟﺻﺣﯾﺔ اﻟﻣﺳؤوﻟﺔ ﻋن اﻟﻔﺣص اﻟطﺑﻲ ﺣﺎل ﺣدوث
 ﻣﺛل ذﻟك ﻟﻲ أو إﺻﺎﺑﺗﻲ ﺑﺄي ﻣن اﻷﻣراض اﻟﺗﻲ ﺗﺻﺑﺢ ﻣﻌﮭﺎ ﻗﯾﺎدﺗﻲ ﻟﻠﻘﺎرب ﺧطراً ﻋﻠﻲ
@@ -304,7 +327,7 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
                     </div>
                 </div>
 					<div class="form-group text-center">
-                    	<button type="submit" class="btn btn-primary">Submit form</button>
+                    	<button type="submit" class="btn btn-primary">Submit form / أرسل الطلب</button>
 					</div>
                 </form>
             </div>
