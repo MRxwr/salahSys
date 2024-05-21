@@ -65,7 +65,12 @@ $data = [
     'phone' => '55512345',
     'sponsor_name' => 'Sponsor Name',
     'sponsor_cid' => '9876543210',
-    'applicationType1' => '✔',
+    'new' => '✔',
+    'renew' => '✔',
+    'lost' => '✔',
+    'damage' => '✔',
+    'update' => '✔',
+    'upgrade' => '✔',
 ];
 
 // Map the data to coordinates on the PDF
@@ -90,7 +95,12 @@ $coordinates = [
     'flat' => [25, 127],
     'floor' => [50, 127],
     'phone' => [35, 140],
-    'applicationType1' => [60, 178],
+    'new' => [60, 159],
+    'renew' => [60, 165],
+    'lost' => [60, 171],
+    'damage' => [60, 178],
+    'update' => [60, 185],
+    'upgrade' => [60, 192],
 ];
 
 // Add the data to the PDF
