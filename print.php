@@ -16,7 +16,7 @@ class PDF extends TCPDF
 }
 
 // Path to the pre-made PDF
-$templatePdf = 'pdf/files.pdf';
+$templatePdf = 'pdf/file.pdf';
 
 // Create new PDF instance
 $pdf = new PDF();
@@ -30,7 +30,7 @@ $pdf->SetKeywords('TCPDF, PDF, example, test, guide');
 
 // Import the first page of the template PDF as an image
 $pdf->AddPage();
-$pdf->Image($templatePdf, 0, 0, 210, 297, '', '', '', false, 600, '', false, false, 0);
+$pdf->Image($templatePdf, 0, 0, 210, 297, '', '', '', false, 1200, '', false, false, 0);
 
 // Set font and color for the text
 $pdf->SetFont('helvetica', '', 12);
