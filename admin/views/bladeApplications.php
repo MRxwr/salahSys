@@ -122,9 +122,9 @@ if( isset($_POST["fullName"]) ){
                 </td>
 				<td id="applicationType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["applicationType"] ?></td>
 				<td id="licenseType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["licenseType"] ?></td>
-				<td id="sponsor<?php echo $applications[$i]["id"]?>" >
+				<td id="attchment<?php echo $applications[$i]["id"]?>" >
                     <?php
-                        foreach ($sponsor as $key => $value) {
+                        foreach ($attchments as $key => $value) {
                             echo strtoupper($key)." : ".$value."<br>";
                         }
                     ?>
