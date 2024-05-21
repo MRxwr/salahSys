@@ -69,24 +69,24 @@ $data = [
 // Map the data to coordinates on the PDF
 $coordinates = [
     'full_name' => [60, 55],
-    'civil_id' => [120, 74],
+    'civil_id' => [120, 73],
     'date_of_birth' => [120, 80],
     'gender' => [120, 87],
+    'blood_type' => [120, 96],
+    'nationality' => [120, 103],
+    'visa_type' => [120, 110],
+    'visa_expiry' => [120, 117],
+    'fishing_license_expiry' => [120, 124],
+    'employer' => [120, 131],
+    'sponsor_name' => [120, 138],
+    'sponsor_cid' => [120, 145],
     'area' => [50, 70],
     'street' => [50, 100],
     'block' => [50, 110],
-    'blood_type' => [50, 120],
-    'nationality' => [50, 130],
     'house' => [50, 140],
-    'visa_type' => [50, 150],
-    'visa_expiry' => [50, 160],
     'flat' => [50, 170],
     'floor' => [50, 180],
-    'fishing_license_expiry' => [50, 190],
-    'employer' => [50, 200],
     'phone' => [50, 210],
-    'sponsor_name' => [50, 220],
-    'sponsor_cid' => [50, 230]
 ];
 
 // Add the data to the PDF
