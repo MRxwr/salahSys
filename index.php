@@ -73,8 +73,12 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                 <form action="index" method="post" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="applicantFullName">Applicant Full Name / الاسم الكامل</label>
-                            <input type="text" name="applicant[fullName]" class="form-control" id="applicantFullName" required>
+                            <label for="applicantFullName">Full Name in English / الاسم الكامل بالإنجليزي</label>
+                            <input type="text" name="applicant[enName]" class="form-control" id="applicantEnName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="applicantFullName">Full Name in Arabic / الاسم الكامل بالعربي</label>
+                            <input type="text" name="applicant[arName]" class="form-control" id="applicantArName" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="civilId">Civil ID No. / رقم الهوية</label>
