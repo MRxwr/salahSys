@@ -18,7 +18,7 @@ class PDF extends FPDI
 }
 
 // Path to the pre-made PDF
-$templatePdf = '/pdf/file.pdf';
+$templatePdf = 'pdf/file.pdf';
 
 // Create new PDF instance
 $pdf = new PDF();
