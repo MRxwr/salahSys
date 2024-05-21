@@ -125,7 +125,7 @@ if( isset($_POST["fullName"]) ){
 				<td id="attachment<?php echo $applications[$i]["id"]?>" >
                     <?php
                         foreach ($attachment as $key => $value) {
-                            echo strtoupper($key)." : ".$value."<br>";
+                            echo strtoupper($key)." : <a href='../logos/{$value}' target='_blank'>".direction("View","عرض")."</a><br>";
                         }
                     ?>
                 </td>
