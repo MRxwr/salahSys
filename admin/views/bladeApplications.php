@@ -87,11 +87,11 @@ if( isset($_POST["fullName"]) ){
                 $address = json_decode($applications[$i]["address"],true);
                 $sponsor = json_decode($applications[$i]["sponsor"],true);
                 $visa = json_decode($applications[$i]["visa"],true);
-                $attchments = json_decode($applications[$i]["attchment"],true);
+                $attachment = json_decode($applications[$i]["attachment"],true);
 				?>
 				<tr>
                 <td id="date<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["date"] ?></td>
-                <td><img src="../logos/<?php echo $attchments["photo"] ?>" style="width: 100px;height: 100px;"></td>
+                <td><img src="../logos/<?php echo $attachment["photo"] ?>" style="width: 100px;height: 100px;"></td>
 				<td id="applicant<?php echo $applications[$i]["id"]?>" >
                     <?php
                         foreach ($applicant as $key => $value) {
@@ -122,9 +122,9 @@ if( isset($_POST["fullName"]) ){
                 </td>
 				<td id="applicationType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["applicationType"] ?></td>
 				<td id="licenseType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["licenseType"] ?></td>
-				<td id="attchment<?php echo $applications[$i]["id"]?>" >
+				<td id="attachment<?php echo $applications[$i]["id"]?>" >
                     <?php
-                        foreach ($attchments as $key => $value) {
+                        foreach ($attachment as $key => $value) {
                             echo strtoupper($key)." : ".$value."<br>";
                         }
                     ?>
