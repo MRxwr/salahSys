@@ -82,7 +82,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         </div>
                         <div class="form-group col-md-6">
                             <label for="civilId">Civil ID No. / رقم الهوية</label>
-                            <input type="text" name="applicant[civilId]"class="form-control" id="civilId" required>
+                            <input type="number" name="applicant[civilId]"class="form-control" id="civilId" pattern="[0-9]*" step='1' min='0' minlength="8" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="dob">Date of Birth / تاريخ الميلاد</label>
@@ -91,8 +91,8 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         <div class="form-group col-md-6">
                             <label for="gender">Gender / الجنس</label>
                             <select class="form-control" name="applicant[gender]" id="gender" required>
-                                <option>Male</option>
-                                <option>Female</option>
+                                <option>Male / ذكر</option>
+                                <option>Female / انثى</option>
                             </select>
                         </div>
                         <div class="form-group col-md-6">
@@ -154,11 +154,11 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         </div>
                         <div class="form-group col-md-6">
                             <label for="sponsorsCivilId">Sponsors Civil ID No. / رقم الهوية للكفيل</label>
-                            <input type="text" name="sponsor[CivilId]" class="form-control" id="sponsorsCivilId">
+                            <input type="number" name="sponsor[CivilId]" pattern="[0-9]*" step='1' min='0' minlength="8" class="form-control" id="sponsorsCivilId">
                         </div>
 						<div class="form-group col-md-6">
                             <label for="phone">Personal Phone / هاتف</label>
-                            <input type="tel" name="applicant[phone]" class="form-control" id="phone" required>
+                            <input type="number" name="applicant[phone]" class="form-control" pattern="[0-9]*" step='1' min='0' minlength="8" id="phone" required>
                         </div>
                     </div>
             </div>
