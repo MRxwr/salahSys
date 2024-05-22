@@ -19,6 +19,7 @@ if( isset($_GET["id"]) && !empty($_GET["id"]) ){
             window.close();
         </script>
         <?php
+        die();
     }
 }else{
     ?>
@@ -27,6 +28,7 @@ if( isset($_GET["id"]) && !empty($_GET["id"]) ){
         window.close();
     </script>
     <?php
+    die();
 }
 
 use setasign\Fpdi\Tcpdf\Fpdi;
