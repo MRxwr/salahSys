@@ -148,8 +148,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <label for="employer">Employer / جهة العمل</label>
                             <input type="text" name="sponsor[Employer]" class="form-control" id="employer">
                         </div>
-                    </div>
-					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="SponsorsName">Sponsors Name / اسم الكفيل </label>
                             <input type="text" name="sponsor[Name]" class="form-control" id="SponsorsName">
