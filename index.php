@@ -124,7 +124,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                         </div>
                         <div class="form-group col-md-6">
                             <label for="visaType">Visa Type / نوع الفيزا</label>
-                            <select class="form-control" name="visa[Type]" id="visaType" required>
+                            <select class="form-control" name="visa[Type]" id="visaType">
                                 <?php
                                 if( $areas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
@@ -189,17 +189,17 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="street">Street / الشارع</label>
-                            <input type="text" name="address[street]" class="form-control" id="street">
+                            <input type="text" name="address[street]" class="form-control" id="street" required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="block">Block / القطعة</label>
-                            <input type="text" name="address[block]" class="form-control" id="block">
+                            <input type="text" name="address[block]" class="form-control" id="block" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="house">House / المنزل</label>
-                            <input type="text" name="address[house]" class="form-control" id="house">
+                            <input type="text" name="address[house]" class="form-control" id="house" >
                         </div>
                         <div class="form-group col-md-6">
                             <label for="ave">Ave / الجاده</label>
