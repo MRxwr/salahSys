@@ -84,8 +84,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <label for="civilId">Civil ID No. / رقم الهوية</label>
                             <input type="text" name="applicant[civilId]"class="form-control" id="civilId" required>
                         </div>
-                    </div>
-                    <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="dob">Date of Birth / تاريخ الميلاد</label>
                             <input type="date" name="applicant[dob]" class="form-control" id="dob" required>
@@ -97,8 +95,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 <option>Female</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="bloodType">Blood Type / نوع الدم</label>
 							<select class="form-control" name="applicant[bloodType]" id="bloodType" required>
@@ -126,8 +122,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                                 ?>
                             </select>
                         </div>
-                    </div>
-					<div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="visaType">Visa Type / نوع الفيزا</label>
                             <select class="form-control" name="visa[Type]" id="visaType" required>
@@ -146,8 +140,6 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <label for="visaExpireyDate">Visa Expirey Date / تاريخ إنتهاء الفيزا</label>
                             <input type="date" name="visa[ExpireyDate]" class="form-control" id="visaExpireyDate">
                         </div>
-                    </div>
-                    <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="FLEdate">Fishing License Expiry Date / تاريخ أنتهاء الرخصة البحرية</label>
                             <input type="date" name="visa[FLEdate]" class="form-control" id="FLEdate">
@@ -166,9 +158,7 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
                             <label for="sponsorsCivilId">Sponsors Civil ID No. / رقم الهوية للكفيل</label>
                             <input type="text" name="sponsor[CivilId]" class="form-control" id="sponsorsCivilId">
                         </div>
-                    </div>
-					<div class="form-row">
-						<div class="form-group col-md-12">
+						<div class="form-group col-md-6">
                             <label for="phone">Personal Phone / هاتف</label>
                             <input type="tel" name="applicant[phone]" class="form-control" id="phone" required>
                         </div>
