@@ -84,7 +84,6 @@ $data = [
     'nationality' => ( isset($applicant["nationality"]) && !empty($applicant["nationality"])) ? $applicant["nationality"]: '',
     'bloodType' => ( isset($applicant["bloodType"]) && !empty($applicant["bloodType"])) ? $applicant["bloodType"]: '',
     'phone' => ( isset($applicant["phone"]) && !empty($applicant["phone"])) ? $applicant["phone"]: '',
-
     'area' => ( isset($address["area"]) && !empty($address["area"])) ? $address["area"]: '',   
     'street' => ( isset($address["street"]) && !empty($address["street"])) ? $address["street"]: '',
     'block' => ( isset($address["block"]) && !empty($address["block"])) ? $address["block"]: '',
@@ -92,29 +91,24 @@ $data = [
     'flat' => ( isset($address["flat"]) && !empty($address["flat"])) ? $address["flat"]: '',
     'floor' => ( isset($address["floor"]) && !empty($address["floor"])) ? $address["floor"]: '',
     'ave' => ( isset($address["ave"]) && !empty($address["ave"])) ? $address["ave"]: '',
-
     'visa_type' => ( isset($visa["Type"]) && !empty($visa["Type"])) ? $visa["Type"]: '',
     'visa_expiry' => ( isset($visa["ExpireyDate"]) && !empty($visa["ExpireyDate"])) ? $visa["ExpireyDate"]: '',
     'fishing_license_expiry' => ( isset($visa["FLEdate"]) && !empty($visa["FLEdate"])) ? $visa["FLEdate"]: '',
-
     'employer' => ( isset($sponsor["Employer"]) && !empty($sponsor["Employer"])) ? $sponsor["Employer"]: '',
     'sponsor_name' => ( isset($sponsor["Name"]) && !empty($sponsor["Name"])) ? $sponsor["Name"]: '',
     'sponsor_cid' => ( isset($sponsor["CivilId"]) && !empty($sponsor["CivilId"])) ? $sponsor["CivilId"]: '',
-
     'new' => '✔',
     'renew' => '✔',
     'lost' => '✔',
     'damage' => '✔',
     'update' => '✔',
     'upgrade' => '✔',
-
     'pleasureA' => '✔',
     'pleasureB' => '✔',
     'fishingA' => '✔',
     'fishingB' => '✔',
     'cruise' => '✔',
     'government' => '✔',
-
     'profile' => ( isset($attachment["photo"]) && !empty($attachment["photo"])) ? $attachment["photo"]: '',
     'licenseId' => ( isset($user[0]["licenseId"]) && !empty($user[0]["licenseId"])) ? $user[0]["licenseId"]: '',
 ];
