@@ -1,8 +1,8 @@
 <?php
 require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
-var_dump($_POST);
-if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullName"]) ){
+
+if( isset($_POST) && !empty($_POST) ){
 	if (is_uploaded_file($_FILES['photo']['tmp_name'])) {
 		$_POST["attachment"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
 	}else{
