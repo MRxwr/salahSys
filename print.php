@@ -1,19 +1,20 @@
 <?php
-ob_start();
+ob_start(); // Start output buffering
+
 require 'vendor/autoload.php';
 require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
 
-if( isset($_GET["id"]) && !empty($_GET["id"]) ){
-    if( $user = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
-        $applicant = json_decode($user[0]["applicant"],true);
-        $attachment = json_decode($user[0]["attachment"],true);
-        $address = json_decode($user[0]["address"],true);
-        $visa = json_decode($user[0]["visa"],true);
-        $sponsor = json_decode($user[0]["sponsor"],true);
+if (isset($_GET["id"]) && !empty($_GET["id"])) {
+    if ($user = selectDBNew("applications", [$_GET["id"]], "`id` = ?", "")) {
+        $applicant = json_decode($user[0]["applicant"], true);
+        $attachment = json_decode($user[0]["attachment"], true);
+        $address = json_decode($user[0]["address"], true);
+        $visa = json_decode($user[0]["visa"], true);
+        $sponsor = json_decode($user[0]["sponsor"], true);
         $applicationType = $user[0]["applicationType"];
         $licenseType = $user[0]["licenseType"];
-    }else{
+    } else {
         ?>
         <script>
             alert("Application not found");
@@ -22,7 +23,7 @@ if( isset($_GET["id"]) && !empty($_GET["id"]) ){
         <?php
         die();
     }
-}else{
+} else {
     ?>
     <script>
         alert("Please select an application");
@@ -71,33 +72,33 @@ $pdf->AddPage();
 // Use the imported page
 $pdf->useTemplate($templateId, 0, 0, 210, 297);
 
-// Set font and color for the text
+// Set font to DejaVu Sans to support Unicode characters
 $pdf->SetFont('dejavusans', '', 12);
 $pdf->SetTextColor(0, 0, 0);
 
 // Define the data to fill in
 $data = [
-    'enName' => ( isset($applicant["enName"]) && !empty($applicant["enName"])) ? $applicant["enName"]: '',
-    'arName' => ( isset($applicant["arName"]) && !empty($applicant["arName"])) ? $applicant["arName"]: '',
-    'civilId' => ( isset($applicant["civilId"]) && !empty($applicant["civilId"])) ? $applicant["civilId"]: '',
-    'gender' => ( isset($applicant["gender"]) && !empty($applicant["gender"])) ? $applicant["gender"]: '',
-    'dob' => ( isset($applicant["dob"]) && !empty($applicant["dob"])) ? $applicant["dob"]: '',
-    'nationality' => ( isset($applicant["nationality"]) && !empty($applicant["nationality"])) ? $applicant["nationality"]: '',
-    'bloodType' => ( isset($applicant["bloodType"]) && !empty($applicant["bloodType"])) ? $applicant["bloodType"]: '',
-    'phone' => ( isset($applicant["phone"]) && !empty($applicant["phone"])) ? $applicant["phone"]: '',
-    'area' => ( isset($address["area"]) && !empty($address["area"])) ? $address["area"]: '',   
-    'street' => ( isset($address["street"]) && !empty($address["street"])) ? $address["street"]: '',
-    'block' => ( isset($address["block"]) && !empty($address["block"])) ? $address["block"]: '',
-    'house' => ( isset($address["house"]) && !empty($address["house"])) ? $address["house"]: '',
-    'flat' => ( isset($address["flat"]) && !empty($address["flat"])) ? $address["flat"]: '',
-    'floor' => ( isset($address["floor"]) && !empty($address["floor"])) ? $address["floor"]: '',
-    'ave' => ( isset($address["ave"]) && !empty($address["ave"])) ? $address["ave"]: '',
-    'visa_type' => ( isset($visa["Type"]) && !empty($visa["Type"])) ? $visa["Type"]: '',
-    'visa_expiry' => ( isset($visa["ExpireyDate"]) && !empty($visa["ExpireyDate"])) ? $visa["ExpireyDate"]: '',
-    'fishing_license_expiry' => ( isset($visa["FLEdate"]) && !empty($visa["FLEdate"])) ? $visa["FLEdate"]: '',
-    'employer' => ( isset($sponsor["Employer"]) && !empty($sponsor["Employer"])) ? $sponsor["Employer"]: '',
-    'sponsor_name' => ( isset($sponsor["Name"]) && !empty($sponsor["Name"])) ? $sponsor["Name"]: '',
-    'sponsor_cid' => ( isset($sponsor["CivilId"]) && !empty($sponsor["CivilId"])) ? $sponsor["CivilId"]: '',
+    'enName' => (isset($applicant["enName"]) && !empty($applicant["enName"])) ? $applicant["enName"] : '',
+    'arName' => (isset($applicant["arName"]) && !empty($applicant["arName"])) ? $applicant["arName"] : '',
+    'civilId' => (isset($applicant["civilId"]) && !empty($applicant["civilId"])) ? $applicant["civilId"] : '',
+    'gender' => (isset($applicant["gender"]) && !empty($applicant["gender"])) ? $applicant["gender"] : '',
+    'dob' => (isset($applicant["dob"]) && !empty($applicant["dob"])) ? $applicant["dob"] : '',
+    'nationality' => (isset($applicant["nationality"]) && !empty($applicant["nationality"])) ? $applicant["nationality"] : '',
+    'bloodType' => (isset($applicant["bloodType"]) && !empty($applicant["bloodType"])) ? $applicant["bloodType"] : '',
+    'phone' => (isset($applicant["phone"]) && !empty($applicant["phone"])) ? $applicant["phone"] : '',
+    'area' => (isset($address["area"]) && !empty($address["area"])) ? $address["area"] : '',
+    'street' => (isset($address["street"]) && !empty($address["street"])) ? $address["street"] : '',
+    'block' => (isset($address["block"]) && !empty($address["block"])) ? $address["block"] : '',
+    'house' => (isset($address["house"]) && !empty($address["house"])) ? $address["house"] : '',
+    'flat' => (isset($address["flat"]) && !empty($address["flat"])) ? $address["flat"] : '',
+    'floor' => (isset($address["floor"]) && !empty($address["floor"])) ? $address["floor"] : '',
+    'ave' => (isset($address["ave"]) && !empty($address["ave"])) ? $address["ave"] : '',
+    'visa_type' => (isset($visa["Type"]) && !empty($visa["Type"])) ? $visa["Type"] : '',
+    'visa_expiry' => (isset($visa["ExpireyDate"]) && !empty($visa["ExpireyDate"])) ? $visa["ExpireyDate"] : '',
+    'fishing_license_expiry' => (isset($visa["FLEdate"]) && !empty($visa["FLEdate"])) ? $visa["FLEdate"] : '',
+    'employer' => (isset($sponsor["Employer"]) && !empty($sponsor["Employer"])) ? $sponsor["Employer"] : '',
+    'sponsor_name' => (isset($sponsor["Name"]) && !empty($sponsor["Name"])) ? $sponsor["Name"] : '',
+    'sponsor_cid' => (isset($sponsor["CivilId"]) && !empty($sponsor["CivilId"])) ? $sponsor["CivilId"] : '',
     'new' => '✔',
     'renew' => '✔',
     'lost' => '✔',
@@ -110,8 +111,8 @@ $data = [
     'fishingB' => '✔',
     'cruise' => '✔',
     'government' => '✔',
-    'profile' => ( isset($attachment["photo"]) && !empty($attachment["photo"])) ? $attachment["photo"]: '',
-    'licenseId' => ( isset($user[0]["licenseId"]) && !empty($user[0]["licenseId"])) ? $user[0]["licenseId"]: '',
+    'profile' => (isset($attachment["photo"]) && !empty($attachment["photo"])) ? $attachment["photo"] : '',
+    'licenseId' => (isset($user[0]["licenseId"]) && !empty($user[0]["licenseId"])) ? $user[0]["licenseId"] : '',
 ];
 
 // Map the data to coordinates on the PDF
@@ -164,5 +165,9 @@ foreach ($data as $field => $value) {
     }
 }
 
+// Clear any previous output
+ob_end_clean();
+
 // Output the modified PDF directly to the browser
 $pdf->Output('pdf/filled_template.pdf', 'I');
+?>
