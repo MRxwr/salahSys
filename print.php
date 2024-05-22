@@ -118,7 +118,7 @@ $data = [
 // Map the data to coordinates on the PDF
 $coordinates = [
     'enName' => [60, 55],
-    'arName' => [135, 62],
+    'arName' => [60, 62],
     'civilId' => [120, 73],
     'dob' => [120, 80],
     'gender' => [120, 87],
@@ -130,7 +130,7 @@ $coordinates = [
     'employer' => [120, 127],
     'sponsor_name' => [120, 134],
     'sponsor_cid' => [120, 140],
-    'area' => [32, 87],
+    'area' => [21, 87],
     'street' => [25, 100],
     'block' => [50, 100],
     'house' => [25, 113],
