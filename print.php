@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require 'vendor/autoload.php';
 require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
