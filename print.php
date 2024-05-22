@@ -1,4 +1,29 @@
 <?php
+if( isset($_GET["id"]) && !empty($_GET["id"]) ){
+    if( $user = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
+        $applicant = json_decode($user[0]["applicant"],true);
+        $attachment = json_decode($user[0]["attachment"],true);
+        $address = json_decode($user[0]["address"],true);
+        $visa = json_decode($user[0]["visa"],true);
+        $sponsor = json_decode($user[0]["sponsor"],true);
+        $applicationType = $user[0]["applicationType"];
+        $licenseType = $user[0]["licenseType"];
+    }else{
+        ?>
+        <script>
+            alert("Application not found");
+            window.close();
+        </script>
+        <?php
+    }
+}else{
+    ?>
+    <script>
+        alert("Please select an application");
+        window.close();
+    </script>
+    <?php
+}
 require 'vendor/autoload.php';
 
 use setasign\Fpdi\Tcpdf\Fpdi;
@@ -18,7 +43,7 @@ class PDF extends Fpdi
 
 // Path to the pre-made PDF
 $templatePdf = 'pdf/files.pdf';
-$signatureImage = 'logos/PsjUlBA.png';
+$signatureImage = "logos/{$attachment["photo"]}";
 
 // Create new PDF instance
 $pdf = new PDF();
@@ -46,51 +71,57 @@ $pdf->SetTextColor(0, 0, 0);
 
 // Define the data to fill in
 $data = [
-    'enName' => 'John Doe',
-    'arName' => 'جون دو',
-    'civil_id' => '1234567890',
-    'area' => 'Salmiya',
-    'date_of_birth' => '01/01/1980',
-    'gender' => 'Male',
-    'street' => '10',
-    'block' => '5',
-    'blood_type' => 'O+',
-    'nationality' => 'Kuwaiti',
-    'house' => '12',
-    'visa_type' => 'Work',
-    'visa_expiry' => '01/01/2025',
-    'flat' => '3',
-    'floor' => '2',
-    'ave' => '-',
-    'fishing_license_expiry' => '01/01/2024',
-    'employer' => 'Company Name',
-    'phone' => '55512345',
-    'sponsor_name' => 'Sponsor Name',
-    'sponsor_cid' => '9876543210',
+    'enName' => ( isset($applicant["enName"]) && !empty($applicant["enName"])) ? $applicant["enName"]: '',
+    'arName' => ( isset($applicant["arName"]) && !empty($applicant["arName"])) ? $applicant["arName"]: '',
+    'civilId' => ( isset($applicant["civilId"]) && !empty($applicant["civilId"])) ? $applicant["civilId"]: '',
+    'gender' => ( isset($applicant["gender"]) && !empty($applicant["gender"])) ? $applicant["gender"]: '',
+    'dob' => ( isset($applicant["dob"]) && !empty($applicant["dob"])) ? $applicant["dob"]: '',
+    'nationality' => ( isset($applicant["nationality"]) && !empty($applicant["nationality"])) ? $applicant["nationality"]: '',
+    'bloodType' => ( isset($applicant["bloodType"]) && !empty($applicant["bloodType"])) ? $applicant["bloodType"]: '',
+    'phone' => ( isset($applicant["phone"]) && !empty($applicant["phone"])) ? $applicant["phone"]: '',
+
+    'area' => ( isset($address["area"]) && !empty($address["area"])) ? $address["area"]: '',   
+    'street' => ( isset($address["street"]) && !empty($address["street"])) ? $address["street"]: '',
+    'block' => ( isset($address["block"]) && !empty($address["block"])) ? $address["block"]: '',
+    'house' => ( isset($address["house"]) && !empty($address["house"])) ? $address["house"]: '',
+    'flat' => ( isset($address["flat"]) && !empty($address["flat"])) ? $address["flat"]: '',
+    'floor' => ( isset($address["floor"]) && !empty($address["floor"])) ? $address["floor"]: '',
+    'ave' => ( isset($address["ave"]) && !empty($address["ave"])) ? $address["ave"]: '',
+
+    'visa_type' => ( isset($visa["Type"]) && !empty($visa["Type"])) ? $visa["Type"]: '',
+    'visa_expiry' => ( isset($visa["ExpireyDate"]) && !empty($visa["ExpireyDate"])) ? $visa["ExpireyDate"]: '',
+    'fishing_license_expiry' => ( isset($visa["FLEdate"]) && !empty($visa["FLEdate"])) ? $visa["FLEdate"]: '',
+
+    'employer' => ( isset($sponsor["Employer"]) && !empty($sponsor["Employer"])) ? $sponsor["Employer"]: '',
+    'sponsor_name' => ( isset($sponsor["Name"]) && !empty($sponsor["Name"])) ? $sponsor["Name"]: '',
+    'sponsor_cid' => ( isset($sponsor["CivilId"]) && !empty($sponsor["CivilId"])) ? $sponsor["CivilId"]: '',
+
     'new' => '✔',
     'renew' => '✔',
     'lost' => '✔',
     'damage' => '✔',
     'update' => '✔',
     'upgrade' => '✔',
+
     'pleasureA' => '✔',
     'pleasureB' => '✔',
     'fishingA' => '✔',
     'fishingB' => '✔',
     'cruise' => '✔',
     'government' => '✔',
-    'profile' => 'image',
-    'licenseNumber' => '123456',
+
+    'profile' => ( isset($attachment["photo"]) && !empty($attachment["photo"])) ? $attachment["photo"]: '',
+    'licenseId' => ( isset($user[0]["licenseId"]) && !empty($user[0]["licenseId"])) ? $user[0]["licenseId"]: '',
 ];
 
 // Map the data to coordinates on the PDF
 $coordinates = [
     'enName' => [60, 55],
     'arName' => [135, 62],
-    'civil_id' => [120, 73],
-    'date_of_birth' => [120, 80],
+    'civilId' => [120, 73],
+    'dob' => [120, 80],
     'gender' => [120, 87],
-    'blood_type' => [120, 94],
+    'bloodType' => [120, 94],
     'nationality' => [120, 100],
     'visa_type' => [120, 107],
     'visa_expiry' => [120, 113],
@@ -119,7 +150,7 @@ $coordinates = [
     'cruise' => [148, 185],
     'government' => [148, 192],
     'profile' => [21, 26],
-    'licenseNumber' => [160, 45],
+    'licenseId' => [160, 45],
 ];
 
 // Add the data to the PDF
