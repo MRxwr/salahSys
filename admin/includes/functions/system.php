@@ -168,10 +168,30 @@ function uploadImageBanner($imageLocation){
 			// Write the contents back to a new file
 			file_put_contents($new, $data);
 		}
+		removeImgur($response["data"]["deletehash"]);
 		return $fileTitle; 
 	}else{
 		return "";
 	}
+}
+
+function removeImgur($hash){
+	$curl = curl_init();
+	curl_setopt_array($curl, array(
+	CURLOPT_URL => "https://api.imgur.com/3/image/{$hash}",
+	CURLOPT_RETURNTRANSFER => true,
+	CURLOPT_ENCODING => '',
+	CURLOPT_MAXREDIRS => 10,
+	CURLOPT_TIMEOUT => 0,
+	CURLOPT_FOLLOWLOCATION => true,
+	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+	CURLOPT_CUSTOMREQUEST => 'DELETE',
+	CURLOPT_HTTPHEADER => array(
+		'Authorization: Client-ID 386563124e58e6c'
+	),
+	));
+	curl_exec($curl);
+	curl_close($curl);
 }
 
 function showLogo(){
