@@ -1,6 +1,9 @@
 <?php
 require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
+require 'vendor/autoload.php';
+use setasign\Fpdi\Tcpdf\Fpdi;
+
 if( isset($_GET["id"]) && !empty($_GET["id"]) ){
     if( $user = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
         $applicant = json_decode($user[0]["applicant"],true);
@@ -26,9 +29,6 @@ if( isset($_GET["id"]) && !empty($_GET["id"]) ){
     </script>
     <?php
 }
-require 'vendor/autoload.php';
-
-use setasign\Fpdi\Tcpdf\Fpdi;
 
 class PDF extends Fpdi
 {
