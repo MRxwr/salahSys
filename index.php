@@ -1,6 +1,7 @@
 <?php
 require_once("admin/includes/config.php");
 require_once("admin/includes/functions.php");
+var_dump($_POST);
 if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullName"]) ){
 	if (is_uploaded_file($_FILES['photo']['tmp_name'])) {
 		$_POST["attachment"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
@@ -61,16 +62,18 @@ if( isset($_POST["applicant"]["fullName"]) && !empty($_POST["applicant"]["fullNa
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<form action="" method="post" enctype="multipart/form-data">
     <div class="container my-4">
         <h1 class="text-center">Application for Skipper License</h1>
         
         <!-- Applicant Information -->
+    
         <div class="card my-4">
             <div class="card-header">
                 Applicant Information / معلومات الطالب
             </div>
             <div class="card-body">
-                <form action="index" method="post" enctype="multipart/form-data">
+                
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="applicantFullName">Full Name in English / الاسم الكامل بالإنجليزي</label>
@@ -321,10 +324,11 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
 					<div class="form-group text-center">
                     	<button type="submit" class="btn btn-primary">Submit form / أرسل الطلب</button>
 					</div>
-                </form>
+                
             </div>
         </div>
     </div>
+    </form>
     <!-- Bootstrap 4 JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
