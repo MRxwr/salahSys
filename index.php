@@ -35,6 +35,7 @@ if( isset($_POST) && !empty($_POST) ){
 	$data["sponsor"] = json_encode($_POST["sponsor"]);
 	$data["applicationType"] = $_POST["applicationType"];
 	$data["licenseType"] = $_POST["licenseType"];
+	$data["locationId"] = $_POST["locationId"];
 	if( insertDB("applications", $data) ){
 		?>
 		<script>
@@ -65,7 +66,29 @@ if( isset($_POST) && !empty($_POST) ){
 <form action="" method="post" enctype="multipart/form-data">
     <div class="container my-4">
         <h1 class="text-center">Application for Skipper License</h1>
-        
+        <!-- Application Type -->
+        <div class="card my-4">
+            <div class="card-header">
+                Location / المكان
+            </div>
+            <div class="card-body">
+                    <div class="form-group">
+                        <label for="applicationType">Test Location / مكان الإختبار </label>
+                        <select class="form-control" name="locationId" id="applicationType" required>
+                                <?php
+                                if( $locations = selectDB("location","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $locations as $location ){
+                                        ?>
+                                        <option value="<?= $location["id"] ?>"><?= $location["enTitle"] . " - " . $location["arTitle"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                        </select>
+                    </div>
+            </div>
+        </div>
+
         <!-- Applicant Information -->
     
         <div class="card my-4">
@@ -235,7 +258,7 @@ if( isset($_POST) && !empty($_POST) ){
                                 if( $areas = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
+                                        <option value="<?= $area["id"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -258,7 +281,7 @@ if( isset($_POST) && !empty($_POST) ){
                                 if( $areas = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
+                                        <option value="<?= $area["id"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }

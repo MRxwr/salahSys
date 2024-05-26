@@ -67,13 +67,12 @@ if( isset($_POST["fullName"]) ){
 		<thead>
 		<tr>
 		<th><?php echo direction("Date","التاريخ") ?></th>
-		<th><?php echo direction("Applicant","الطالب") ?></th>
-		<th><?php echo direction("Visa","التأشيره") ?></th>
-		<th><?php echo direction("Sponsor","الكفيل") ?></th>
-		<th><?php echo direction("Address","العنوان") ?></th>
+		<th><?php echo direction("English Name","الإسم بالإنجليزي") ?></th>
+		<th><?php echo direction("Arabic Name","الإسم بالعربي") ?></th>
+		<th><?php echo direction("Mobile","الهاتف") ?></th>
+		<th><?php echo direction("Location","المكان") ?></th>
 		<th><?php echo direction("Application Type","نوع الطلب") ?></th>
 		<th><?php echo direction("License Type","نوع الرخصة") ?></th>
-		<th><?php echo direction("Attachments","المرفقات") ?></th>
 		<th class="text-nowrap"><?php echo direction("Actions","الخيارات") ?></th>
 		</tr>
 		</thead>
@@ -83,50 +82,30 @@ if( isset($_POST["fullName"]) ){
 		if( $applications = selectDB("applications","`status` = '0' AND `hidden` = '0' ORDER BY `id` DESC") ){
 			for( $i = 0; $i < sizeof($applications); $i++ ){
                 $applicant = json_decode($applications[$i]["applicant"],true);
-                $address = json_decode($applications[$i]["address"],true);
-                $sponsor = json_decode($applications[$i]["sponsor"],true);
-                $visa = json_decode($applications[$i]["visa"],true);
-                $attachment = json_decode($applications[$i]["attachment"],true);
+                if( $location = selectDB("location","`id` = '{$applications[$i]["locationId"]}'") ){
+					$location = direction($location[0]["enTitle"],$location[0]["arTitle"]);
+				}else{
+					$location = "";
+				}
+                if( $applicationtype = selectDB("applicationtype","`id` = '{$applications[$i]["applicationType"]}'") ){
+					$applicationType = direction($applicationtype[0]["enTitle"],$applicationtype[0]["arTitle"]);
+				}else{
+					$applicationType = "";
+				}
+                if( $licenseType = selectDB("licenseType","`id` = '{$applications[$i]["licenseType"]}'") ){
+					$licenseType = direction($licenseType[0]["enTitle"],$licenseType[0]["arTitle"]);
+				}else{
+					$licenseType = "";
+				}
 				?>
 				<tr>
                 <td id="date<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["date"] ?></td>
-				<td id="applicant<?php echo $applications[$i]["id"]?>" >
-                    <?php
-                        foreach ($applicant as $key => $value) {
-                            echo strtoupper($key)." : ".$value."<br>";
-                        }
-                    ?>
-                </td>
-				<td id="visa<?php echo $applications[$i]["id"]?>" >
-                    <?php
-                        foreach ($visa as $key => $value) {
-                            echo strtoupper($key)." : ".$value."<br>";
-                        }
-                    ?>
-                </td>
-				<td id="sponsor<?php echo $applications[$i]["id"]?>" >
-                    <?php
-                        foreach ($sponsor as $key => $value) {
-                            echo strtoupper($key)." : ".$value."<br>";
-                        }
-                    ?>
-                </td>
-				<td id="address<?php echo $applications[$i]["id"]?>" >
-                    <?php
-                        foreach ($address as $key => $value) {
-                            echo strtoupper($key)." : ".$value."<br>";
-                        }
-                    ?>
-                </td>
-				<td id="applicationType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["applicationType"] ?></td>
-				<td id="licenseType<?php echo $applications[$i]["id"]?>" ><?php echo $applications[$i]["licenseType"] ?></td>
-				<td id="attachment<?php echo $applications[$i]["id"]?>" >
-                    <?php
-                        foreach ($attachment as $key => $value) {
-                            echo strtoupper($key)." : <a href='../logos/{$value}' target='_blank'>".direction("View","عرض")."</a><br>";
-                        }
-                    ?>
-                </td>
+				<td id="enName<?php echo $applications[$i]["id"]?>" ><?php echo $applicant["enName"] ?></td>
+				<td id="arName<?php echo $applications[$i]["id"]?>" ><?php echo $applicant["arName"] ?></td>
+				<td id=" mobile<?php echo $applications[$i]["id"]?>" ><?php echo $applicant["phone"] ?></td>
+				<td><?php echo $location ?></td>
+				<td><?php echo $applicationType ?></td>
+				<td><?php echo $licenseType ?></td>
 				<td class="text-nowrap">
 					<a href="?v=ClientInfo&id=<?php echo $applications[$i]["id"] ?>" class="mr-25" data-toggle="tooltip" data-original-title="<?php echo direction("More","المزيد") ?>"> <i class="fa fa-plus text-inverse m-r-10"></i>
 					<a href="<?php echo "?v={$_GET["v"]}&delId={$applications[$i]["id"]}" ?>" data-toggle="tooltip" data-original-title="<?php echo direction("Delete","حذف") ?>"><i class="fa fa-close text-danger"></i>

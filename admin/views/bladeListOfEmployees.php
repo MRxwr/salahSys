@@ -64,7 +64,7 @@ if( isset($_POST["fullName"]) ){
 	<form class="" method="POST" action="" enctype="multipart/form-data">
 		<div class="row m-0">
 
-			<div class="col-md-12">
+			<div class="col-md-6">
 			<label><?php echo direction("Type","النوع") ?></label>
 			<select name="empType" class="form-control">
 				<?php 
@@ -72,6 +72,20 @@ if( isset($_POST["fullName"]) ){
 					for( $i = 0; $i < sizeof($roles); $i++ ){
 						$title = direction($roles[$i]["enTitle"],$roles[$i]["arTitle"]);
 						echo "<option value='{$roles[$i]["id"]}'>{$title}</option>";
+					}
+				}
+				?>
+			</select>
+			</div>
+
+			<div class="col-md-6">
+			<label><?php echo direction("Location","المكان") ?></label>
+			<select name="locationId" class="form-control">
+				<?php 
+				if( $location = selectDB("location","`status` = '0' AND `hidden` = '1'") ){
+					for( $i = 0; $i < sizeof($location); $i++ ){
+						$title = direction($location[$i]["enTitle"],$location[$i]["arTitle"]);
+						echo "<option value='{$location[$i]["id"]}'>{$title}</option>";
 					}
 				}
 				?>
@@ -129,6 +143,7 @@ if( isset($_POST["fullName"]) ){
 		<th><?php echo direction("Email","الإيميل") ?></th>
 		<th><?php echo direction("Mobile","الهاتف") ?></th>
 		<th><?php echo direction("Type","النوع") ?></th>
+		<th><?php echo direction("Location","المكان") ?></th>
 		<th class="text-nowrap"><?php echo direction("الخيارات","Actions") ?></th>
 		</tr>
 		</thead>
@@ -161,6 +176,12 @@ if( isset($_POST["fullName"]) ){
 				}else{
 					$employee = "";
 				}
+
+				if( $location = selectDB("location","`id` = '{$employees[$i]["locationId"]}'") ){
+					$location = direction($location[0]["enTitle"],$location[0]["arTitle"]);
+				}else{
+					$location = "";
+				}
 				
 				?>
 				<tr>
@@ -168,6 +189,7 @@ if( isset($_POST["fullName"]) ){
 				<td id="email<?php echo $employees[$i]["id"]?>" ><?php echo $employees[$i]["email"] ?></td>
 				<td id="mobile<?php echo $employees[$i]["id"]?>" ><?php echo $employees[$i]["phone"] ?></td>
 				<td><?php echo $employee ?></td>
+				<td><?php echo $location ?></td>
 				<td class="text-nowrap">
 				
 				<a id="<?php echo $employees[$i]["id"] ?>" class="mr-25 edit" data-toggle="tooltip" data-original-title="<?php echo direction("Edit","تعديل") ?>"> <i class="fa fa-pencil text-inverse m-r-10"></i>
@@ -178,7 +200,7 @@ if( isset($_POST["fullName"]) ){
 				</a>
 				<div style="display:none">
 					<label id="type<?php echo $employees[$i]["id"]?>"><?php echo $employees[$i]["empType"] ?></label>
-					<label id="shop<?php echo $employees[$i]["id"]?>"><?php echo $employees[$i]["shopId"] ?></label></div>				
+					<label id="location<?php echo $employees[$i]["id"]?>"><?php echo $employees[$i]["locationId"] ?></label></div>				
 				</td>
 				</tr>
 				<?php
@@ -202,6 +224,7 @@ if( isset($_POST["fullName"]) ){
 		var name = $("#name"+id).html();
 		var mobile = $("#mobile"+id).html();
 		var type = $("#type"+id).html();
+		var location = $("#location"+id).html();
 		var logo = $("#logo"+id).html();
 		$("input[name=password]").prop("required",false);
 		$("input[name=email]").val(email);
@@ -210,5 +233,6 @@ if( isset($_POST["fullName"]) ){
 		$("input[name=fullName]").val(name);
 		$("input[name=fullName]").focus();
 		$("select[name=empType]").val(type);
+		$("select[name=location]").val(location);
 	})
 </script>

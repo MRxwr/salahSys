@@ -1,19 +1,19 @@
 <?php 
 if( isset($_GET["hide"]) && !empty($_GET["hide"]) ){
-	if( updateDB('roles',array('hidden'=> '2'),"`id` = '{$_GET["hide"]}'") ){
-		header("LOCATION: ?v=Roles");
+	if( updateDB('location',array('hidden'=> '2'),"`id` = '{$_GET["hide"]}'") ){
+		header("LOCATION: ?v=Location");
 	}
 }
 
 if( isset($_GET["show"]) && !empty($_GET["show"]) ){
-	if( updateDB('roles',array('hidden'=> '1'),"`id` = '{$_GET["show"]}'") ){
-		header("LOCATION: ?v=Roles");
+	if( updateDB('location',array('hidden'=> '1'),"`id` = '{$_GET["show"]}'") ){
+		header("LOCATION: ?v=Location");
 	}
 }
 
 if( isset($_GET["delId"]) && !empty($_GET["delId"]) ){
-	if( updateDB('roles',array('status'=> '1'),"`id` = '{$_GET["delId"]}'") ){
-		header("LOCATION: ?v=Roles");
+	if( updateDB('location',array('status'=> '1'),"`id` = '{$_GET["delId"]}'") ){
+		header("LOCATION: ?v=Location");
 	}
 }
 if( isset($_POST["enTitle"]) ){
@@ -21,8 +21,8 @@ if( isset($_POST["enTitle"]) ){
 	unset($_POST["update"]);
 	if ( $id == 0 ){
 		$_POST["hidden"] = '1';
-		if( insertDB("roles", $_POST) ){
-			header("LOCATION: ?v=Roles");
+		if( insertDB("location", $_POST) ){
+			header("LOCATION: ?v=Location");
 		}else{
 		?>
 		<script>
@@ -31,8 +31,8 @@ if( isset($_POST["enTitle"]) ){
 		<?php
 		}
 	}else{
-		if( updateDB("roles", $_POST, "`id` = '{$id}'") ){
-			header("LOCATION: ?v=Roles");
+		if( updateDB("location", $_POST, "`id` = '{$id}'") ){
+			header("LOCATION: ?v=Location");
 		}else{
 		?>
 		<script>
@@ -48,7 +48,7 @@ if( isset($_POST["enTitle"]) ){
 <div class="panel panel-default card-view">
 <div class="panel-heading">
 <div class="pull-left">
-	<h6 class="panel-title txt-dark"><?php echo direction("ٌRole Details","تفاصيل العضوية") ?></h6>
+	<h6 class="panel-title txt-dark"><?php echo direction("Location Details","تفاصيل المكان") ?></h6>
 </div>
 	<div class="clearfix"></div>
 </div>
@@ -82,7 +82,7 @@ if( isset($_POST["enTitle"]) ){
 <div class="panel panel-default card-view">
 <div class="panel-heading">
 <div class="pull-left">
-<h6 class="panel-title txt-dark"><?php echo direction("List of Roles","أنواع العضويات") ?></h6>
+<h6 class="panel-title txt-dark"><?php echo direction("List of Locations","قائمة الأماكن") ?></h6>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -93,15 +93,15 @@ if( isset($_POST["enTitle"]) ){
 	<table class="table display responsive product-overview mb-30" id="myTable">
 		<thead>
 		<tr>
-		<th><?php echo direction("English Title","العنوان") ?></th>
-		<th><?php echo direction("Arabic Title","الرابط") ?></th>
+		<th><?php echo direction("English Title","العنوان بالإنجليزي") ?></th>
+		<th><?php echo direction("Arabic Title","العنوان بالعربي") ?></th>
 		<th class="text-nowrap"><?php echo direction("الخيارات","Actions") ?></th>
 		</tr>
 		</thead>
 		
 		<tbody>
 		<?php 
-		if( $roles = selectDB("roles","`status` = '0' ORDER BY `id` ASC") ){
+		if( $roles = selectDB("location","`status` = '0' ORDER BY `id` ASC") ){
 		for( $i = 0; $i < sizeof($roles); $i++ ){
             if ( $roles[$i]["hidden"] == 2 ){
                 $icon = "fa fa-eye";
@@ -117,15 +117,12 @@ if( isset($_POST["enTitle"]) ){
 		<td id="enTitle<?php echo $roles[$i]["id"]?>" ><?php echo $roles[$i]["enTitle"] ?></td>
 		<td id="arTitle<?php echo $roles[$i]["id"]?>" ><?php echo $roles[$i]["arTitle"] ?></td>
 		<td class="text-nowrap">
-		
-		<a href="?v=RolesEdit&id=<?php echo $roles[$i]["id"] ?>" class="mr-25 edit" data-toggle="tooltip" data-original-title="<?php echo direction("Edit","تعديل") ?>"> <i class="fa fa-list text-inverse m-r-10"></i>
-		</a>
-		<a id="<?php echo $roles[$i]["id"] ?>" class="mr-25 edit" data-toggle="tooltip" data-original-title="<?php echo direction("Edit","تعديل") ?>"> <i class="fa fa-pencil text-inverse m-r-10"></i>
-		</a>
-		<a href="<?php echo $link ?>" class="mr-25" data-toggle="tooltip" data-original-title="<?php echo $hide ?>"> <i class="<?php echo $icon ?> text-inverse m-r-10"></i>
-		</a>
-		<a href="<?php echo "?v={$_GET["v"]}&delId={$roles[$i]["id"]}" ?>" data-toggle="tooltip" data-original-title="<?php echo direction("Delete","حذف") ?>"><i class="fa fa-close text-danger"></i>
-		</a>
+			<a id="<?php echo $roles[$i]["id"] ?>" class="mr-25 edit" data-toggle="tooltip" data-original-title="<?php echo direction("Edit","تعديل") ?>"> <i class="fa fa-pencil text-inverse m-r-10"></i>
+		    </a>
+		    <a href="<?php echo $link ?>" class="mr-25" data-toggle="tooltip" data-original-title="<?php echo $hide ?>"> <i class="<?php echo $icon ?> text-inverse m-r-10"></i>
+	    	</a>
+		    <a href="<?php echo "?v={$_GET["v"]}&delId={$roles[$i]["id"]}" ?>" data-toggle="tooltip" data-original-title="<?php echo direction("Delete","حذف") ?>"><i class="fa fa-close text-danger"></i>
+		    </a>
 		</td>
 		</tr>
 		<?php
