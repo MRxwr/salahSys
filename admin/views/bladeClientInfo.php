@@ -1,5 +1,10 @@
 <?php 
-if( $user = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
+if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
+	$applicant = json_decode($application[0]["applicant"],true);
+	$address = json_decode($application[0]["address"],true);
+	$visa = json_decode($application[0]["visa"],true);
+	$sponsor = json_decode($application[0]["sponsor"],true);
+	$attachment = json_decode($application[0]["attachment"],true);
 }else{
 	header("LOCATION: ?v=Applications");die();
 }
@@ -14,37 +19,21 @@ if( $user = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 				<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("User Details","معلومات العضو") ?></h6>
 				<hr class="light-grey-hr"/>
 				<div class="row">
+					
 					<div class="col-md-6">
 						<div class="form-group">
-						<label class="control-label mb-10">Name</label>
-						<input type="text" id="enname" class="form-control" value="<?php echo $user[0]["fullName"];?>" disabled>
+						<label class="control-label mb-10"><? echo direction("English Name","الاسم باللغة الانجليزية") ?></label>
+						<input type="text" id="applicant[enName]" class="form-control" value="<?php echo $applicant["enName"];?>">
 						</div>
 					</div>
-					<!--/span-->
-					<div class="col-md-6">
-						<div class="form-group">
-						<label class="control-label mb-10">E-mail</label>
-						<input type="text" id="arname" class="form-control" value="<?php echo $user[0]["email"];?>" disabled>
-						</div>
-					</div>
-					<!--/span-->
-				</div>
 
-				<div class="row">
 					<div class="col-md-6">
 						<div class="form-group">
-						<label class="control-label mb-10">Phone</label>
-						<input type="text" id="enname" class="form-control" value="<?php echo $user[0]["phone"];?>" disabled>
+						<label class="control-label mb-10"><? echo direction("Arabic Name","الاسم باللغة العربية") ?></label>
+						<input type="text" id="applicant[arName]" class="form-control" value="<?php echo $applicant["arName"];?>">
 						</div>
 					</div>
-					<!--/span-->
-					<div class="col-md-6">
-						<div class="form-group">
-						<label class="control-label mb-10">Joinging Date</label>
-						<input type="text" id="arname" class="form-control" value="<?php $date = explode(" ",$user[0]["date"]); echo $date[0];?>" disabled>
-						</div>
-					</div>
-					<!--/span-->
+
 				</div>
 			</form>
 		</div>
