@@ -34,6 +34,78 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						</div>
 					</div>
 
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Civil Id","الرقم المدني") ?></label>
+						<input type="number" step="any" minlength="12" maxlength="12" id="applicant[civilId]" class="form-control" value="<?php echo $applicant["civilId"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Date of birth","تاريخ الميلاد") ?></label>
+						<input type="date" id="applicant[dob]" class="form-control" value="<?php echo $applicant["dob"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Mobile Number","رقم الجوال") ?></label>
+						<input type="number" step="any" minlength="8" maxlength="8" id="applicant[phone]" class="form-control" value="<?php echo $applicant["phone"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Gender","الجنس") ?></label>
+						<select class="form-control" name="applicant[gender]">
+							<?
+							$selectedMale = ($applicant["gender"] == "Male") ? "selected" : "";
+							$selectedFemale = ($applicant["gender"] == "Female") ? "selected" : "";
+							?>
+							<option <? echo $selectedMale ?>>Male / ذكر</option>
+							<option <? echo $selectedFemale ?>>Female / انثى</option>
+						</select>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Gender","الجنس") ?></label>
+						<select class="form-control" name="applicant[bloodType]">
+							<?
+							$types = ["O+","O-","A+","A-","B+","B-","AB+","AB-"];
+							for( $i = 0; $i < sizeof($types); $i++ ){
+								$selected = ($types[$i] == $applicant["bloodType"]) ? "selected" : "";
+								?>
+								<option <? echo $selected ?>><?php echo $types[$i] ?></option>
+								<?php
+							}
+							?>
+						</select>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Gender","الجنس") ?></label>
+						<select class="form-control" name="applicant[nationality]">
+							<?php
+                                if( $countries = selectDB("cities","`status` = '1' GROUP BY `CountryName` ORDER BY `CountryName` ASC") ){
+                                    foreach( $countries as $country ){
+										// check if selected
+										$selected = ($country["id"] == $applicant["nationality"]) ? "selected" : "";
+                                        ?>
+                                        <option value="<?= $country["id"] ?>" <? echo $selected ?>><?= $country["CountryName"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
+						</select>
+						</div>
+					</div>
+
 				</div>
 			</form>
 		</div>
