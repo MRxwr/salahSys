@@ -92,7 +92,7 @@ if( isset($_POST["fullName"]) ){
 				}else{
 					$applicationType = "";
 				}
-                if( $licenseType = selectDB("licenseType","`id` = '{$applications[$i]["licenseType"]}'") ){
+                if( $licenseType = selectDB("licensetype","`id` = '{$applications[$i]["licenseType"]}'") ){
 					$licenseType = direction($licenseType[0]["enTitle"],$licenseType[0]["arTitle"]);
 				}else{
 					$licenseType = "";
