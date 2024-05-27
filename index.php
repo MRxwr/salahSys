@@ -141,7 +141,7 @@ if( isset($_POST) && !empty($_POST) ){
                                 if( $countries = selectDB("cities","`status` = '1' GROUP BY `CountryName` ORDER BY `CountryName` ASC") ){
                                     foreach( $countries as $country ){
                                         ?>
-                                        <option value="<?= $country["CountryName"] ?>"><?= $country["CountryName"] ?></option>
+                                        <option value="<?= $country["id"] ?>"><?= $country["CountryName"] ?></option>
                                         <?php
                                     }
                                 }
@@ -152,10 +152,10 @@ if( isset($_POST) && !empty($_POST) ){
                             <label for="visaType">Visa Type / نوع الفيزا</label>
                             <select class="form-control" name="visa[Type]" id="visaType">
                                 <?php
-                                if( $areas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
-                                    foreach( $areas as $area ){
+                                if( $visas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $visas as $visa ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
+                                        <option value="<?= $visa["id"] ?>"><?= $visa["enTitle"] . " - " . $visa["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -204,7 +204,7 @@ if( isset($_POST) && !empty($_POST) ){
                                 if( $areas = selectDB("areas","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $areas as $area ){
                                         ?>
-                                        <option value="<?= $area["enTitle"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
+                                        <option value="<?= $area["id"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -255,10 +255,10 @@ if( isset($_POST) && !empty($_POST) ){
                         <label for="applicationType">Application Type / نوع الطلب</label>
                         <select class="form-control" name="applicationType" id="applicationType" required>
                                 <?php
-                                if( $areas = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
-                                    foreach( $areas as $area ){
+                                if( $applicationTypes = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $applicationTypes as $applicationType ){
                                         ?>
-                                        <option value="<?= $area["id"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
+                                        <option value="<?= $applicationType["id"] ?>"><?= $applicationType["enTitle"] . " - " . $applicationType["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
@@ -278,10 +278,10 @@ if( isset($_POST) && !empty($_POST) ){
                         <label for="licenseType">License Type / نوع الرخصة</label>
                         <select class="form-control" name="licenseType" id="licenseType" required>
                                 <?php
-                                if( $areas = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
-                                    foreach( $areas as $area ){
+                                if( $licenseTypes = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $licenseTypes as $licenseType ){
                                         ?>
-                                        <option value="<?= $area["id"] ?>"><?= $area["enTitle"] . " - " . $area["arTitle"] ?></option>
+                                        <option value="<?= $licenseType["id"] ?>"><?= $licenseType["enTitle"] . " - " . $licenseType["arTitle"] ?></option>
                                         <?php
                                     }
                                 }
