@@ -27,29 +27,50 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 				<div class="row">
 
 					<!-- application Info -->
-					<div class="col-12">
+					<div class="col-12 text-center">
 					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Application Info","معلومات الطلب") ?></h6>
 					<hr class="light-grey-hr"/>
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("License ID","رقم الرخصة") ?></label>
-						<input type="text" name="licenseId" class="form-control" value="<?php echo $applicant["licenseId"];?>">
+						<input type="text" name="licenseId" class="form-control" value="<?php echo $application["licenseId"];?>">
 						</div>
 					</div>
 
-					<div class="col-md-6">
+					<!-- location -->
+
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="control-label mb-10"><? echo direction("Test Location","موقع الإختبار") ?></label>
+							<select class="form-control" name="locationId" id="licenseType">
+								<?php
+								if( $locations = selectDB("location","`status` = '0' ORDER BY `enTitle` ASC") ){
+									foreach( $locations as $location ){
+										// check if selected
+										$selected = ($location["id"] == $application["locationId"]) ? "selected" : "";
+										?>
+										<option value="<?= $location["id"] ?>" <? echo $selected ?>><?= $location["enTitle"] . " - " . $location["arTitle"] ?></option>
+										<?php
+									}
+								}
+								?>
+							</select>
+						</div>
+					</div>
+
+					<div class="col-md-4">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Test Date","تاريخ الاختبار") ?></label>
-						<input type="date" name="testDate" class="form-control" value="<?php echo $applicant["testDate"];?>">
+						<input type="date" name="testDate" class="form-control" value="<?php echo $application["testDate"];?>">
 						</div>
 					</div>
 
 					<!-- applicant -->
-					<div class="col-12">
-					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Applicant Details","بيانات مقدم الطلب") ?></h6>
-					<hr class="light-grey-hr"/>
+					<div class="col-12 text-center">
+						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Applicant Details","بيانات مقدم الطلب") ?></h6>
+						<hr class="light-grey-hr"/>
 					</div>
 
 					<div class="col-md-6">
@@ -138,6 +159,11 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<!-- address -->
 
+					<div class="col-12 text-center">
+						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Address Details","عنوان مقدم الطلب") ?></h6>
+						<hr class="light-grey-hr"/>
+					</div>
+
 					<div class="col-md-12">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Area","المنطقة") ?></label>
@@ -201,6 +227,11 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<!-- visa -->
 
+					<div class="col-12 text-center">
+						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Visa Details","فيزا مقدم الطلب") ?></h6>
+						<hr class="light-grey-hr"/>
+					</div>
+
 					<div class="col-md-4">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Visa Type","نوع الفيزا") ?></label>
@@ -236,6 +267,11 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<!-- sponsor -->
 
+					<div class="col-12 text-center">
+						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Sponsors Details","بيانات الكفيل") ?></h6>
+						<hr class="light-grey-hr"/>
+					</div>
+
 					<div class="col-md-4">
 						<div class="form-group">
                             <label class="control-label mb-10"><? echo direction("Employer","جهة العمل") ?></label>
@@ -256,8 +292,12 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					</div>
 
 					<!-- application Type -->
+					<div class="col-12 text-center">
+						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Type","نوع") ?></h6>
+						<hr class="light-grey-hr"/>
+					</div>
 
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="form-group">
 							<label class="control-label mb-10"><? echo direction("Application Type","نوع الطلب") ?></label>
 							<select class="form-control" name="applicationType" id="applicationType">
@@ -278,7 +318,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					
 					<!-- license Type -->
 
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="form-group">
 							<label class="control-label mb-10"><? echo direction("License Type","نوع الرخصة") ?></label>
 							<select class="form-control" name="licenseType" id="licenseType">
@@ -297,28 +337,11 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						</div>
 					</div>
 
-					<!-- location -->
-
-					<div class="col-md-12">
-						<div class="form-group">
-							<label class="control-label mb-10"><? echo direction("Test Location","موقع الإختبار") ?></label>
-							<select class="form-control" name="locationId" id="licenseType">
-								<?php
-								if( $locations = selectDB("location","`status` = '0' ORDER BY `enTitle` ASC") ){
-									foreach( $locations as $location ){
-										// check if selected
-										$selected = ($location["id"] == $application["locationId"]) ? "selected" : "";
-										?>
-										<option value="<?= $location["id"] ?>" <? echo $selected ?>><?= $location["enTitle"] . " - " . $location["arTitle"] ?></option>
-										<?php
-									}
-								}
-								?>
-							</select>
-						</div>
-					</div>
-
 					<!-- attchaments -->
+					<div class="col-12 text-center">
+						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Attachments","المرفقات") ?></h6>
+						<hr class="light-grey-hr"/>
+					</div>
 
 					<div class="col-md-6">
 					<div class="form-group">
