@@ -36,7 +36,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<div class="col-md-4">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("License ID","رقم الرخصة") ?></label>
-						<input type="text" name="licenseId" class="form-control" value="<?php echo $application["licenseId"];?>">
+						<input type="text" name="licenseId" class="form-control" value="<?php echo $application[0]["licenseId"];?>">
 						</div>
 					</div>
 
@@ -50,7 +50,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 								if( $locations = selectDB("location","`status` = '0' ORDER BY `enTitle` ASC") ){
 									foreach( $locations as $location ){
 										// check if selected
-										$selected = ($location["id"] == $application["locationId"]) ? "selected" : "";
+										$selected = ($location["id"] == $application[0]["locationId"]) ? "selected" : "";
 										?>
 										<option value="<?= $location["id"] ?>" <? echo $selected ?>><?= $location["enTitle"] . " - " . $location["arTitle"] ?></option>
 										<?php
@@ -64,7 +64,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<div class="col-md-4">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Test Date","تاريخ الاختبار") ?></label>
-						<input type="date" name="testDate" class="form-control" value="<?php echo $application["testDate"];?>">
+						<input type="date" name="testDate" class="form-control" value="<?php echo $application[0]["testDate"];?>">
 						</div>
 					</div>
 
@@ -306,7 +306,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 								if( $applicationTypes = selectDB("applicationtype","`status` = '0' ORDER BY `enTitle` ASC") ){
 									foreach( $applicationTypes as $applicationType ){
 										// check if selected
-										$selected = ($applicationType["id"] == $application["applicationType"]) ? "selected" : "";
+										$selected = ($applicationType["id"] == $application[0]["applicationType"]) ? "selected" : "";
 										?>
 										<option value="<?= $applicationType["id"] ?>" <? echo $selected ?>><?= $applicationType["enTitle"] . " - " . $applicationType["arTitle"] ?></option>
 										<?php
@@ -327,7 +327,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 								if( $licenseTypes = selectDB("licensetype","`status` = '0' ORDER BY `enTitle` ASC") ){
 									foreach( $licenseTypes as $licenseType ){
 										// check if selected
-										$selected = ($licenseType["id"] == $application["licenseType"]) ? "selected" : "";
+										$selected = ($licenseType["id"] == $application[0]["licenseType"]) ? "selected" : "";
 										?>
 										<option value="<?= $licenseType["id"] ?>" <? echo $selected ?>><?= $licenseType["enTitle"] . " - " . $licenseType["arTitle"] ?></option>
 										<?php
