@@ -62,6 +62,7 @@ if( isset($_POST) && !empty($_POST) ){
     <title>Application for Skipper License</title>
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
 <body>
 <form action="" method="post" enctype="multipart/form-data">
@@ -375,6 +376,8 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
         // block fridays and saturdays from #testDateCal
         // what should i add in html part to make it work?
         // <input type="text" id="testDateCal" name="testDateCal">
+        // its not working i think i should load a datepicker library 
+        // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
         $('#testDateCal').datepicker({
             beforeShowDay: function(date) {
                 var day = date.getDay();
