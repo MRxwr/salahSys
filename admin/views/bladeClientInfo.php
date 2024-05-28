@@ -14,6 +14,9 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 		width: 100px;
 		height: 100px;
 	}
+	hr {
+    	margin-top: 35px;
+	}
 </style>
 <div class="row">
 	<div class="col-sm-12">
@@ -70,6 +73,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<!-- applicant -->
 					<div class="col-12 text-center">
+						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Applicant Details","بيانات مقدم الطلب") ?></h6>
 						<hr class="light-grey-hr"/>
 					</div>
@@ -161,6 +165,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<!-- address -->
 
 					<div class="col-12 text-center">
+						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Address Details","عنوان مقدم الطلب") ?></h6>
 						<hr class="light-grey-hr"/>
 					</div>
@@ -229,6 +234,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<!-- visa -->
 
 					<div class="col-12 text-center">
+						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Visa Details","فيزا مقدم الطلب") ?></h6>
 						<hr class="light-grey-hr"/>
 					</div>
@@ -269,6 +275,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<!-- sponsor -->
 
 					<div class="col-12 text-center">
+						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Sponsors Details","بيانات الكفيل") ?></h6>
 						<hr class="light-grey-hr"/>
 					</div>
@@ -294,6 +301,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<!-- application Type -->
 					<div class="col-12 text-center">
+						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Type","نوع") ?></h6>
 						<hr class="light-grey-hr"/>
 					</div>
@@ -340,6 +348,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<!-- attchaments -->
 					<div class="col-12 text-center">
+						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Attachments","المرفقات") ?></h6>
 						<hr class="light-grey-hr"/>
 					</div>
