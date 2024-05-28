@@ -152,7 +152,7 @@ if( isset($_POST) && !empty($_POST) ){
                             <label for="visaType">Visa Type / نوع الفيزا</label>
                             <select class="form-control" name="visa[Type]" id="visaType">
                                 <?php
-                                if( $visas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                if( $visas = selectDB("visatype","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $visas as $visa ){
                                         ?>
                                         <option value="<?= $visa["id"] ?>"><?= $visa["enTitle"] . " - " . $visa["arTitle"] ?></option>
@@ -253,7 +253,7 @@ if( isset($_POST) && !empty($_POST) ){
             <div class="card-body">
                     <div class="form-group">
                         <label for="applicationType">Application Type / نوع الطلب</label>
-                        <select class="form-control" name="applicationType" id="applicationType" required>
+                        <select class="form-control" name="applicationtype" id="applicationType" required>
                                 <?php
                                 if( $applicationTypes = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $applicationTypes as $applicationType ){
@@ -276,7 +276,7 @@ if( isset($_POST) && !empty($_POST) ){
             <div class="card-body">
                     <div class="form-group">
                         <label for="licenseType">License Type / نوع الرخصة</label>
-                        <select class="form-control" name="licenseType" id="licenseType" required>
+                        <select class="form-control" name="licensetype" id="licenseType" required>
                                 <?php
                                 if( $licenseTypes = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $licenseTypes as $licenseType ){
