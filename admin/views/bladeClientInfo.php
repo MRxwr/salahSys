@@ -2,7 +2,7 @@
 if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 	$applicant = json_decode($application[0]["applicant"],true);
 	$address = json_decode($application[0]["address"],true);
-	$visa = json_decode($application[0]["visa"],true);
+	$applicationVisa = json_decode($application[0]["visa"],true);
 	$sponsor = json_decode($application[0]["sponsor"],true);
 	$attachment = json_decode($application[0]["attachment"],true);
 }else{
@@ -19,6 +19,8 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 				<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("User Details","معلومات العضو") ?></h6>
 				<hr class="light-grey-hr"/>
 				<div class="row">
+
+					<!-- applicant -->
 					
 					<div class="col-md-6">
 						<div class="form-group">
@@ -104,7 +106,9 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						</div>
 					</div>
 
-					<div class="col-md-6">
+					<!-- address -->
+
+					<div class="col-md-12">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Area","المنطقة") ?></label>
 						<select class="form-control" name="address[area]">
@@ -119,7 +123,6 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                                     }
                                 }
                                 ?>
-                            </select>
 						</select>
 						</div>
 					</div>
@@ -164,6 +167,60 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						<label class="control-label mb-10"><? echo direction("Floor","الدور") ?></label>
 						<input type="text" id="address[floor]" class="form-control" value="<?php echo $address["floor"];?>">
 						</div>
+					</div>
+					<!-- visa -->
+
+					<div class="col-md-4">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Visa Type","نوع الفيزا") ?></label>
+						<select class="form-control" name="visa[Type]" id="visaType">
+							<?php
+							if( $visas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
+								foreach( $visas as $visa ){
+									// check if selected
+									$selected = ($visa["id"] == $applicationVisa["Type"]) ? "selected" : "";
+									?>
+									<option value="<?= $visa["id"] ?>"><?= $visa["enTitle"] . " - " . $visa["arTitle"] ?></option>
+									<?php
+								}
+							}
+							?>
+						</select>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="form-group">
+                            <label class="control-label mb-10"><? echo direction("Visa Expirey Date","تاريخ أنتهاء الفيزا") ?></label>
+                            <input type="date" name="visa[ExpireyDate]" class="form-control" id="visaExpireyDate" value="<?php echo $applicationVisa["ExpireyDate"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="form-group">
+							<label class="control-label mb-10"><? echo direction("Fishing License Expiry Date","تاريخ أنتهاء الرخصة البحرية") ?></label>
+							<input type="date" name="visa[FLEdate]" class="form-control" id="FLEdate" value="<?php echo $applicationVisa["FLEdate"];?>">
+						</div>
+					</div>
+
+					<!-- sponsor -->
+					<div class="col-md-4">
+						<div class="form-group">
+                            <label class="control-label mb-10"><? echo direction("Employer","جهة العمل") ?></label>
+                            <input type="text" name="sponsor[Employer]" class="form-control" id="employer" value="<?php echo $sponsor["Employer"];?>">
+                        </div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+                            <label class="control-label mb-10"><? echo direction("Sponsors Name","اسم الكفيل") ?></label>
+                            <input type="text" name="sponsor[Name]" class="form-control" id="SponsorsName" value="<?php echo $sponsor["Name"];?>">
+                        </div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+                            <label class="control-label mb-10"><? echo direction("Sponsors Civil ID No.","رقم الهوية للكفيل") ?></label>
+                            <input type="number" name="sponsor[CivilId]" pattern="[0-9]*" step='1' min='0' minlength="8" value="<?php echo $sponsor["CivilId"];?>" class="form-control" id="sponsorsCivilId">
+                        </div>
 					</div>
 
 				</div>
