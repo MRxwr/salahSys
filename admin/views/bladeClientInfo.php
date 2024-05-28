@@ -9,6 +9,12 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 	header("LOCATION: ?v=Applications");die();
 }
 ?>
+<style>
+	.img-fluid{
+		width: 100px;
+		height: 100px;
+	}
+</style>
 <div class="row">
 	<div class="col-sm-12">
 		<div class="panel panel-default card-view">
@@ -295,35 +301,35 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                         <input type="file" name="photo" class="form-control-file" id="photo" >
                     </div>
 					<div class="form-group col-md-6">
-                        <img src="../logos/<?php echo $attachment["photo"];?>" alt="photo" class="img-fluid">
+                        <a href="../logos/<?php echo $attachment["photo"];?>" target="_blank"><img src="../logos/<?php echo $attachment["photo"];?>" alt="photo" class="img-fluid"></a>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo"><? direction("Civil ID","البطاقة المدنية") ?></label>
                         <input type="file" name="civilId" class="form-control-file" id="civilId" >
                     </div>
 					<div class="form-group col-md-6">
-                        <img src="../logos/<?php echo $attachment["civilId"];?>" alt="photo" class="img-fluid">
+						<a href="../logos/<?php echo $attachment["civilId"];?>" target="_blank"><img src="../logos/<?php echo $attachment["civilId"];?>" alt="photo" class="img-fluid"></a>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo"><? direction("Driving Licence","رخصة القيادة") ?></label>
                         <input type="file" name="drivingLicence" class="form-control-file" id="drivingLicence" >
                     </div>
 					<div class="form-group col-md-6">
-                        <img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid">
+						<a href="../logos/<?php echo $attachment["drivingLicence"];?>" target="_blank"><img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid"></a>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo"><? direction(">Passport [Non Kuwaiti]","جواز للغير كويتي") ?></label>
                         <input type="file" name="Passport" class="form-control-file" id="Passport">
                     </div>
 					<div class="form-group col-md-6">
-                        <img src="../logos/<?php echo $attachment["passport"];?>" alt="photo" class="img-fluid">
+						<a href="../logos/<?php echo $attachment["passport"];?>" target="_blank"><img src="../logos/<?php echo $attachment["passport"];?>" alt="photo" class="img-fluid"></a>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo"><? direction("Boat captain degree [PAAET / AUK] for Pleasure (A)","شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)") ?></label>
                         <input type="file" name="PADegree" class="form-control-file" id="PADegree">
                     </div>
 					<div class="form-group col-md-6">
-                        <img src="../logos/<?php echo $attachment["degree"];?>" alt="photo" class="img-fluid">
+						<a href="../logos/<?php echo $attachment["degree"];?>" target="_blank"><img src="../logos/<?php echo $attachment["degree"];?>" alt="photo" class="img-fluid"></a>
                     </div>
 
 				</div>
