@@ -1,5 +1,57 @@
 <?php 
 if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
+	if( isset($_POST) && !empty($_POST) ){
+		if (is_uploaded_file($_FILES['photo']['tmp_name'])) {
+			$_POST["attachment"]["photo"] = uploadImageBanner($_FILES['photo']['tmp_name']);
+		}else{
+			$_POST["attachment"]["photo"] = "";
+		}
+		if (is_uploaded_file($_FILES['civilId']['tmp_name'])) {
+			$_POST["attachment"]["civilId"] = uploadImageBanner($_FILES['civilId']['tmp_name']);
+		}else{
+			$_POST["attachment"]["civilId"] = "";
+		}
+		if (is_uploaded_file($_FILES['drivingLicence']['tmp_name'])) {
+			$_POST["attachment"]["drivingLicence"] = uploadImageBanner($_FILES['drivingLicence']['tmp_name']);
+		}else{
+			$_POST["attachment"]["drivingLicence"] = "";
+		}
+		if (is_uploaded_file($_FILES['passport']['tmp_name'])) {
+			$_POST["attachment"]["passport"] = uploadImageBanner($_FILES['passport']['tmp_name']);
+		}else{
+			$_POST["attachment"]["passport"] = "";
+		}
+		if (is_uploaded_file($_FILES['PADegree']['tmp_name'])) {
+			$_POST["attachment"]["degree"] = uploadImageBanner($_FILES['degree']['tmp_name']);
+		}else{
+			$_POST["attachment"]["degree"] = "";
+		}
+		$data["applicant"] = json_encode($_POST["applicant"]);
+		$data["address"] = json_encode($_POST["address"]);
+		$data["attachment"] = json_encode($_POST["attachment"]);
+		$data["visa"] = json_encode($_POST["visa"]);
+		$data["sponsor"] = json_encode($_POST["sponsor"]);
+		$data["applicationType"] = $_POST["applicationType"];
+		$data["licenseType"] = $_POST["licenseType"];
+		$data["locationId"] = $_POST["locationId"];
+		$data["licenseId"] = $_POST["licenseId"];
+		$data["testDate"] = $_POST["testDate"];
+		if( updateDB("applications", $data, "`id` = ?", $_GET["id"]) ){
+			?>
+			<script>
+				alert("Application updated successfully. we will contact you soon.");
+				window.location.href = "?v=ClientInfo&id=<?php echo $_GET["id"] ?>";
+			</script>
+			<?php
+		}else{
+			?>
+			<script>
+				alert("Something went wrong. Please try again.");
+				window.location.href = "?v=ClientInfo&id='<?php echo $_GET["id"] ?>'";
+			</script>
+			<?php
+		}
+	}
 	$applicant = json_decode($application[0]["applicant"],true);
 	$address = json_decode($application[0]["address"],true);
 	$applicationVisa = json_decode($application[0]["visa"],true);
@@ -24,7 +76,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 		<div class="panel-wrapper collapse in">
 		<div class="panel-body">
 		<div class="form-wrap">
-			<form action="#">
+			<form action="?id=<?php echo $_GET["id"];?>" method="POST" enctype="multipart/form-data">
 				<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("User Details","معلومات العضو") ?></h6>
 				<hr class="light-grey-hr"/>
 				<div class="row">
