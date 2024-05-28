@@ -36,7 +36,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 		$data["locationId"] = $_POST["locationId"];
 		$data["licenseId"] = $_POST["licenseId"];
 		$data["testDate"] = $_POST["testDate"];
-		if( updateDB("applications", $data, "`id` = ?", $_GET["id"]) ){
+		if( updateDB("applications", $data, "`id` = '{$_GET["id"]}'") ){
 			?>
 			<script>
 				alert("Application updated successfully. we will contact you soon.");
