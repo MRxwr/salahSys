@@ -77,9 +77,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 							$types = ["O+","O-","A+","A-","B+","B-","AB+","AB-"];
 							for( $i = 0; $i < sizeof($types); $i++ ){
 								$selected = ($types[$i] == $applicant["bloodType"]) ? "selected" : "";
-								?>
-								<option <? echo $selected ?>><?php echo $types[$i] ?></option>
-								<?php
+								echo "<option{$selected}>{$types[$i]}</option>";
 							}
 							?>
 						</select>
