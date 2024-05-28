@@ -372,12 +372,8 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
-        // block fridays and saturdays from #testDateCal
-        // what should i add in html part to make it work?
-        // <input type="text" id="testDateCal" name="testDateCal">
-        // its not working i think i should load a datepicker library 
-        // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
         $('#testDateCal').datepicker({
             beforeShowDay: function(date) {
                 var day = date.getDay();
