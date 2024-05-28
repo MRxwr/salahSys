@@ -36,6 +36,7 @@ if( isset($_POST) && !empty($_POST) ){
 	$data["applicationType"] = $_POST["applicationType"];
 	$data["licenseType"] = $_POST["licenseType"];
 	$data["locationId"] = $_POST["locationId"];
+	$data["testDate"] = $_POST["testDate"];
 	if( insertDB("applications", $data) ){
 		?>
 		<script>
@@ -66,6 +67,20 @@ if( isset($_POST) && !empty($_POST) ){
 <form action="" method="post" enctype="multipart/form-data">
     <div class="container my-4">
         <h1 class="text-center">Application for Skipper License</h1>
+
+        <!-- Application Type -->
+        <div class="card my-4">
+            <div class="card-header">
+                Test Date / تاريخ الإختبار
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="testDate">Test Date / تاريخ الإختبار </label>
+                    <input type="date" id="testDateCal" name="testDate" class="form-control" id="testDate" required>
+                </div>
+            </div>
+        </div>
+
         <!-- Application Type -->
         <div class="card my-4">
             <div class="card-header">
@@ -356,5 +371,14 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // block fridays and saturdays from #testDateCal
+        $('#testDateCal').datepicker({
+            beforeShowDay: function(date) {
+                var day = date.getDay();
+                return [(day != 0 && day != 6)];
+            }
+        });
+    </script>
 </body>
 </html>
