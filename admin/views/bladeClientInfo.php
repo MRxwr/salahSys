@@ -31,7 +31,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Application Info","معلومات الطلب") ?></h6>
 					<hr class="light-grey-hr"/>
 					</div>
-
+<? var_dump($application); ?>
 					<div class="col-md-4">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("License ID","رقم الرخصة") ?></label>
