@@ -86,7 +86,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<div class="col-md-6">
 						<div class="form-group">
-						<label class="control-label mb-10"><? echo direction("Gender","الجنس") ?></label>
+						<label class="control-label mb-10"><? echo direction("Nationality","الجنسية") ?></label>
 						<select class="form-control" name="applicant[nationality]">
 							<?php
                                 if( $countries = selectDB("cities","`status` = '1' GROUP BY `CountryName` ORDER BY `CountryName` ASC") ){
@@ -95,6 +95,26 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 										$selected = ($country["id"] == $applicant["nationality"]) ? "selected" : "";
                                         ?>
                                         <option value="<?= $country["id"] ?>" <? echo $selected ?>><?= $country["CountryName"] ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
+						</select>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Area","المنطقة") ?></label>
+						<select class="form-control" name="address[area]">
+							<?php
+                                if( $areas = selectDB("areas","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                    foreach( $areas as $area ){
+										// check if selected
+										$selected = ($area["id"] == $address["area"]) ? "selected" : "";
+                                        ?>
+                                        <option value="<?= $area["id"] ?>" <? echo $selected ?>><?= direction("{$area["enTitle"]}","{$area["arTitle"]}") ?></option>
                                         <?php
                                     }
                                 }
