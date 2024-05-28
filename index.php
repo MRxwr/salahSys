@@ -76,7 +76,7 @@ if( isset($_POST) && !empty($_POST) ){
             <div class="card-body">
                 <div class="form-group">
                     <label for="testDate">Test Date / تاريخ الإختبار </label>
-                    <input type="date" id="testDateCal" name="testDate" class="form-control" id="testDate" required>
+                    <input type="text" id="testDateCal" name="testDate" class="form-control" id="testDate" required>
                 </div>
             </div>
         </div>
@@ -373,6 +373,8 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         // block fridays and saturdays from #testDateCal
+        // what should i add in html part to make it work?
+        // <input type="text" id="testDateCal" name="testDateCal">
         $('#testDateCal').datepicker({
             beforeShowDay: function(date) {
                 var day = date.getDay();
