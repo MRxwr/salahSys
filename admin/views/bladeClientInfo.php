@@ -27,8 +27,10 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 				<div class="row">
 
 					<!-- application Info -->
+					<div class="col-12">
 					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Application Info","معلومات الطلب") ?></h6>
 					<hr class="light-grey-hr"/>
+					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
@@ -37,7 +39,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						</div>
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Test Date","تاريخ الاختبار") ?></label>
 						<input type="date" name="testDate" class="form-control" value="<?php echo $applicant["testDate"];?>">
@@ -45,9 +47,10 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					</div>
 
 					<!-- applicant -->
-					
+					<div class="col-12">
 					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Applicant Details","بيانات مقدم الطلب") ?></h6>
 					<hr class="light-grey-hr"/>
+					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
