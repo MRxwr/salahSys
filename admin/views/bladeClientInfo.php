@@ -296,7 +296,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                     </div>
 					<div class="form-group col-md-6">
                         <label for="photo">Personal Photo / صورة شخصية</label>
-                        <img src="../logos/<?php echo $application["photo"];?>" alt="photo" class="img-fluid">
+                        <img src="../logos/<?php echo $attachment["photo"];?>" alt="photo" class="img-fluid">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo">Civil ID / البطاقة المدنية </label>
@@ -304,7 +304,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                     </div>
 					<div class="form-group col-md-6">
                         <label for="photo">Civil ID / البطاقة المدنية </label>
-                        <img src="../logos/<?php echo $application["civilId"];?>" alt="photo" class="img-fluid">
+                        <img src="../logos/<?php echo $attachment["civilId"];?>" alt="photo" class="img-fluid">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo">Driving Licence / رخصة القيادة </label>
@@ -312,7 +312,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                     </div>
 					<div class="form-group col-md-6">
                         <label for="photo">Driving Licence / رخصة القيادة </label>
-                        <img src="../logos/<?php echo $application["drivingLicence"];?>" alt="photo" class="img-fluid">
+                        <img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
@@ -320,7 +320,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                     </div>
 					<div class="form-group col-md-6">
                         <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
-                        <img src="../logos/<?php echo $application["passport"];?>" alt="photo" class="img-fluid">
+                        <img src="../logos/<?php echo $attachment["passport"];?>" alt="photo" class="img-fluid">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
@@ -328,7 +328,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                     </div>
 					<div class="form-group col-md-6">
                         <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
-                        <img src="../logos/<?php echo $application["degree"];?>" alt="photo" class="img-fluid">
+                        <img src="../logos/<?php echo $attachment["degree"];?>" alt="photo" class="img-fluid">
                     </div>
 
 				</div>
