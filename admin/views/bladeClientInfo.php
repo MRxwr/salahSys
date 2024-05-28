@@ -168,6 +168,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						<input type="text" id="address[floor]" class="form-control" value="<?php echo $address["floor"];?>">
 						</div>
 					</div>
+
 					<!-- visa -->
 
 					<div class="col-md-4">
@@ -204,6 +205,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					</div>
 
 					<!-- sponsor -->
+
 					<div class="col-md-4">
 						<div class="form-group">
                             <label class="control-label mb-10"><? echo direction("Employer","جهة العمل") ?></label>
@@ -221,6 +223,69 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                             <label class="control-label mb-10"><? echo direction("Sponsors Civil ID No.","رقم الهوية للكفيل") ?></label>
                             <input type="number" name="sponsor[CivilId]" pattern="[0-9]*" step='1' min='0' minlength="8" value="<?php echo $sponsor["CivilId"];?>" class="form-control" id="sponsorsCivilId">
                         </div>
+					</div>
+
+					<!-- application Type -->
+
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label mb-10"><? echo direction("Application Type","نوع الطلب") ?></label>
+							<select class="form-control" name="applicationType" id="applicationType">
+								<?php
+								if( $applicationTypes = selectDB("applicationtype","`status` = '0' ORDER BY `enTitle` ASC") ){
+									foreach( $applicationTypes as $applicationType ){
+										// check if selected
+										$selected = ($applicationType["id"] == $application["applicationType"]) ? "selected" : "";
+										?>
+										<option value="<?= $applicationType["id"] ?>" <? echo $selected ?>><?= $applicationType["enTitle"] . " - " . $applicationType["arTitle"] ?></option>
+										<?php
+									}
+								}
+								?>
+							</select>
+						</div>
+					</div>
+					
+					<!-- license Type -->
+
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label mb-10"><? echo direction("License Type","نوع الرخصة") ?></label>
+							<select class="form-control" name="licenseType" id="licenseType">
+								<?php
+								if( $licenseTypes = selectDB("licensetype","`status` = '0' ORDER BY `enTitle` ASC") ){
+									foreach( $licenseTypes as $licenseType ){
+										// check if selected
+										$selected = ($licenseType["id"] == $application["licenseType"]) ? "selected" : "";
+										?>
+										<option value="<?= $licenseType["id"] ?>" <? echo $selected ?>><?= $licenseType["enTitle"] . " - " . $licenseType["arTitle"] ?></option>
+										<?php
+									}
+								}
+								?>
+							</select>
+						</div>
+					</div>
+
+					<!-- location -->
+
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label mb-10"><? echo direction("Test Location","موقع الإختبار") ?></label>
+							<select class="form-control" name="locationId" id="licenseType">
+								<?php
+								if( $locations = selectDB("location","`status` = '0' ORDER BY `enTitle` ASC") ){
+									foreach( $locations as $location ){
+										// check if selected
+										$selected = ($location["id"] == $application["locationId"]) ? "selected" : "";
+										?>
+										<option value="<?= $location["id"] ?>" <? echo $selected ?>><?= $location["enTitle"] . " - " . $location["arTitle"] ?></option>
+										<?php
+									}
+								}
+								?>
+							</select>
+						</div>
 					</div>
 
 				</div>
