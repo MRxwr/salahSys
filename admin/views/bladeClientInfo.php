@@ -124,6 +124,48 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						</div>
 					</div>
 
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Block","القطعه") ?></label>
+						<input type="text" id="address[block]" class="form-control" value="<?php echo $address["block"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Street","الشارع") ?></label>
+						<input type="text" id="address[street]" class="form-control" value="<?php echo $address["street"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("House","المنزل") ?></label>
+						<input type="text" id="address[house]" class="form-control" value="<?php echo $address["house"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Avenu","الجاده") ?></label>
+						<input type="text" id="address[ave]" class="form-control" value="<?php echo $address["ave"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Flat","الشقة") ?></label>
+						<input type="text" id="address[flat]" class="form-control" value="<?php echo $address["flat"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Floor","الدور") ?></label>
+						<input type="text" id="address[floor]" class="form-control" value="<?php echo $address["floor"];?>">
+						</div>
+					</div>
+
 				</div>
 			</form>
 		</div>
