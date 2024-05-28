@@ -288,6 +288,49 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						</div>
 					</div>
 
+					<!-- attchaments -->
+
+					<div class="form-group col-md-6">
+                        <label for="photo">Personal Photo / صورة شخصية</label>
+                        <input type="file" name="photo" class="form-control-file" id="photo" >
+                    </div>
+					<div class="form-group col-md-6">
+                        <label for="photo">Personal Photo / صورة شخصية</label>
+                        <img src="../logos/<?php echo $application["photo"];?>" alt="photo" class="img-fluid">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Civil ID / البطاقة المدنية </label>
+                        <input type="file" name="civilId" class="form-control-file" id="civilId" >
+                    </div>
+					<div class="form-group col-md-6">
+                        <label for="photo">Civil ID / البطاقة المدنية </label>
+                        <img src="../logos/<?php echo $application["civilId"];?>" alt="photo" class="img-fluid">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Driving Licence / رخصة القيادة </label>
+                        <input type="file" name="drivingLicence" class="form-control-file" id="drivingLicence" >
+                    </div>
+					<div class="form-group col-md-6">
+                        <label for="photo">Driving Licence / رخصة القيادة </label>
+                        <img src="../logos/<?php echo $application["drivingLicence"];?>" alt="photo" class="img-fluid">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
+                        <input type="file" name="Passport" class="form-control-file" id="Passport">
+                    </div>
+					<div class="form-group col-md-6">
+                        <label for="photo">Passport [Non Kuwaiti] / جواز للغير كويتي </label>
+                        <img src="../logos/<?php echo $application["passport"];?>" alt="photo" class="img-fluid">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
+                        <input type="file" name="PADegree" class="form-control-file" id="PADegree">
+                    </div>
+					<div class="form-group col-md-6">
+                        <label for="photo">Boat captain degree [PAAET / AUK] for Pleasure (A) /  شهادة قائد زورق من ( التطبيقي / الإستراليه ) للنزهه (أ)</label>
+                        <img src="../logos/<?php echo $application["degree"];?>" alt="photo" class="img-fluid">
+                    </div>
+
 				</div>
 			</form>
 		</div>
