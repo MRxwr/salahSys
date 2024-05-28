@@ -26,40 +26,61 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 				<hr class="light-grey-hr"/>
 				<div class="row">
 
+					<!-- application Info -->
+					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Application Info","معلومات الطلب") ?></h6>
+					<hr class="light-grey-hr"/>
+
+					<div class="col-md-6">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("License ID","رقم الرخصة") ?></label>
+						<input type="text" name="licenseId" class="form-control" value="<?php echo $applicant["licenseId"];?>">
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="form-group">
+						<label class="control-label mb-10"><? echo direction("Test Date","تاريخ الاختبار") ?></label>
+						<input type="date" name="testDate" class="form-control" value="<?php echo $applicant["testDate"];?>">
+						</div>
+					</div>
+
 					<!-- applicant -->
 					
+					<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Applicant Details","بيانات مقدم الطلب") ?></h6>
+					<hr class="light-grey-hr"/>
+
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("English Name","الاسم باللغة الانجليزية") ?></label>
-						<input type="text" id="applicant[enName]" class="form-control" value="<?php echo $applicant["enName"];?>">
+						<input type="text" name="applicant[enName]" class="form-control" value="<?php echo $applicant["enName"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Arabic Name","الاسم باللغة العربية") ?></label>
-						<input type="text" id="applicant[arName]" class="form-control" value="<?php echo $applicant["arName"];?>">
+						<input type="text" name="applicant[arName]" class="form-control" value="<?php echo $applicant["arName"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Civil Id","الرقم المدني") ?></label>
-						<input type="number" step="any" minlength="12" maxlength="12" id="applicant[civilId]" class="form-control" value="<?php echo $applicant["civilId"];?>">
+						<input type="number" step="any" minlength="12" maxlength="12" name="applicant[civilId]" class="form-control" value="<?php echo $applicant["civilId"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Date of birth","تاريخ الميلاد") ?></label>
-						<input type="date" id="applicant[dob]" class="form-control" value="<?php echo $applicant["dob"];?>">
+						<input type="date" name="applicant[dob]" class="form-control" value="<?php echo $applicant["dob"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Mobile Number","رقم الجوال") ?></label>
-						<input type="number" step="any" minlength="8" maxlength="8" id="applicant[phone]" class="form-control" value="<?php echo $applicant["phone"];?>">
+						<input type="number" step="any" minlength="8" maxlength="8" name="applicant[phone]" class="form-control" value="<?php echo $applicant["phone"];?>">
 						</div>
 					</div>
 
@@ -136,42 +157,42 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Block","القطعه") ?></label>
-						<input type="text" id="address[block]" class="form-control" value="<?php echo $address["block"];?>">
+						<input type="text" name="address[block]" class="form-control" value="<?php echo $address["block"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Street","الشارع") ?></label>
-						<input type="text" id="address[street]" class="form-control" value="<?php echo $address["street"];?>">
+						<input type="text" name="address[street]" class="form-control" value="<?php echo $address["street"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("House","المنزل") ?></label>
-						<input type="text" id="address[house]" class="form-control" value="<?php echo $address["house"];?>">
+						<input type="text" name="address[house]" class="form-control" value="<?php echo $address["house"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Avenu","الجاده") ?></label>
-						<input type="text" id="address[ave]" class="form-control" value="<?php echo $address["ave"];?>">
+						<input type="text" name="address[ave]" class="form-control" value="<?php echo $address["ave"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Flat","الشقة") ?></label>
-						<input type="text" id="address[flat]" class="form-control" value="<?php echo $address["flat"];?>">
+						<input type="text" name="address[flat]" class="form-control" value="<?php echo $address["flat"];?>">
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="form-group">
 						<label class="control-label mb-10"><? echo direction("Floor","الدور") ?></label>
-						<input type="text" id="address[floor]" class="form-control" value="<?php echo $address["floor"];?>">
+						<input type="text" name="address[floor]" class="form-control" value="<?php echo $address["floor"];?>">
 						</div>
 					</div>
 
@@ -302,7 +323,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                         <input type="file" name="photo" class="form-control-file" id="photo" >
                     </div>
 					</div>
-
+					
 					<div class="col-md-6">
 					<div class="form-group">
                         <a href="../logos/<?php echo $attachment["photo"];?>" target="_blank"><img src="../logos/<?php echo $attachment["photo"];?>" alt="photo" class="img-fluid"></a>
@@ -344,7 +365,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<div class="col-md-6">
 					<div class="form-group">
-						<a href="../logos/<?php echo $attachment["passport"];?>" target="_blank"><img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid"></a>
+						<a href="../logos/<?php echo $attachment["passport"];?>" target="_blank"><img src="../logos/<?php echo $attachment["passport"];?>" alt="photo" class="img-fluid"></a>
                     </div>
 					</div>
 
@@ -357,7 +378,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<div class="col-md-6">
 					<div class="form-group">
-						<a href="../logos/<?php echo $attachment["degree"];?>" target="_blank"><img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid"></a>
+						<a href="../logos/<?php echo $attachment["degree"];?>" target="_blank"><img src="../logos/<?php echo $attachment["degree"];?>" alt="photo" class="img-fluid"></a>
                     </div>
 					</div>
 
