@@ -75,7 +75,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					<div class="col-12 text-center">
 						<hr class="light-grey-hr"/>
 						<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("Applicant Details","بيانات مقدم الطلب") ?></h6>
-						<hr class="light-grey-hr"/>
+						<hr class="light-grey-hr"/> 
 					</div>
 
 					<div class="col-md-6">
