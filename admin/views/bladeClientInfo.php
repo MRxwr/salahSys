@@ -175,12 +175,12 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 						<label class="control-label mb-10"><? echo direction("Visa Type","نوع الفيزا") ?></label>
 						<select class="form-control" name="visa[Type]" id="visaType">
 							<?php
-							if( $visas = selectDB("visaType","`status` = '0' ORDER BY `enTitle` ASC") ){
+							if( $visas = selectDB("visatype","`status` = '0' ORDER BY `enTitle` ASC") ){
 								foreach( $visas as $visa ){
 									// check if selected
 									$selected = ($visa["id"] == $applicationVisa["Type"]) ? "selected" : "";
 									?>
-									<option value="<?= $visa["id"] ?>"><?= $visa["enTitle"] . " - " . $visa["arTitle"] ?></option>
+									<option value="<?= $visa["id"] ?>" <? echo $selected ?>><?= $visa["enTitle"] . " - " . $visa["arTitle"] ?></option>
 									<?php
 								}
 							}
