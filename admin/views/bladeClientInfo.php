@@ -302,7 +302,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
                         <input type="file" name="photo" class="form-control-file" id="photo" >
                     </div>
 					</div>
-					
+
 					<div class="col-md-6">
 					<div class="form-group">
                         <a href="../logos/<?php echo $attachment["photo"];?>" target="_blank"><img src="../logos/<?php echo $attachment["photo"];?>" alt="photo" class="img-fluid"></a>
@@ -344,7 +344,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<div class="col-md-6">
 					<div class="form-group">
-						<a href="../logos/<?php echo $attachment["passport"];?>" target="_blank"><img src="../logos/<?php echo $attachment["passport"];?>" alt="photo" class="img-fluid"></a>
+						<a href="../logos/<?php echo $attachment["passport"];?>" target="_blank"><img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid"></a>
                     </div>
 					</div>
 
@@ -357,7 +357,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<div class="col-md-6">
 					<div class="form-group">
-						<a href="../logos/<?php echo $attachment["degree"];?>" target="_blank"><img src="../logos/<?php echo $attachment["degree"];?>" alt="photo" class="img-fluid"></a>
+						<a href="../logos/<?php echo $attachment["degree"];?>" target="_blank"><img src="../logos/<?php echo $attachment["drivingLicence"];?>" alt="photo" class="img-fluid"></a>
                     </div>
 					</div>
 
