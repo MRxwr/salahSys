@@ -411,6 +411,9 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 					</div>
 
 				</div>
+				<input type="hidden" name="id" value="<? echo $application[0]["id"] ?>">
+				<button type="submit" class="btn btn-warning btn-rounded btn-block my-4" name="updateClientInfo"><? echo direction("Update","تحديث") ?></button>
+				<a href="../print.php?id=<? echo $application[0]["id"] ?>" class="btn btn-primary btn-rounded btn-block my-4"><? direction("Print","طباعة") ?></a>
 			</form>
 		</div>
 		</div>
