@@ -76,7 +76,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 		<div class="panel-wrapper collapse in">
 		<div class="panel-body">
 		<div class="form-wrap">
-			<form action="?id=<?php echo $_GET["id"];?>" method="POST" enctype="multipart/form-data">
+			<form action="?v=ClientInfo&id=<?php echo $_GET["id"];?>" method="POST" enctype="multipart/form-data">
 				<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i><?php echo direction("User Details","معلومات العضو") ?></h6>
 				<hr class="light-grey-hr"/>
 				<div class="row">
