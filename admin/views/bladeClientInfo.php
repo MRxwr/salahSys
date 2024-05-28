@@ -71,7 +71,7 @@ if( $application = selectDBNew("applications",[$_GET["id"]],"`id` = ?","")){
 
 					<div class="col-md-6">
 						<div class="form-group">
-						<label class="control-label mb-10"><? echo direction("Gender","الجنس") ?></label>
+						<label class="control-label mb-10"><? echo direction("Blood Type","نوع الدم") ?></label>
 						<select class="form-control" name="applicant[bloodType]">
 							<?
 							$types = ["O+","O-","A+","A-","B+","B-","AB+","AB-"];
