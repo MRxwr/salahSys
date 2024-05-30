@@ -77,7 +77,7 @@ if( isset($_POST) && !empty($_POST) ){
             <div class="card-body">
                 <div class="form-group">
                     <label for="testDate">Test Date / تاريخ الإختبار </label>
-                    <input type="date" id="testDateCal" name="testDate" class="form-control" id="testDate" required>
+                    <input type="date" id="testDateCal" name="testDate" class="form-control" required>
                 </div>
             </div>
         </div>
@@ -375,7 +375,7 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            const dateInput = document.getElementById('date');
+            const dateInput = document.getElementById('testDateCal');
             dateInput.addEventListener('input', function() {
                 const dateValue = new Date(this.value);
                 const day = dateValue.getUTCDay();
