@@ -77,7 +77,7 @@ if( isset($_POST) && !empty($_POST) ){
             <div class="card-body">
                 <div class="form-group">
                     <label for="testDate">Test Date / تاريخ الإختبار </label>
-                    <input type="text" id="testDateCal" name="testDate" class="form-control" id="testDate" required>
+                    <input type="date" id="testDateCal" name="testDate" class="form-control" id="testDate" required>
                 </div>
             </div>
         </div>
@@ -374,11 +374,16 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script>
-        $('#testDateCal').datepicker({
-            beforeShowDay: function(date) {
-                var day = date.getDay();
-                return [(day != 0 && day != 6)];
-            }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dateInput = document.getElementById('date');
+            dateInput.addEventListener('input', function() {
+                const dateValue = new Date(this.value);
+                const day = dateValue.getUTCDay();
+                if (day === 5 || day === 6) {
+                    alert("Fridays and Saturdays are not selectable.");
+                    this.value = ''; // Clear the input value
+                }
+            });
         });
     </script>
 </body>
