@@ -380,7 +380,7 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
                 const dateValue = new Date(this.value);
                 const day = dateValue.getUTCDay();
                 if (day === 5 || day === 6) {
-                    alert("Fridays and Saturdays are not selectable.");
+                    alert("لايمكن إختيار يوم من ايام عطلة نهاية الاسبوع");
                     this.value = ''; // Clear the input value
                 }else{
                     const selectedDate = this.value;
@@ -394,20 +394,20 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
                 type: 'GET',
                 data: { date: date },
                 success: function(response) {
-                    console.log("Response from server:", response);
+                    //console.log("Response from server:", response);
                     try {
                         var parsedResponse = JSON.parse(response);
                     } catch (e) {
                         var parsedResponse = response;
                     }
                     if (parsedResponse === true || parsedResponse === "true" ) {
-                        alert("Date is available.");
                     } else {
-                        alert("Date is not available. Please select another date.");
+                        alert("تم حجز جميع المواعيد المتاحه لهذا التاريخ، الرجاء إختيار تاريخ آخر.");
+                        document.getElementById("testDateCal").value = "";
                     }
                 },
                 error: function(xhr, status, error) {
-                    console.error("Error checking date:", status, error);
+                    //console.error("Error checking date:", status, error);
                 }
             });
         }
