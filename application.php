@@ -382,9 +382,30 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
                 if (day === 5 || day === 6) {
                     alert("Fridays and Saturdays are not selectable.");
                     this.value = ''; // Clear the input value
+                }else{
+                    const selectedDate = this.value;
+                    checkDate(selectedDate);
                 }
             });
         });
+        function checkDate(date) {
+            $.ajax({
+                url: `api/check.php`,
+                type: 'GET',
+                data: { date: date },
+                success: function(response) {
+                    console.log("Response from server:", response);
+                    if (response === "true") {
+                        alert("Date is available.");
+                    } else {
+                        alert("Date is not available. Please select another date.");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error checking date:", status, error);
+                }
+            });
+        }
     </script>
 </body>
 </html>
