@@ -271,7 +271,7 @@ if( isset($_POST) && !empty($_POST) ){
                         <label for="applicationType">Application Type / نوع الطلب</label>
                         <select class="form-control" name="applicationtype" id="applicationType" required>
                                 <?php
-                                if( $applicationTypes = selectDB("applicationType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                if( $applicationTypes = selectDB("applicationtype","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $applicationTypes as $applicationType ){
                                         ?>
                                         <option value="<?= $applicationType["id"] ?>"><?= $applicationType["enTitle"] . " - " . $applicationType["arTitle"] ?></option>
@@ -294,7 +294,7 @@ if( isset($_POST) && !empty($_POST) ){
                         <label for="licenseType">License Type / نوع الرخصة</label>
                         <select class="form-control" name="licensetype" id="licenseType" required>
                                 <?php
-                                if( $licenseTypes = selectDB("licenseType","`status` = '0' ORDER BY `enTitle` ASC") ){
+                                if( $licenseTypes = selectDB("licensetype","`status` = '0' ORDER BY `enTitle` ASC") ){
                                     foreach( $licenseTypes as $licenseType ){
                                         ?>
                                         <option value="<?= $licenseType["id"] ?>"><?= $licenseType["enTitle"] . " - " . $licenseType["arTitle"] ?></option>
