@@ -42,10 +42,10 @@
             <div class="col-md-8 p-2 text-right">قسم شؤن البحاره شويخ  مؤسسه المواني الدور السادس غرفه٦٠٢</div>
 
             <div class="col-12 p-2 text-center"><h4>المادة الدراسيه</h4></div>
-            <div class="col-6 text-center"><a href="files/english-course.pdf" target="_blank">English</a></div>
-            <div class="col-6 text-center"><a href="files/arabic-course.pdf" target="_blank">عربي</a></div>
+            <div class="col-6 text-center"><a href="files/english-course.pdf" class="btn btn-primary rounded w-50" target="_blank">English</a></div>
+            <div class="col-6 text-center"><a href="files/arabic-course.pdf" class="btn btn-primary rounded w-50" target="_blank">عربي</a></div>
 
-            <div class="col-12 p-2 text-center"><a href="application.php" >للتقديم على الطلب إضغط هنا</a></div>
+            <div class="col-12 p-2 text-center"><a href="application.php" class="btn btn-primary rounded w-50">للتقديم على الطلب إضغط هنا</a></div>
         </div>
     </div>
 
