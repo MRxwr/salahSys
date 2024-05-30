@@ -395,7 +395,12 @@ I the undersigned hereby certify that I can swim efficiently and have not experi
                 data: { date: date },
                 success: function(response) {
                     console.log("Response from server:", response);
-                    if (response === "true") {
+                    try {
+                        var parsedResponse = JSON.parse(response);
+                    } catch (e) {
+                        var parsedResponse = response;
+                    }
+                    if (parsedResponse === true || parsedResponse === "true" ) {
                         alert("Date is available.");
                     } else {
                         alert("Date is not available. Please select another date.");
