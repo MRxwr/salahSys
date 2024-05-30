@@ -14,6 +14,31 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
         $sponsor = json_decode($user[0]["sponsor"], true);
         $applicationType = $user[0]["applicationType"];
         $licenseType = $user[0]["licenseType"];
+        if( $visa["Type"] = selectDB("visatype","`id` = '{$visa["Type"]}'")){
+            $visa["Type"] = direction($visa["Type"][0]["enTitle"], $visa["Type"][0]["arTitle"]);
+        }else{
+            $visa["Type"] = "";
+        }
+        if( $applicationType = selectDB("applicationtype","`id` = '{$applicationType}'")){
+            $applicationType = direction($applicationType[0]["enTitle"], $applicationType[0]["arTitle"]);
+        }else{
+            $visa["Type"] = "";
+        }
+        if( $licenseType = selectDB("licensetype","`id` = '{$licenseType}'")){
+            $licenseType = direction($licenseType[0]["enTitle"], $licenseType[0]["arTitle"]);
+        }else{
+            $licenseType = "";
+        }
+        if( $address["area"] = selectDB("areas","`id` = '{$address["area"]}'")){
+            $address["area"] = direction($address["area"][0]["enTitle"], $address["area"][0]["arTitle"]);
+        }else{
+            $address["area"] = "";
+        }
+        if( $applicant["nationality"] = selectDB("cities","`id` = '{$applicant["nationality"]}'")){
+            $applicant["nationality"] = $applicant["nationality"][0]["CountryName"];
+        }else{
+            $applicant["nationality"] = "";
+        }
     } else {
         ?>
         <script>
