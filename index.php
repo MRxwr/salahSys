@@ -11,16 +11,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row">
+    <div class="container p-3">
+        <div class="row m-0">
             <div class="col-2 text-center"><img src='' style='width: 100px; height: 100px;'></div>
-            <div class="col-8 text-center ">
-                <h2>وزارة الداخليه</h2>
-                <h2>MINSTRY OF INTERIOR</h2>
-                <h2>الإدارة العامه لخفر السواحل</h2>
-                <h2>COAST GUARD GENERAL DEP</h2>
-                <h2>النقل البحري</h2>
-                <h2>MARITIME TRANSPORT</h2>
+            <div class="col-8 text-center">
+                <h3>وزارة الداخليه</h3>
+                <h3>MINSTRY OF INTERIOR</h3>
+                <h3>الإدارة العامه لخفر السواحل</h3>
+                <h3>COAST GUARD GENERAL DEP</h3>
+                <h3>النقل البحري</h3>
+                <h3>MARITIME TRANSPORT</h3>
             </div>
             <div class="col-2 text-center"><img src='' style='width: 100px; height: 100px;'></div>
         </div>
