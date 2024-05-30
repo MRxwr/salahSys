@@ -23,14 +23,14 @@
             <div class="col-12 p-2 text-center">
                 <h4>المرفقات المطلوبه لإستخراج الليسن</h4>
             </div>
-            <div class="col-md-4 p-2 text-right">طلبات استخراج أو تجديد الليسن البحري للكويتيين :</div>
+            <div class="col-md-4 p-2 text-right bold">طلبات استخراج أو تجديد الليسن البحري للكويتيين :</div>
             <div class="col-md-8 p-2 text-right">
             .1 صورة من البطاقة المدنية</br>
             .2 صورة من ليسن السيارة أو فحص نظر</br>
             .3 صور شخصية عدد 2 مقاس 4*6</br>
             .4 رسوم 8 دنانير كي نت
             </div>
-            <div class="col-md-4 p-2 text-right">طلبات استخراج أو تجديد الليسن البحري لغير الكويتي:</div>
+            <div class="col-md-4 p-2 text-right bold">طلبات استخراج أو تجديد الليسن البحري لغير الكويتي:</div>
             <div class="col-md-8 p-2 text-right">
             .1 صورة من البطاقة المدنية</br>
             .2 صورة من ليسن السيارة أو فحص نظر</br>
@@ -38,12 +38,12 @@
             .4 صورة الجواز</br>
             .5 رسوم 8 دنانير كي نت
             </div>
-            <div class="col-md-4 p-2 text-right">الصيادين</div>
+            <div class="col-md-4 p-2 text-right bold">الصيادين</div>
             <div class="col-md-8 p-2 text-right">قسم شؤن البحاره شويخ  مؤسسه المواني الدور السادس غرفه٦٠٢</div>
 
             <div class="col-12 p-2 text-center"><h4>المادة الدراسيه</h4></div>
-            <div class="col-6 text-center"><a href="files/english-course.pdf" class="btn btn-secondary rounded" target="_blank">English</a></div>
-            <div class="col-6 text-center"><a href="files/arabic-course.pdf" class="btn btn-secondary rounded" target="_blank">عربي</a></div>
+            <div class="col-6 text-center"><a href="files/english-course.pdf" class="btn btn-secondary rounded w-50" target="_blank">English</a></div>
+            <div class="col-6 text-center"><a href="files/arabic-course.pdf" class="btn btn-secondary rounded w-50" target="_blank">عربي</a></div>
 
             <div class="col-12 pt-5 text-center"><a href="application.php" class="btn btn-secondary rounded">للتقديم على الطلب إضغط هنا</a></div>
         </div>
