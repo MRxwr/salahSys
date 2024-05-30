@@ -13,9 +13,39 @@
   <body>
     <div class="container p-3">
         <div class="row m-0">
-            <div class="col">
+            <div class="col-12">
                 <img src="img/header.png" class="img-fluid" alt="Responsive image">
             </div>
+            <div class="col-12">
+                <h4>قسم شؤن البحاره شويخ  مؤسسه المواني الدور السادس غرفه ٦٠٢</h4>
+            </div>
+
+            <div class="col-12">
+                المرفقات المطلوبه لإستخراج الليسن
+            </div>
+            <div class="col-4">طلبات استخراج أو تجديد الليسن البحري للكويتيين :</div>
+            <div class="col-8">
+            .1 صورة من البطاقة المدنية
+            .2 صورة من ليسن السيارة أو فحص نظر
+            .3 صور شخصية عدد 2 مقاس 4*6
+            .4 رسوم 8 دنانير كي نت
+            </div>
+            <div class="col-4">طلبات استخراج أو تجديد الليسن البحري لغير الكويتي:</div>
+            <div class="col-8">
+            .1 صورة من البطاقة المدنية
+            .2 صورة من ليسن السيارة أو فحص نظر
+            .3 صور شخصية عدد 2 مقاس 4*6
+            .4 صورة الجواز
+            .5 رسوم 8 دنانير كي نت
+            </div>
+            <div class="col-4">الصيادين</div>
+            <div class="col-8">قسم شؤن البحاره شويخ  مؤسسه المواني الدور السادس غرفه٦٠٢</div>
+
+            <div class="col-12">المادة الدراسيه</div>
+            <div class="col-6"><a href="files/english-course.pdf" target="_blank">English</a></div>
+            <div class="col-6"><a href="files/arabic-course.pdf" target="_blank">عربي</a></div>
+
+            <div class="col-12"><a href="application.php" >للتقديم على الطلب إضغط هنا</a></div>
         </div>
     </div>
 
