@@ -13,16 +13,9 @@
   <body>
     <div class="container p-3">
         <div class="row m-0">
-            <div class="col-2 text-center"><img src='' style='width: 100px; height: 100px;'></div>
-            <div class="col-8 text-center">
-                <h3>وزارة الداخليه</h3>
-                <h3>MINSTRY OF INTERIOR</h3>
-                <h3>الإدارة العامه لخفر السواحل</h3>
-                <h3>COAST GUARD GENERAL DEP</h3>
-                <h3>النقل البحري</h3>
-                <h3>MARITIME TRANSPORT</h3>
+            <div class="col">
+                <img src="img/header.png" class="img-fluid" alt="Responsive image">
             </div>
-            <div class="col-2 text-center"><img src='' style='width: 100px; height: 100px;'></div>
         </div>
     </div>
 
