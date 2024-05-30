@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" direction="rtl">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Application for Skipper License</title>
   </head>
   <body>
     <div class="container p-3">
@@ -23,23 +23,23 @@
             <div class="col-12 p-2 text-center">
                 <h4>المرفقات المطلوبه لإستخراج الليسن</h4>
             </div>
-            <div class="col-4 p-2">طلبات استخراج أو تجديد الليسن البحري للكويتيين :</div>
-            <div class="col-8 p-2">
+            <div class="col-md-4 p-2 text-right">طلبات استخراج أو تجديد الليسن البحري للكويتيين :</div>
+            <div class="col-md-8 p-2 text-right">
             .1 صورة من البطاقة المدنية</br>
             .2 صورة من ليسن السيارة أو فحص نظر</br>
             .3 صور شخصية عدد 2 مقاس 4*6</br>
             .4 رسوم 8 دنانير كي نت
             </div>
-            <div class="col-4 p-2">طلبات استخراج أو تجديد الليسن البحري لغير الكويتي:</div>
-            <div class="col-8 p-2">
+            <div class="col-md-4 p-2 text-right">طلبات استخراج أو تجديد الليسن البحري لغير الكويتي:</div>
+            <div class="col-md-8 p-2 text-right">
             .1 صورة من البطاقة المدنية</br>
             .2 صورة من ليسن السيارة أو فحص نظر</br>
             .3 صور شخصية عدد 2 مقاس 4*6</br>
             .4 صورة الجواز</br>
             .5 رسوم 8 دنانير كي نت
             </div>
-            <div class="col-4 p-2">الصيادين</div>
-            <div class="col-8 p-2">قسم شؤن البحاره شويخ  مؤسسه المواني الدور السادس غرفه٦٠٢</div>
+            <div class="col-md-4 p-2 text-right">الصيادين</div>
+            <div class="col-md-8 p-2 text-right">قسم شؤن البحاره شويخ  مؤسسه المواني الدور السادس غرفه٦٠٢</div>
 
             <div class="col-12 p-2 text-center"><h4>المادة الدراسيه</h4></div>
             <div class="col-6 text-center"><a href="files/english-course.pdf" target="_blank">English</a></div>
